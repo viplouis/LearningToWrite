@@ -1,6 +1,13 @@
 ## 异步Post OkHttp3请求
 ### https://blog.csdn.net/knight1996/article/details/77995547?locationNum=8&fps=1
 
+#### 引用一些不错的文章
+###### https://blog.csdn.net/xx326664162/article/details/77714126
+###### https://blog.csdn.net/qq_19431333/article/details/53053367
+###### https://blog.csdn.net/qq_33463102/article/details/60765056
+###### https://www.jianshu.com/p/1133389c1f75
+###### https://www.jianshu.com/p/c99bfdb5bf11
+
 package com.yunke.amazon.authorization.services;
 
 import java.io.IOException;
