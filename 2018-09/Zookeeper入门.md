@@ -2,7 +2,7 @@
 ## 
 ## zookeeper概述：
 
-Zookeeper是一个开源的分布式的额，为分布式应用提供协调服务的Apache项目。
+Zookeeper是一个开源的分布式的，为分布式应用提供协调服务的Apache项目。
 
 Zookeeper从设计模式角度来理解：是一个基于观察者模式设计的分布式服务管理框架，它负责存储和管理大家都关心的数据，然后接受观察者的注册，
 一旦这些数据的状态发生变化，Zookeeper就将负责通知已经在Zookeeper上注册的那些观察者做出相应的反应。
@@ -74,7 +74,9 @@ zookeeper数据模型的结构Unix文件系统很类似，整体上可以看作�
 	dataDir=/opt/module/zookeeper-3.4.10/zkData
 	3）在/opt/module/zookeeper-3.4.10这个目录上创建zkData文件夹
 	[atguigu@haddop102 zookeeper-3.4.10]$ mkdir zkData
+	
 3.操作Zookeeper
+
  1）启动Zookeeper
  [atguigu@haddop102 zookeeper-3.4.10]$ bin/zkServer.sh start
  2）查看进程是否启动
@@ -155,7 +157,7 @@ Leader是通过内部的选举机制临时产生的。
  
  ## 4.1 分布式安装部署
 	1.集群规划
-		在hadoop102、hadoop103和hadoop三个节点上部署Zookeeper
+		在hadoop102、hadoop103和hadoop104三个节点上部署Zookeeper
  
 	2.解压安装
 		1）解压Zookeeper安装包到/opt/module/目录下
