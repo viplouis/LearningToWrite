@@ -1,4 +1,4 @@
-CREATE DEFINER=`admin`@`%` PROCEDURE `getInventoryDailySummaryProc`(
+CREATE DEFINER=`root`@`%` PROCEDURE `getInventoryDailySummaryProc`(
 	IN startDate DATETIME,
 	IN endDate DATETIME,
 	IN shopId INT,
@@ -47,7 +47,7 @@ SELECT endDate INTO endDate1;
 		WHERE
 		inventory_summary.`user_id`=userId
 		AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-		AND IF(salesChannel is null,1=1,inventory_summary.`sale_channel`=salesChannel)
+		AND IF(salesChannel='',1=1,inventory_summary.`sale_channel`=salesChannel)
 		AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
 		inventory_summary_temp
 		ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
@@ -65,7 +65,7 @@ SELECT endDate INTO endDate1;
 		WHERE
 		inventory_summary.`user_id`=userId
 		AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-		AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
+		AND IF(salesChannel='',1=1,inventory_summary.`sale_channel`=salesChannel)
 		AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
 		inventory_summary_temp
 		ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
@@ -84,7 +84,7 @@ IF userType='PriAccount' THEN
 		WHERE
 		inventory_summary.`user_id`=userId
 		AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-		AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
+		AND IF(salesChannel='',1=1,inventory_summary.`sale_channel`=salesChannel)
 		AND inventory_summary.`quantity`<0 group by snapshot_date)
 		inventory_summary_temp
 		ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
@@ -100,7 +100,7 @@ IF userType='PriAccount' THEN
 		WHERE
 		inventory_summary.`user_id`=userId
 		AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-		AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
+		AND IF(salesChannel='',1=1,inventory_summary.`sale_channel`=salesChannel)
 		AND inventory_summary.`quantity`<0 GROUP BY snapshot_date)
 		inventory_summary_temp
 		ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
