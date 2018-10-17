@@ -83,20 +83,32 @@ BEGIN
 		ELSE
 		#子账号
 			
-		SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			INNER JOIN temp_shopId_inventory_daily ON temp_shopId_inventory_daily.parent_user_id = inventory_summary.`user_id`
-			AND temp_shopId_inventory_daily.shopId = inventory_summary.`shop_id`
-			AND temp_shopId_inventory_daily.sale_channel = inventory_summary.`sale_channel`
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+		SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+
+		IF(campaigns_report.`clicks` IS NULL,0,campaigns_report.`clicks`) clicks,
+		IF(campaigns_report.`impressions` IS NULL,0,campaigns_report.`impressions`) impressions,
+		IF(campaigns_report.`orders` IS NULL,0,campaigns_report.`orders`) orders
+		
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(campaigns_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+
+		campaigns_report.`impressions` impressions,
+		campaigns_report.`clicks` clicks,
+		campaigns_report.`attributed_units_ordered1d` orders
+	
+		FROM  campaigns_report 
+		INNER JOIN temp_shopId_adDateView ON temp_shopId_adDateView.parent_user_id = campaigns_report.`user_id`
+		AND temp_shopId_adDateView.shopId = campaigns_report.`shop_id`
+		AND temp_shopId_adDateView.sale_channel = campaigns_report.`sale_channel`
+		WHERE
+		campaigns_report.`user_id`=userId
+		AND IF(shopId=0,1=1,campaigns_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,campaigns_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		campaigns_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = campaigns_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		
 		END IF;
 		
@@ -104,34 +116,60 @@ BEGIN
 		#找到这段时间的广告adgroups
 		IF userType='PriAccount' THEN
 			#主账号
-			SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel is null,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+			SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+		
+		IF(adgroups_report.`clicks` IS NULL,0,adgroups_report.`clicks`) clicks,
+		IF(adgroups_report.`impressions` IS NULL,0,adgroups_report.`impressions`) impressions,
+		IF(adgroups_report.`orders` IS NULL,0,adgroups_report.`orders`) orders
+		
+		
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(adgroups_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+		
+		adgroups_report.`impressions` impressions,
+		adgroups_report.`clicks` clicks,
+		adgroups_report.`attributed_units_ordered1d` orders
+	
+		FROM  adgroups_report 
+		WHERE
+		adgroups_report.`user_id`=userId
+		AND IF(shopId=0,1=1,adgroups_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,adgroups_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		adgroups_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = adgroups_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		ELSE
 		#子账号
 			
-		SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			INNER JOIN temp_shopId_inventory_daily ON temp_shopId_inventory_daily.parent_user_id = inventory_summary.`user_id`
-			AND temp_shopId_inventory_daily.shopId = inventory_summary.`shop_id`
-			AND temp_shopId_inventory_daily.sale_channel = inventory_summary.`sale_channel`
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+		SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+		
+		IF(adgroups_report.`clicks` IS NULL,0,adgroups_report.`clicks`) clicks,
+		IF(adgroups_report.`impressions` IS NULL,0,adgroups_report.`impressions`) impressions,
+		IF(adgroups_report.`orders` IS NULL,0,adgroups_report.`orders`) orders
+		
+		
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(adgroups_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+		
+		adgroups_report.`impressions` impressions,
+		adgroups_report.`clicks` clicks,
+		adgroups_report.`attributed_units_ordered1d` orders
+	
+		FROM  adgroups_report 
+		INNER JOIN temp_shopId_adDateView ON temp_shopId_adDateView.parent_user_id = adgroups_report.`user_id`
+		AND temp_shopId_adDateView.shopId = adgroups_report.`shop_id`
+		AND temp_shopId_adDateView.sale_channel = adgroups_report.`sale_channel`
+		WHERE
+		adgroups_report.`user_id`=userId
+		AND IF(shopId=0,1=1,adgroups_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,adgroups_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		adgroups_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = adgroups_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		
 		END IF;
 			
@@ -140,68 +178,116 @@ BEGIN
 		#找到这段时间的广告productads
 		IF userType='PriAccount' THEN
 			#主账号
-			SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel is null,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+		SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+		
+		IF(productads_report.`clicks` IS NULL,0,productads_report.`clicks`) clicks,
+		IF(productads_report.`impressions` IS NULL,0,productads_report.`impressions`) impressions,
+		IF(productads_report.`orders` IS NULL,0,productads_report.`orders`) orders
+
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(productads_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+		
+		productads_report.`impressions` impressions,
+		productads_report.`clicks` clicks,
+		productads_report.`attributed_units_ordered1d` orders
+	
+		FROM  productads_report 
+		WHERE
+		productads_report.`user_id`=userId
+		AND IF(shopId=0,1=1,productads_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,productads_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		productads_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = productads_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		ELSE
 		#子账号
 			
-		SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			INNER JOIN temp_shopId_inventory_daily ON temp_shopId_inventory_daily.parent_user_id = inventory_summary.`user_id`
-			AND temp_shopId_inventory_daily.shopId = inventory_summary.`shop_id`
-			AND temp_shopId_inventory_daily.sale_channel = inventory_summary.`sale_channel`
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+		SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+		
+		IF(productads_report.`clicks` IS NULL,0,productads_report.`clicks`) clicks,
+		IF(productads_report.`impressions` IS NULL,0,productads_report.`impressions`) impressions,
+		IF(productads_report.`orders` IS NULL,0,productads_report.`orders`) orders
+
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(productads_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+		
+		productads_report.`impressions` impressions,
+		productads_report.`clicks` clicks,
+		productads_report.`attributed_units_ordered1d` orders
+	
+		FROM  productads_report 
+		INNER JOIN temp_shopId_adDateView ON temp_shopId_adDateView.parent_user_id = productads_report.`user_id`
+		AND temp_shopId_adDateView.shopId = productads_report.`shop_id`
+		AND temp_shopId_adDateView.sale_channel = productads_report.`sale_channel`
+		WHERE
+		productads_report.`user_id`=userId
+		AND IF(shopId=0,1=1,productads_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,productads_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		productads_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = productads_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		
 		END IF;
 	ELSEIF shopAdDataOverviewType = 'keywords' THEN
 	#找到这段时间的广告keywords
 		IF userType='PriAccount' THEN
 			#主账号
-			SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel is null,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+			SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+		
+		IF(keywords_report.`clicks` IS NULL,0,keywords_report.`clicks`) clicks,
+		IF(keywords_report.`impressions` IS NULL,0,keywords_report.`impressions`) impressions,
+		IF(keywords_report.`orders` IS NULL,0,keywords_report.`orders`) orders
+
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(keywords_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+		
+		keywords_report.`impressions` impressions,
+		keywords_report.`clicks` clicks,
+		keywords_report.`attributed_units_ordered1d` orders
+	
+		FROM  keywords_report 
+		WHERE
+		keywords_report.`user_id`=userId
+		AND IF(shopId=0,1=1,keywords_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,keywords_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		keywords_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = keywords_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		ELSE
 		#子账号
 			
-		SELECT DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") snapshotDate,IF(SUM(inventory_summary_temp.`quantity`) IS NULL,0,SUM(inventory_summary_temp.`quantity`))quantity FROM
-			inventory_daily_day LEFT JOIN 
-			(SELECT DATE_FORMAT(inventory_summary.`snapshot_date`,"%Y-%m-%d") snapshot_date,SUM(inventory_summary.`quantity`) quantity FROM  inventory_summary 
-			INNER JOIN temp_shopId_inventory_daily ON temp_shopId_inventory_daily.parent_user_id = inventory_summary.`user_id`
-			AND temp_shopId_inventory_daily.shopId = inventory_summary.`shop_id`
-			AND temp_shopId_inventory_daily.sale_channel = inventory_summary.`sale_channel`
-			WHERE
-			inventory_summary.`user_id`=userId
-			AND IF(shopId=0,1=1,inventory_summary.`shop_id`=shopId) 
-			AND IF(salesChannel IS NULL,1=1,inventory_summary.`sale_channel`=salesChannel)
-			AND inventory_summary.`quantity`>0 GROUP BY snapshot_date)
-			inventory_summary_temp
-			ON  DATE_FORMAT( inventory_daily_day.date1,"%Y-%m-%d") = inventory_summary_temp.snapshot_date
-				GROUP BY snapshotDate ORDER BY snapshotDate;
+		SELECT DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") snapshotDate,
+		
+		IF(keywords_report.`clicks` IS NULL,0,keywords_report.`clicks`) clicks,
+		IF(keywords_report.`impressions` IS NULL,0,keywords_report.`impressions`) impressions,
+		IF(keywords_report.`orders` IS NULL,0,keywords_report.`orders`) orders
+
+		FROM
+		adDateView_day LEFT JOIN 
+		(SELECT DATE_FORMAT(keywords_report.`site_local_date`,"%Y-%m-%d") snapshot_date,
+		
+		keywords_report.`impressions` impressions,
+		keywords_report.`clicks` clicks,
+		keywords_report.`attributed_units_ordered1d` orders
+	
+		FROM  keywords_report 
+		INNER JOIN temp_shopId_adDateView ON temp_shopId_adDateView.parent_user_id = keywords_report.`user_id`
+		AND temp_shopId_adDateView.shopId = keywords_report.`shop_id`
+		AND temp_shopId_adDateView.sale_channel = keywords_report.`sale_channel`
+		WHERE
+		keywords_report.`user_id`=userId
+		AND IF(shopId=0,1=1,keywords_report.`shop_id`=shopId) 
+		AND IF(saleChannel is null,1=1,keywords_report.`sale_channel`=saleChannel)
+		GROUP BY snapshot_date)
+		keywords_report
+		ON  DATE_FORMAT( adDateView_day.date1,"%Y-%m-%d") = keywords_report.snapshot_date
+		  GROUP BY snapshotDate ORDER BY snapshotDate;
 		
 		END IF;
 		
