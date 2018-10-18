@@ -1,0 +1,24 @@
+[
+	{
+		"profileId":913335469840997,
+		"countryCode":"US",
+		"currencyCode":"USD",
+		"dailyBudget":300.0,
+		"timezone":"America/Los_Angeles",
+		"accountInfo":{
+			"marketplaceStringId":"ATVPDKIKX0DER",
+			"sellerStringId":"A3B2U6R5MD5KPC"
+		}
+	},
+	{
+		"profileId":204897611698354,
+		"countryCode":"CA",
+		"currencyCode":"CAD",
+		"dailyBudget":30.0,
+		"timezone":"America/Los_Angeles",
+		"accountInfo":{
+			"marketplaceStringId":"A2EUQ1WTGCTBG2",
+			"sellerStringId":"A3B2U6R5MD5KPC"
+		}
+	}
+]
