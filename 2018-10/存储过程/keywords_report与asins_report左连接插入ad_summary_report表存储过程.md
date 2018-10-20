@@ -3,7 +3,7 @@ BEGIN
 	#Routine body goes here...
 	
 	
-	REPLACE INTO ad_summary_report (
+REPLACE INTO ad_summary_report (
 ad_summary_report.shop_id,
 ad_summary_report.sale_channel,
 ad_summary_report.user_id,

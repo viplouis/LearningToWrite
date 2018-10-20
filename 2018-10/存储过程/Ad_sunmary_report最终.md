@@ -5,7 +5,7 @@ CREATE TABLE `ad_summary_report` (
   `operator_id` varchar(30) DEFAULT NULL,
   `campaign_type` varchar(50) DEFAULT NULL COMMENT '查询参数字段',
   `segment` varchar(50) DEFAULT NULL COMMENT '查询参数字段',
-  `report_date` varchar(30) DEFAULT NULL COMMENT '查询参数字段',
+  `report_date` varchar(30) NOT NULL COMMENT '查询参数字段',
   `keyword_id` varchar(50) NOT NULL DEFAULT '',
   `campaign_id` varchar(30) NOT NULL,
   `ad_group_id` varchar(50) NOT NULL,
@@ -32,12 +32,11 @@ CREATE TABLE `ad_summary_report` (
   `attributed_units_ordered7d` decimal(11,2) DEFAULT NULL,
   `attributed_sales7d_sameSKU` decimal(11,2) DEFAULT NULL,
   `attributed_conversions7d_sameSKU` decimal(11,2) DEFAULT NULL,
- 
- `attributedSales7dOtherSKU` decimal(11,2) DEFAULT NULL,
- `attributedUnitsOrdered7dOtherSKU` decimal(11,2) DEFAULT NULL,
+  `attributedSales7dOtherSKU` decimal(11,2) DEFAULT NULL,
+  `attributedUnitsOrdered7dOtherSKU` decimal(11,2) DEFAULT NULL,
   `synchronised_time` datetime DEFAULT NULL COMMENT '入数据库时间',
   `is_delete` varchar(3) DEFAULT NULL,
   `site_local_date` datetime DEFAULT NULL,
   `remarks` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`shop_id`,`sale_channel`,`keyword_id`,`campaign_id`,`ad_group_id`,`placement`,`asin`,`other_asin`) USING BTREE
+  PRIMARY KEY (`shop_id`,`sale_channel`,`keyword_id`,`campaign_id`,`ad_group_id`,`placement`,`asin`,`other_asin`,`report_date`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
