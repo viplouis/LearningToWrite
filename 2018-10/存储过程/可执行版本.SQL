@@ -56,7 +56,7 @@ BEGIN
 	 
 	SET @SQL_data3=CONCAT(" and if('",saleChannel,"'='zero'",",1=1,productads_report.sale_channel='",saleChannel,"') and ",selectWhere);
 	 #SELECT  @SQL_data3;
-
+-- SET @SQL_data7= CONCAT(" ad_group_name LIKE %精准%");
 	SET @SQL_data4= CONCAT(" between '",startDate,"' and '", endDate,"'");
 #	SELECT  @SQL_data5;
 	SET @SQL_data5= CONCAT(" GROUP BY ",selectGroupby);
