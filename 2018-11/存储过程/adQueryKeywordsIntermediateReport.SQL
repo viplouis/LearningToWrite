@@ -73,12 +73,18 @@ BEGIN
 		SELECT i.shop_id,i.`user_ID`,sub.`sale_channel` FROM shop_info i INNER JOIN sub_user_authority sub ON i.`user_ID`=sub.`parent_user_id` AND i.`shop_Id`=sub.`shop_id` WHERE i.`user_ID`=userId AND i.`state`='1' AND sub.`user_id`=loginUserId;
 
 	END IF; 
-	
+
+
 	#迁移数据
+-- 	IF(impressions IS 0,0,clicks/impressions)
+-- 	IF(impressions IS 0,0,cost/impressions*1000)
+-- 	IF(clicks IS 0,0,cost/clicks)
+-- 	IF(attributed_sales7d IS 0,0,cost/attributed_sales7d)
+-- 	IF(clicks IS 0,0,attributed_units_ordered7d/clicks)
 	
 	SET @SelectSourceField = CONCAT(" shop_id,","sale_channel,","user_id,","campaign_type,","segment,","report_date,","ad_group_id,","ad_group_name,","keyword_id,","campaign_id,",
 	"campaign_name,","impressions,","currency,","cost,","matchType,","query,","keywordText,","clicks,","attributed_sales7d,","attributed_units_ordered7d,","attributed_conversions7d,",
-	"attributed_sales7d_sameSKU,","attributed_conversions7d_sameSKU,","synchronised_time,","is_delete,","site_local_date,","remarks");
+	"attributed_sales7d_sameSKU,","attributed_conversions7d_sameSKU,","synchronised_time,","is_delete,","site_local_date,","remarks,","IF(impressions = 0,0,clicks/impressions) AS CTR,","IF(impressions = 0,0,cost/impressions*1000) AS CPM,","IF(clicks = 0,0,cost/clicks) AS CPC,","IF(attributed_sales7d = 0,0,cost/attributed_sales7d) AS ACOS,","IF(clicks = 0,0,attributed_units_ordered7d/clicks) AS CPA");
 	
 	IF userType = 'PriAccount' THEN
 	
@@ -103,10 +109,10 @@ BEGIN
 -- 		SET @SQL_data5 = CONCAT("insert into temp_keywords_report ",@SQL_data1,@SQL_data2,@SQL_data3,@SQL_data4);
 	SET @DestinationField = CONCAT(" (","shop_id,","sale_channel,","user_id,","campaign_type,","segment,","report_date,","ad_group_id,","ad_group_name,","keyword_id,","campaign_id,",
 	"campaign_name,","impressions,","currency,","cost,","matchType,","query,","keywordText,","clicks,","attributed_sales7d,","attributed_units_ordered7d,","attributed_conversions7d,",
-	"attributed_sales7d_sameSKU,","attributed_conversions7d_sameSKU,","synchronised_time,","is_delete,","site_local_date,","remarks",") ");
+	"attributed_sales7d_sameSKU,","attributed_conversions7d_sameSKU,","synchronised_time,","is_delete,","site_local_date,","remarks,","CTR,","CPM,","CPC,","ACOS,","CPA",") ");
 	
 	
-	SET @finalSql_data = CONCAT("insert into temp_shopId_keywords_report_temporary ",@DestinationField,@SQL_data1,@SQL_data2,@SQL_data3,@SQL_data4);
+	SET @finalSql_data = CONCAT("insert into temp_keywords_report ",@DestinationField,@SQL_data1,@SQL_data2,@SQL_data3,@SQL_data4);
 	
 	#SELECT @finalSql_data;
 
