@@ -5,6 +5,15 @@ HTML 5 增加了一项新功能是 自定义数据属性 ，也就是  data-* �
 使用attribute方法存取 data-* 自定义属性的值
 使用attributes方法存取 data-* 自定义属性的值非常方便：
 
+
+this参数传值获取
+function getCampaignId(obj) {
+	var f2 = $(obj).attr("data-id")
+	alert("f2 = "+f2);
+}
+
+
+
 javascript 代码:
 // 使用getAttribute获取 data- 属性
 var user = document . getElementById ( 'user' ) ;
