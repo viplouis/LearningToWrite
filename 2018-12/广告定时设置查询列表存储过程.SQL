@@ -46,6 +46,54 @@ BEGIN
 		inner join temp_shopId_ad_timing_data
 		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
 		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`timing_switch` = hostingStatus GROUP BY timing_type,timing_type_id;
+		ELSEIF(hostingStatus = 'all' && name != 'blankNull')  THEN
+				 CASE hostingType  
+            WHEN 'campaigns' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`campaign_name` = name GROUP BY timing_type,timing_type_id; 
+            WHEN 'adgroups' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`ad_group_name` = name GROUP BY timing_type,timing_type_id; 
+            WHEN 'productads' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`sku` = name OR ad_timing.`asin` = name GROUP BY timing_type,timing_type_id;  
+            WHEN 'keywords' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`keyword_text` = name GROUP BY timing_type,timing_type_id; 
+        END CASE;
+				
+				ELSEIF(hostingStatus != 'all' && name != 'blankNull')  THEN
+				 CASE hostingType  
+            WHEN 'campaigns' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`timing_switch` = hostingStatus AND ad_timing.`campaign_name` = name GROUP BY timing_type,timing_type_id; 
+            WHEN 'adgroups' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`timing_switch` = hostingStatus AND ad_timing.`ad_group_name` = name GROUP BY timing_type,timing_type_id; 
+            WHEN 'productads' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`timing_switch` = hostingStatus AND ad_timing.`sku` = name OR ad_timing.`asin` = name GROUP BY timing_type,timing_type_id;  
+            WHEN 'keywords' THEN  
+                SELECT timing_id,shop_id,ad_timing.sale_channel,ad_timing.parent_user_id,ad_timing.user_id,start_time,end_time,bid,timing_type,timing_type_id,create_time,last_update_time,remarks,is_delete,timing_switch,targeting_type,campaign_id,campaign_name,ad_group_id,ad_group_name,ad_id,sku,asin,keyword_id,keyword_text,group_concat(" ",start_time,' - ',end_time,"  出价: ",bid) as period from ad_timing
+		inner join temp_shopId_ad_timing_data
+		on ad_timing.shop_id=temp_shopId_ad_timing_data.shopId
+		WHERE ad_timing.`user_id`= userId AND ad_timing.`shop_id`= shopId AND ad_timing.`sale_channel`= saleChannel AND ad_timing.`timing_type`=hostingType AND ad_timing.`timing_switch` = hostingStatus AND ad_timing.`keyword_text` = name GROUP BY timing_type,timing_type_id; 
+        END CASE;  
+				
 		END IF;
 		
 
