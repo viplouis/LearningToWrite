@@ -1,0 +1,32 @@
+SELECT
+	iop.product_id,
+	iop.order_id,
+	iop.product_name,
+	io.id,
+	p.summary,
+	p.NAME,
+	p.title,
+	p.suggest_price,
+	p.brand,
+	p.category,
+	p.tags,
+	p.description,
+	p.unit,
+	p.factory_ids,
+	(SELECT para_name FROM tb_sys_commpara WHERE para_code = 'unit' AND para_key = p.unit) unit_str,
+	(SELECT group_concat(fty_name) FROM tb_personel_factory a WHERE find_in_set(a.fty_id, p.factory_ids)) AS factory_names,
+	sum(TIMESTAMPDIFF( MINUTE, io.agreement_install_time, io.finished_time)) AS difference,
+	SUM(CASE WHEN TIMESTAMPDIFF(MINUTE, io.agreement_install_time, io.finished_time) THEN TIMESTAMPDIFF(MINUTE, io.agreement_install_time, io.finished_time) ELSE 0 END) AS time,
+	count(iop.product_id) as quantity,
+	sum(iop.num) AS iop_num,
+	sum(TIMESTAMPDIFF( MINUTE, io.agreement_install_time, io.finished_time)) / count( iop.product_id ) as avgtime
+	
+FROM
+	install_order_product iop
+	INNER JOIN install_order io ON iop.order_id = io.id
+	INNER JOIN product p ON iop.product_id = p.id 
+	WHERE io.status = '1' 
+-- 	and io.id = '400000006667260'
+-- 	and io.id = '400000006667260' or io.id = '400000007667483'
+GROUP BY iop.product_id
+;
