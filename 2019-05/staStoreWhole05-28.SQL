@@ -38,13 +38,13 @@ BEGIN
     DEALLOCATE PREPARE stmtView;  
 		
 		-- 统计门店预约单数
-		SET @sqlStrReserveCount = CONCAT("UPDATE sta_store_whole ssw set ssw.reserve_sum = ( SELECT sum(reserve_sum) AS num FROM sta_product_whole spw WHERE spw.store_id = ",storeId," ) WHERE ssw.store_id = ",storeId);
+		SET @sqlStrReserveCount = CONCAT("UPDATE sta_store_whole ssw set ssw.reserve_sum = ( SELECT(IF(( SELECT sum(reserve_sum) AS num FROM sta_product_whole spw WHERE spw.store_id = ",storeId," ) IS NULL,0,( SELECT sum(reserve_sum) AS num FROM sta_product_whole spw WHERE spw.store_id = ",storeId," ))) t) WHERE ssw.store_id = ",storeId);
     PREPARE stmtReserve from @sqlStrReserveCount;
     EXECUTE stmtReserve;
     DEALLOCATE PREPARE stmtReserve;  
 
 		-- 统计门店订单数
-		SET @sqlStrOrderCount = CONCAT("UPDATE sta_store_whole ssw set ssw.order_sum = ( SELECT sum(order_sum) AS num FROM sta_product_whole spw WHERE spw.store_id = ",storeId," ) WHERE ssw.store_id = ",storeId);
+		SET @sqlStrOrderCount = CONCAT("UPDATE sta_store_whole ssw set ssw.order_sum = (SELECT(IF(( SELECT sum( order_sum ) AS num FROM sta_product_whole spw WHERE spw.store_id = ",storeId," ) IS NULL,0,( SELECT sum( order_sum ) AS num FROM sta_product_whole spw WHERE spw.store_id = ",storeId," ))) t) WHERE ssw.store_id = ",storeId);
     PREPARE stmtOrder from @sqlStrOrderCount;
     EXECUTE stmtOrder;
     DEALLOCATE PREPARE stmtOrder;  
@@ -57,7 +57,7 @@ BEGIN
 		
 		
 		-- 统计顾客到店数
-		SET @sqlStrArrivalCount = CONCAT("UPDATE sta_store_whole ssw set ssw.customer_sum = ( SELECT count(*) AS num FROM order_records orc,order_reserve ors WHERE orc.order_id = ors.id and orc.status = 1 and ors.store_id = ",storeId," ) WHERE ssw.store_id = ",storeId);
+		SET @sqlStrArrivalCount = CONCAT("UPDATE sta_store_whole ssw set ssw.arrival_sum = ( SELECT count(*) AS num FROM order_records orc,order_reserve ors WHERE orc.order_id = ors.id and orc.status = 1 and ors.store_id = ",storeId," ) WHERE ssw.store_id = ",storeId);
     PREPARE stmtArrival from @sqlStrArrivalCount;
     EXECUTE stmtArrival;
     DEALLOCATE PREPARE stmtArrival;  
