@@ -1,0 +1,711 @@
+{
+	"info": {
+		"_postman_id": "650f6f8d-6a2e-4ebd-b8f3-7108dcf47bb6",
+		"name": "智慧门店 - 门店端接口",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/storeIndexPage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/storeIndexPage",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeIndexPage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/saleGeniusesPagination",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000004,\n\t\"page\" : 2,\n\t\"limit\" :2\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/saleGeniusesPagination",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"saleGeniusesPagination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/getRecentStoreList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : 1,\n\t\"limit\" : 50\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/getRecentStoreList",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getRecentStoreList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/getStoreCollectionList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\" : \"collection\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/store/getStoreCollectionList",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getStoreCollectionList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/getStoreById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000017\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/getStoreById",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getStoreById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/commitStoreComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000017,\n\t\"content\" : \"我就要发个表情😭\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/commitStoreComment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"commitStoreComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/statisticsstoreLeaderboard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"startDate\" : \"2019-04-20 00:00:00\",\n\t\"endDate\" : \"2019-05-23 00:00:00\",\n\t\"indicators\" : \"synthesis\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/statistics/storeLeaderboard",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"storeLeaderboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/storeCommentList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000017\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/store/storeCommentList",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeCommentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/storePraise",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000017\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/storePraise",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storePraise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/delStoreComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "base",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"contentId\" : 70000044\n\t\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/delStoreComment",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"delStoreComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/saveStoreSetting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zbaiquan",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeName\": \"圣保罗桂城店\",\n    \"storeBrand\": \"马特斯门窗\",\n    \"introduction\": \"1,2,3\",\n    \"taobaoLink\": null,\n    \"contactNumber\": \"18883365218\",\n    \"storekeeperWechat\": \"18883365218\",\n    \"establishmentTime\": \"2019-4-28\",\n    \"logoUrl\": \"https://pic.qqtn.com/up/2019-4/2019042209164859843.jpg\",\n    \"bannerUrl\": \"https://pic.qqtn.com/up/2019-4/2019042209164859843.jpg,https://pic.qqtn.com/up/2019-4/2019042209164866656.jpg\",\n    \"jdLink\": null,\n    \"brandUrl\": \"WI4QGWVg.jgSsjALpdVWU016a85bca8a7f83ca940ed00becb808e.png\",\n    \"auditer\": null,\n    \"lat\": 23.06339012,\n    \"vrUrl\": \"1\",\n    \"lng\": 113.15732788,\n    \"storeDes\": \"马特斯门窗\",\n    \"abbreviation\": \"云店美家\",\n    \"storeAddress\": \"千灯湖\",\n    \"isVr\": 1,\n    \"storeIndustry\": \"门窗\",\n    \"locateAddress\": \"广东省佛山市南海区桂澜北路28号\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/saveStoreSetting",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"saveStoreSetting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/startPagePanorama",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"typeId\" : 1,\n\t\"code\" : 5\n}\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/startPagePanorama",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"startPagePanorama"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/getBrandIntroduction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "null",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeId\": 600000017\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/store/getBrandIntroduction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getBrandIntroduction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/saveBrandIntroduction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "null",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"introduction\" : \"1,2\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/store/saveBrandIntroduction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"saveBrandIntroduction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/delBrandIntroduction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "null",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"id\" : 2\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/store/delBrandIntroduction",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"delBrandIntroduction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/storeCase/storeCaseList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeId\": 600000017\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/storeCase/storeCaseList",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"storeCaseList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/store/storeCommentMangt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/store/storeCommentMangt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeCommentMangt"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2b470a1a-3374-43be-9ccc-371fd3c4a686",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "feea0c1d-51c3-4243-a67c-6d5dec43fde2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "e2875811-a5fe-4016-84b5-ee51007b061e",
+		"name": "定位",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/nearbysort?lon=113.253082&lat=23.126872",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/nearbysort?lon=113.253082&lat=23.126872",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"nearbysort"
+					],
+					"query": [
+						{
+							"key": "lon",
+							"value": "113.253082"
+						},
+						{
+							"key": "lat",
+							"value": "23.126872"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/userlogin?account=admin&pwd=admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/userlogin?account=admin&pwd=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"userlogin"
+					],
+					"query": [
+						{
+							"key": "account",
+							"value": "admin"
+						},
+						{
+							"key": "pwd",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/userlogout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/userlogout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"userlogout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/myfirst3?name=zhang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/myfirst3?name=zhang",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"myfirst3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "zhang"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/store_api/v1/store/myNearStore",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lon\" : 113.092871,\n\t\"lat\" : 23.068567,\n\t\"page\" : 1,\n\t\"limit\" : 1\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/store_api/v1/store/myNearStore",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"myNearStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/nearbysort?lon=113.253082&lat=23.126872",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/nearbysort?lon=113.253082&lat=23.126872",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"nearbysort"
+					],
+					"query": [
+						{
+							"key": "lon",
+							"value": "113.253082"
+						},
+						{
+							"key": "lat",
+							"value": "23.126872"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/store_api/v1/aliance/agreeOrRefuseApplyJoinAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 58,\n\t\"storeId\" : 600000007,\n\t\"type\" : 1,\n\t\"saeId\" : 22,\n\t\"userId\" : 10000623\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/store_api/v1/aliance/agreeOrRefuseApplyJoinAliance",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"agreeOrRefuseApplyJoinAliance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
