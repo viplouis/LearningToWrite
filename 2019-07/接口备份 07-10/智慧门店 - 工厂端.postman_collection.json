@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "5febd714-81c3-4ec6-9fed-0e0938fa6da1",
+		"name": "智慧门店 - 工厂端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:80/store_api/v1/storeHandover/storeList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "factory",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:80/store_api/v1/storeHandover/storeList",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"storeList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:80/store_api/v1/storeHandover/factoryApply",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "factory",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 3\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:80/store_api/v1/storeHandover/goFactoryApply",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"goFactoryApply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:80/store_api/v1/storeHandover/factoryApply",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "factory",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000024,\n\t\"name\" : \"华国锋\",\n\t\"phoneNum\" :6656466,\n\t\"wechatId\" : \"wx5646\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:80/store_api/v1/storeHandover/factoryApply",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"factoryApply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:80/store_api/v1/storeHandover/withdrawal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "factory",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 4,\n    \"storeId\": 600000024\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:80/store_api/v1/storeHandover/withdrawal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"withdrawal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

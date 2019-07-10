@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "d833bc50-d792-475c-9a8c-bba1d182753b",
+		"name": "智慧门店 - 门店分析",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8080/store_api/v1/statistics/storeComprehensiveData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000004\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/statistics/storeComprehensiveData",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"storeComprehensiveData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/store_api/v1/statistics/storeCustomerStatistics",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"staDate\" : \"2019-06\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/store_api/v1/statistics/storeCustomerStatistics",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"storeCustomerStatistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/statistics/storeLeaderboard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"day\",\n    \"staDate\": \"2019-05-28\",\n    \"indicators\": \"view\"\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/statistics/storeLeaderboard",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"storeLeaderboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " 192.168.0.166/store_api/v1/store/startPagePanorama",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"typeId\" : 1,\n\t\"code\" : 5\n}\n"
+				},
+				"url": {
+					"raw": "192.168.0.166/store_api/v1/store/startPagePanorama",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"166"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"startPagePanorama"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

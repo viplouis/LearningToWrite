@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "fddf547b-aa6e-4788-8f6b-5eb66ae1c983",
+		"name": "智慧门店 - Web管理端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:80/sys/menu/getMenu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "127.0.0.1:9094/sys/menu/getMenu",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9094",
+					"path": [
+						"sys",
+						"menu",
+						"getMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9094/ydmj//sys/menu/list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:9094/ydmj//sys/menu/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9094",
+					"path": [
+						"ydmj",
+						"",
+						"sys",
+						"menu",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9094/ydmj//sys/menu/getTreeMenu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:9094/ydmj//sys/menu/getTreeMenu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9094",
+					"path": [
+						"ydmj",
+						"",
+						"sys",
+						"menu",
+						"getTreeMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9094/ydmj/store_web/v1/store/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ids\" : [70000054,70000055]\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:9094/store_web/v1/store/delete",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9094",
+					"path": [
+						"store_web",
+						"v1",
+						"store",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9094/ydmj/store_web/v1/store/storeCommentList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:9094/ydmj/store_web/v1/store/storeCommentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9094",
+					"path": [
+						"ydmj",
+						"store_web",
+						"v1",
+						"store",
+						"storeCommentList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

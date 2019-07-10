@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "1855b16e-1cb7-4565-a38f-3e164f9224f9",
+		"name": "智慧门店 - 销售端接口",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/createSaleCase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\t\"caseTitle\" : \"龙珠花园 -- 欧式铜门LLL\",\r\n\t\"panoramicUrl\" : \"www.xxx.com,www.xxx.com,www.xxx.com\",\r\n\t\"caseLogoUrl\" : \"www.xxx.com\",\r\n\t\"introduction\" : \"蚁装(www.fsyizhuang.com)，企业赋予每个人的智能商务工具。...\",\r\n\t\"details\" : \"www.xxx.com\"\r\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/store/createSaleCase",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"createSaleCase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/saleCaseList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/store_api/v1/store/saleCaseList",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"saleCaseList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/store/getSaleCase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "caseId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/store_api/v1/store/getSaleCase",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getSaleCase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/sale/getWorkById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"workId\" : 1038\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/store_api/v1/sale/getWorkById",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"store_api",
+						"v1",
+						"sale",
+						"getWorkById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8080/store_api/v1/sale/getSaleCollectionList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\" : \"\"\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/sale/getSaleCollectionList",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"sale",
+						"getSaleCollectionList"
+					]
+				},
+				"description": "我收藏的销售列表"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/sale/viewInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"saleId\" :  10000646\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/sale/viewInfo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"sale",
+						"viewInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/store_api/v1/sale/getRecentSaleList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : 1,\n\t\"limit\" : 3\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1/store_api/v1/sale/getRecentSaleList",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"store_api",
+						"v1",
+						"sale",
+						"getRecentSaleList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:80/store_api/v1/sale/getRecentSaleById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"saleId\" : 10000678\n}"
+				},
+				"url": {
+					"raw": "127.0.0.1:80/store_api/v1/sale/getRecentSaleById",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "80",
+					"path": [
+						"store_api",
+						"v1",
+						"sale",
+						"getRecentSaleById"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
