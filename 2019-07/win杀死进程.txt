@@ -1,0 +1,7 @@
+win+R，进入DOS命令行窗口
+
+# netstat -ano | findstr <端口号>
+
+# tasklist | findstr <进程号>
+
+# taskkill -f -t -im <程序名>
