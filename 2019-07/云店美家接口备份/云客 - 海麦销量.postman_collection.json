@@ -1,0 +1,4054 @@
+{
+	"info": {
+		"_postman_id": "d5a0509c-c503-4404-803d-26fe8187d355",
+		"name": "云客 - 海麦销量",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/Customer/autoUrge/sendCheckFilter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2000001003",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Customer/autoUrge/sendCheckFilter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"autoUrge",
+						"sendCheckFilter"
+					]
+				},
+				"description": "http://localhost:8080/Customer/autoUrge/sendCheckFilter"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/autoUrge/getTheStoreThatOpensRule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2000001003",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Customer/exceptions/demo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"exceptions",
+						"demo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/autoUrge/getTheStoreThatOpensRule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Customer/advertising/syc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"advertising",
+						"syc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles/register",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPhSPoiiVLTa_hGeOFKlwtTf1qP4LsvTBtU5aOKtwZjF67Kdr12_eIvabt27_CIhLlI8Vq7fWeDZsyNcKvwSPaAtfzS8VTfbvGtI-dN5Er-dO2r4Vr04h6DFqPm1ozgSnhLQ3w9AS-4WzRaLGQdNMHlyP1jDPQQbrFFBpfPfLjUz3cVKuc76da1uOzktVtptI1Jfw-3itD0YDMolEvBPfvHWfHSbkkWLZLRqslrZpljppaQ-Dfe0z9tLr4B6k18CDq7NPAAKTnugQ-Q_XchJ45qvSV8nu2VQn6REdL2nk1bLOrqpqiGEJWlRY-Q-eL5kOB3HujOHxSQuNt469yHwyq77iZS7tHZxCJ7WzGPM4pWi8F1R8UgsrXRjCccpBtnUH6aYqvlAjB7Uu5ZSXybs-yG72FJYpxlfnp8uJWRX2ZVg95OCrk4I86C0YvWBumGkN_g65qPbl8YRqQW0pdSyUPAhOk3_nJA4yCI6q7411Wvdm9oxJEAUlR5Fhwdq5T9wwjdJbgYQ_19mrJxyXkT67XEsOgqx0GOP8BEe_brEz1vcy24v8tC1Kh5t4wj7DIN8LSF5t-sq9FYnb0oB4750uslXS01Z5ShoSN6mrMqsTzeJ-Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"countryCode\" : \"CA\"\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles/register",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles/afabee88-2583-4ce1-9c35-54fed1927758CA",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPhSPoiiVLTa_hGeOFKlwtTf1qP4LsvTBtU5aOKtwZjF67Kdr12_eIvabt27_CIhLlI8Vq7fWeDZsyNcKvwSPaAtfzS8VTfbvGtI-dN5Er-dO2r4Vr04h6DFqPm1ozgSnhLQ3w9AS-4WzRaLGQdNMHlyP1jDPQQbrFFBpfPfLjUz3cVKuc76da1uOzktVtptI1Jfw-3itD0YDMolEvBPfvHWfHSbkkWLZLRqslrZpljppaQ-Dfe0z9tLr4B6k18CDq7NPAAKTnugQ-Q_XchJ45qvSV8nu2VQn6REdL2nk1bLOrqpqiGEJWlRY-Q-eL5kOB3HujOHxSQuNt469yHwyq77iZS7tHZxCJ7WzGPM4pWi8F1R8UgsrXRjCccpBtnUH6aYqvlAjB7Uu5ZSXybs-yG72FJYpxlfnp8uJWRX2ZVg95OCrk4I86C0YvWBumGkN_g65qPbl8YRqQW0pdSyUPAhOk3_nJA4yCI6q7411Wvdm9oxJEAUlR5Fhwdq5T9wwjdJbgYQ_19mrJxyXkT67XEsOgqx0GOP8BEe_brEz1vcy24v8tC1Kh5t4wj7DIN8LSF5t-sq9FYnb0oB4750uslXS01Z5ShoSN6mrMqsTzeJ-Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles/afabee88-2583-4ce1-9c35-54fed1927758CA",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles",
+						"afabee88-2583-4ce1-9c35-54fed1927758CA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/advertising/campaignsSyn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Customer/advertising/campaignsSyn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"advertising",
+						"campaignsSyn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/advertising/keywordsSyn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Customer/advertising/keywordsSyn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"advertising",
+						"keywordsSyn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/advertising/productadsSyn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Customer/advertising/productadsSyn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"advertising",
+						"productadsSyn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/advertising/adGroupsSyn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/Customer/advertising/adGroupsSyn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"advertising",
+						"adGroupsSyn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8080/Customer/outh/host",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/Customer/outh/host",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"outh",
+						"host"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/outh/authToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codeParam",
+							"value": "ANbjmNoVKwsUPYZhozJA",
+							"type": "text"
+						},
+						{
+							"key": "stateParam",
+							"value": "000,zba",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Customer/outh/authToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"outh",
+						"authToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刷新获取accessToken",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIBDbmqCWPfoAjy5siEOO2sbeYaPjBrk7SxyeMZ4geE46fCvyFoz753pJYjBwXxPXXkP9n5jgI0V7LH6T8hYpvngLJZ2n3cbwCA-4QjOd1G6kqPupCliEeLK4xdjrlHKgHZ4AWkxoTTq8nWWh_Yugl7rmldOUuj2F2EyecOIvui0jQo0FLDysuqAi_GlApg_eCSMGdqKRkKDTVs7BCfhUiH16iNtfjoGV-9SjrsZ164THr-6y4EySWQftgauLLI7ITofN5PoMkVFmeIauSQM9IAzFDbq3aG6qimBviwrJpXbjrJZ8cHDRnfEc4fCG8g34mJykiXi2emgn1NlVeLM66_kNAPCuN0xkGnYKDftGEcuTbZXrBXJ3dYk1ZdyF_hQUJN_mi2K0WGo8Y45z9UbxGkwmj7-Y5qZ8nhaxU9kPtKJveUhUW1Sk5hnxbpfDeTll6R9BgL-xoMsXy5cm9KGQK_rlZpImSmnFtx8kQKUoi3ICBgv6rRDSqmb1ki-qfQ7XC_5uGRpO7Sei1I-GZbyB5m_1cFI7nq8iptgVl0ouTznq1zgg5F6bZjwYchXTpb0faBY6DTX8_wO87SWU1OyKD_nT",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"disabled": true
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e",
+							"disabled": true
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIBDbmqCWPfoAjy5siEOO2sbeYaPjBrk7SxyeMZ4geE46fCvyFoz753pJYjBwXxPXXkP9n5jgI0V7LH6T8hYpvngLJZ2n3cbwCA-4QjOd1G6kqPupCliEeLK4xdjrlHKgHZ4AWkxoTTq8nWWh_Yugl7rmldOUuj2F2EyecOIvui0jQo0FLDysuqAi_GlApg_eCSMGdqKRkKDTVs7BCfhUiH16iNtfjoGV-9SjrsZ164THr-6y4EySWQftgauLLI7ITofN5PoMkVFmeIauSQM9IAzFDbq3aG6qimBviwrJpXbjrJZ8cHDRnfEc4fCG8g34mJykiXi2emgn1NlVeLM66_kNAPCuN0xkGnYKDftGEcuTbZXrBXJ3dYk1ZdyF_hQUJN_mi2K0WGo8Y45z9UbxGkwmj7-Y5qZ8nhaxU9kPtKJveUhUW1Sk5hnxbpfDeTll6R9BgL-xoMsXy5cm9KGQK_rlZpImSmnFtx8kQKUoi3ICBgv6rRDSqmb1ki-qfQ7XC_5uGRpO7Sei1I-GZbyB5m_1cFI7nq8iptgVl0ouTznq1zgg5F6bZjwYchXTpb0faBY6DTX8_wO87SWU1OyKD_nT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "下载报告第一步",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIF7Z-DuDdekF5ngWC7ErI9Qvtn8AWG5UcYBQcXmXPVkWM_CvFb0lCExCsmbWwU-DIfXHZeGnNzzmLqAHr5hYTmQ6xXnTtIO47O8QYQH_wxiceQyNIQNAByJGxuCYADzj__TIb1Z8TgB4s1mWMH887L5S-CQAmMAO8W76Xs3qT4dQssvCfH5wdpZVHK6OQmYomResvQxrgpMr6wd6KTLHlHO4bXkP_umgFqgjx1EFVBUmtwrKDIpWZc8etZVRDsOMZH4ybuaTIOvv3vgPbg5gyBvxyhv0jd0pqBI5LHTwGcjXjLUDCA8eiliqPEpqtox67Atvl7OzVv0S5KuEAQa8sPHtZHTjG9kLCKx0zUOAoYintoSedxOLSd4TEus-lEFmEGYskJWBnkyfMLnZoU_tkKJPVBxbF-6pOjJeYTIvEAuYYhhlWy4V1OW7dbEH6gb-H8TPMuKiqhuLfWuzyOebymP6Z37uhCk-VwT2PRzTuE1H_DWVmxgqY_jD-HarxWiSJ1Q9JBT9oYZ8hd-N48rvCTN1ZzAAfKjmIYe9T35H8AVmXQ6r4tpIjBA4nikTdcrj9TjZA8jpKT9d0aBnnTstvlU8YA2gV_gSNThV-HhnRpGUMw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "913335469840997",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"segment\" : \"\",\n\t\"reportDate\" : \"20190112\",\n\t\"metrics\" : \"CAMPAIGNNAME,campaignId,targetId,targetingExpression,targetingText,targetingType,impressions,clicks,currency,campaignName,campaignId,cost,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU,attributedUnitsOrdered7dSameSKU\"\n\t\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api.amazon.com/v2/sp/targets/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"targets",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded;charset=UTF-8"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " https://advertising-api-test.amazon.com/v1/profiles/register",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIB55VxvwdS8PWZWsanUwL5Do0p8XkrjfziwJRF5KK_YbwbDPJihb-I5GlcZVdUeY86Hs9IIaOpz6cKWGRGcZGlwnAkwoCNDoOMggsmgr4DBSi0AwD3Fk0rnBCsitZuuSrZka0jpU7zRPSW1qTUFB19hTMa23xGiUt-7ZNd4j3LhWmAROx8XVgxbuKJaL-j5jyo44MCQsVE3de91Uyh9e2ZZE-18ijHpR3pxqDNQGFA0Yum4ZXVDvEFx2-lNtnZPI4jPJMYrwyP6iaJzkLyZbFyjMQDsp33rgD06o763Ouilkx5GpEkgN1s4cdvEP30Y8sg1rQMQLO8xhrQXNX3h19pvjiiMMY64hkqW9PP6GtXj2dJylXHG2ip0enLMMx8iNnjOTi4gOe2tHsq93entRHz9O3AepAek9eN5uOM7DaQF4lhjiqJ1tJFTUlFXDp8ZxtelIGYnFDxVESF9qx_WuNfBA-Q9hhE-ZDpry-CeAP8RRiQ4CJfmSBqg01lXZqxS_snno1zTjrQOj_mmPFbkoCYrub-qGwA7FPZlku2yEFVa-ji-0LU7DZ8JAdq5t6gbRmJl-RBzGLO7ppjx-74PPiTz8McUOFnprZixOnKXbdJsk7A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"countryCode\":\"US\"}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles/register",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles",
+						"register"
+					]
+				},
+				"description": "profileId\n"
+			},
+			"response": []
+		},
+		{
+			"name": "看profile的详细信息",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIBFlMiN_LikbRvtBKXixvvcXIsgNMFXI58fhwoGbe_-rRRqkeK2lgtuYBjw3KxJ0F3_6qSSKmyMaMEvmpJGP5AeOIGknlhYF21e14QdfphwKeZMKPpPUQJ9H3qdaxXe6LVO56ytjepBn4q_kq9UH8jQWqR5guYO3UE0FPPKGTs2HHULIh6Ww6x3wVtKN3Dc_wMy6UIzLwLaJniphoFRrlM3SAWXYMQwhqNUT6E1pvkOv07q1BQYrrQp0iId9NYWxZjsdC-rfyUqj6HFAQSvOB7n7hNt19BsmtCjtCNRuKB8xd4gkKvjXEUtwcB9_dM6iGuVALv9tCu0rnWeM7gjjg-mZs_enoA1V4lhbQDlpKSIdJC8y-EHX9FznQudunhPQWwuDNT4Dmu6owYbxuL-7xxVEwO2w4jlS86SarwniTnDuEmyHlDRe868xKqmRT0JYSKmrqLeaUDktAO0kU5X4ljnDHCDvgJVlPOJeV9u3Hld1z3z0a5rH2V461QLPxu95Y_l7iAamaA8DHfubVBeNt8teT0N3n9UbNdzrnQl3TXjH1spq77_qtlWdr72a1c8DhcfjnsI-ZsSf1k06eQhYDAN7wd1MNsm2B1gRGouGSymvaA",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建campagnId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ef9a53fa-ad5f-43ad-9067-39c0d3e629b7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIFH-eV5NcMNEp5FvUr9hwhy2Hi76EHbg781X_LvsfEl5e3aZrqIIpVlmB1Y9n0_4OKIi8LUaqcmOOGiM9EvIgQyL1MmtKny98NPetQeD5jxwwXYUu7FRxET9dhtPE-yCzR49gsooC2FPKiHr1j09RB3LRW6876GfJFRrJoNG33VsaPcfRXikd79gkt-ktJNkZskOabT5z_kpWFEQJNOy98WIhsUFaAXVHkdQ1uO5AdDK8lxJ6xYzlhpRW7euUM2pKcvEjaAonRrR_-3ZCMjwOZeLJGNkKQ2-oZaKJhoSVmwUiM_UAbCA4xcbhWCXLDg46vcoDWI4XsZ6ut_vxuRnQC3SJYXkjyzq8_IXv4Gu17OEwZHeJKu8-FYBR0Ywi50Xhe6gkhnlD-CRJxUY0JJeZz_rKtDNuXiixK9hRBVbn1qq6IsMKmyrBkEP5n-sMuSSVrSAwbnDL6KqzsG2FQ7pQaCktQucEx3qSGNwq5WQ6kLZ0SvNGd-YOy4VhBUd7LlCnkYgCr2FDRg7WB211L-dGcGUA79gngmD38Ih7kzqrZBXejak1bYv-P0LY8i0TnEUHHovBryZEJx2nmrOwAr7qaGHN1g3ZWYRYzp4gsT_ds_Ndg",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建camapaign",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIHTt1aZjjCTnT2Hi8Kxpd-tZ2nRQzS9b_C9pwIhwDTAfHTfcSxBGGQhLEsfDtQiwgLy_WZVLBhR4DaFyF0FGvtw8_4Zkw8BEw45y17AIJRod65KqCkM_RaVygkQmH5X4WKRqpxeIbyp9FPgs9Ox-uve4HakgYZ4DUqS0_aMwpVUE4f4UAX4wF3VU_rtbeAD_jqv7GDvXi9s5yGX9f3TtarBZrpzonVrfFqOW6nunuNmf56_hwbF5qRRPJutIIKD6ricM0IpjPeyuVH7dMUwzD1uPmBAZh6ib0ysJvNLKlOEUwehfz7diKacQPH6XLMEH6G21gw1G5by_EhqZu-G7dnVXCIWzsEnIa1NvTAialqYDNxqgv9CWsPmh-8mBW1Sn05JHVg1pzvxTYE6IV8mhhR18z-VwuLVZUsVgsmFeQbNwTrpHDedKaLMhmbasAh6io6wWeSTZWFsSI_xMVMz5u53GLtjwEbQ4X7Pb0bIe2RUNB0zuh4ivd9i-wNInn7Qoe8O3cSm_r3l4FaL8s2G6PRe-ZsD15RWK0W_WEO-J_fD4GRdQ3fBvUoes_zzYcUx9UsQRr-ut-KslauThyw9rZKMxtRpZ-MQjEDbHIQH2cJHpmQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"name\":\"test2\",\n\t\"campaignType\":\"sponsoredProducts\",\n\t\"targetingType\":\"auto\",\n\t\"state\": \"enabled\",\n\t\"dailyBudget\":\"1.0\",\n\t\"startDate\":\"20180906\"\n}]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token?grant_type=refresh_token&client_id=amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8&refresh_token=Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WM",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token?grant_type=refresh_token&client_id=amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8&refresh_token=Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS&client_secret=c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/reports/amzn1.clicksAPI.v1.m1.5BCE9881.8e00b1a9-dbab-4dfc-8c97-f79ca624a2ae/download\t",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPy8WELmQWHNeVwF_Qi250F0SEUhQ8XJVoLTS-2QElowngy4yiikN9xOj53DUyNRtSwTDPdRu3Yyg1VNffI80gUld1MFwsMojwU4lPAuj6pVvgHxfM8QvBiM2t7Wm3L_FiI7EjpEhwkP-Bxi8eShUbKRsb6ud4_rZNrKYru1gerwCS_RwlKOePC21SUBkFf9Pnod9vfhfiIh3sx0cByCUtGenz0HTXfnGgCs5z1IZZ2jF1TXXrZZ6K4cv60czI5Y684-UVdx7EJYzuMZdY_GelDCqS1iq2aqK_R4qvxgN4JvoG0toiB91G0WuNoiPDfZIS8Ot7KQ2h_axY3CatPxlIj6LqyZrrCP11C78_C77A0CAmhFq_NUhlhkHjWeN-5gqeS99x2YF6y3vDdvEKBzwmpl3DChc40KvpB_dej006qpJlnebz-Le5rDITy7Rx_t9zXDjF6FXeS7zMbdczhCAoSkJ2PTVlbN1EaYzMCi0cq6DRTV4PRgwRymRJQN2_h70q0_7DR9qEU6txAOimtzmmG1q4ntgyJOR7QuGSlDnIU6xlENbQ3rkhBp8p67VnYEjXOhOCJ2jewc-9lHByYY344CgJ53w2e5UDKkZPEoc_oSbw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/reports/amzn1.clicksAPI.v1.m1.5BCEF6E5.f31baabf-9664-428a-8cb4-872a3d939482/download",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"reports",
+						"amzn1.clicksAPI.v1.m1.5BCEF6E5.f31baabf-9664-428a-8cb4-872a3d939482",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/sp/adGroups/report",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIBy5P0crYNQ4Idlz2dbikPWdOyZ9HZ0JHc5mtAcKjeKia1L6KGFWxGlQbaEeK7HAqB9gwkTRyZ9l8yyKC4Wzcn3_iLTa7Z9lqtqVVaowg8T-wM8qV12Y5PWqnHhWjeNIASnNPr1gchhWhzEPnLbGdxaO0_yv9qrq9wr_IttE_957myaUteuw9rylgf4SuOdyHQ77Z9fp6k6LG42a-YhAQOwFcsXAjnwni2c5X1By6d5YejsHyGzLj93INxRB2lcnhCb1-6tEZiVPJW4qWQQOUspb6F08Dffzf51DlcD9g1jtv1aFyLtnRdzHIJUTr6YusG4gu0QzW-xCkctuKY9dUll8N_wVM-OdhXgY-Q8DRKxmiH4TW3rIXCSUDHXLT1SWV4LsIeLiKz5sBVliI4Dxew0O_x5Gl0h65qjPjzHSv7wDiEO6sz20OSYSJKq8G9BoXwBPw3O2hrMM6N-qTWPNiPf8-NWai7Q-7QbypLsGJY73b0IYxxCQILXqiMJq1AJBF0ekdI00ihZ8D8i2i-mAY7TeczgkFvB_Q27EvbAU0DnyQvuxfPqD-wzfXdhNljBXYLdDFE_az3w2QPfH33fr1TwXOWLB-_ZjTFXyBcLkW8-CfQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"segment\": \"\",\n\t\"reportDate\" : \"20180930\",\n\t\"metrics\" : \"campaignName,campaignId,adGroupName,adGroupId,impressions,clicks,cost,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU\"\n\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/sp/adGroups/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"adGroups",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "ANcMHqyENkaVEfbbXSnp",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://app.ykamz.com/outh/authToken",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				},
+				"description": "获取refresh_token的方法"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				},
+				"description": "获取token"
+			},
+			"response": [
+				{
+					"name": "https://api.amazon.com/auth/o2/token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+									"type": "text"
+								},
+								{
+									"key": "refresh_token",
+									"value": "Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.amazon.com/auth/o2/token",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amazon",
+								"com"
+							],
+							"path": [
+								"auth",
+								"o2",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"name": "Content-Encoding",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"key": "Content-Length",
+							"value": "1044",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Sep 2018 04:06:14 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Server",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding,User-Agent",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "X-Amz-Date",
+							"value": "Thu, 13 Sep 2018 04:06:14 GMT",
+							"name": "X-Amz-Date",
+							"description": "Custom header"
+						},
+						{
+							"key": "x-amz-rid",
+							"value": "YNX3N55SNXJM468K9V2R",
+							"name": "x-amz-rid",
+							"description": "Custom header"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5b68c994-b70a-11e8-b430-a703157ae473",
+							"name": "x-amzn-RequestId",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "amazon.com",
+							"path": "/",
+							"secure": false,
+							"value": "144-3799503-5075830",
+							"key": "session-id"
+						},
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "amazon.com",
+							"path": "/",
+							"secure": false,
+							"value": "2082787201l",
+							"key": "session-id-time"
+						},
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "amazon.com",
+							"path": "/",
+							"secure": false,
+							"value": "135-5144907-9118334",
+							"key": "ubid-main"
+						},
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "amazon.com",
+							"path": "/",
+							"secure": false,
+							"value": "\"p31Yycfw30xknll8UkjnZDpq7EbD7HSvVylNCGtmKOftv8S2WGn4St3DQLET5cKpJWT3JoXHCOlRFZuaFnJvNC0Pldx8EjdXhgmz/ZztLCboBKg0JRT0zajEGdTnJSyfbv0CcfmiQP4xMeikP7zM/+Uyk3rpuJUJB7EKlbbMTsMmM6iS7NDOMDFyLCsjAnkDPyq6Z64O0CmT4ufLNY4/7A==\"",
+							"key": "session-token"
+						},
+						{
+							"expires": "Invalid Date",
+							"httpOnly": false,
+							"domain": "amazon.com",
+							"path": "/",
+							"secure": false,
+							"value": "noskin",
+							"key": "skin"
+						},
+						{
+							"expires": "Invalid Date",
+							"httpOnly": true,
+							"domain": "amazon.com",
+							"path": "/",
+							"secure": true,
+							"value": "4978b8c9e4b4779d0a5a95ac9e9dac67",
+							"key": "lwa-context"
+						}
+					],
+					"body": "{\"access_token\":\"Atza|IwEBIMe40yhnha3MyZzCnxDC77SNKyL4yHeREp8LO1711EA_biuRpGuBFAoWxNI5efi7I88TTDpbPQgfOX8_xqzuIy3eGtfZ_46ZOMyoPw25BhP0_hTL6oS8iOZvvvoke5oXzhgLJQ2_iHpXI6192fdg0FYrTztcWY80B13ecQCCgzg9MCejF_KQ9YK-3XMjVIH3JhbbKSVduX24DFW00Sm5GLXf4HZzPuvwvV4NcYq6HhjMROSO3p5DeVCjSlD-tgLC201dd2ve4hHW8eLejwA7gwo8FTVyW5R0waShzoybWKeDMbR4_l892WJL5Fgi53ikfH45i21PYfLKzHf51xAg5T6xeyMQpZWxfdSaxy7s8m-dbKuwwkoloML7dnDEhLIW8TXVFphamLYCOYOqt2JiUDrwsOenHGEUJzmphqSK352s_MV6f0JthUeJZSGKT6D2vmXCkIOF0Mri0yNc4FZJ1a-OhbgLPsEuoCdmSSb09dIayjgGK-HY8kO_Z53cA7HMp1tlF5QYqwUzukZg-hxxcX4RTHs_OwlzefWBts4cgmGn_gjxdC9k1yMiJ-I-AhnpdqL2dBwEgZ9cOZfB23t3hsifoyKp5Rcbo9JPwm2V6mQslw\",\"refresh_token\":\"Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS\",\"token_type\":\"bearer\",\"expires_in\":3600}"
+				}
+			]
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBICVB2aze88viSPioLcvzvzmfYTo_HBJYzmsZxjpLYBM6C48pg7HMV6vTxrzJfyU7qPyE8cn-VrisMf9X9eVZ4YwdL52sU3_kPKJHXVl_mTsCIlySGapGZf6_N91LL_3IudNYVGFVZAphGyLZ5p_5FVU_oH2AitrufEFNvr3WRNLcwLzeRJXZp014WPIcJEcX8wBjCGCaToIcpH-pWVEEV2El3bxmp3mZlYMyrZJ7cy8efwFheMB33H9MQEEeAcfnfgY_1Zp2dD9N4EgCLNOo2FuvQRS1u5BJx8pIgV4o3LvoxgMV_sXGiye58jZ8-XnhWj5w8vMnpZMS9Cgg2P-cDcYWNEzfM9_asTXveAF-zuUzwrUFdSby0mZdq4n0fdagQYsxvZ2mewHmsdkUwD5ZHIZCjp044YcJQxakmceLOXJeCxv3dtly_aWabn2yZl-uEusNtCFQQXt8Da9Td7B8Ty9gL5LrFj0QWlfdssHrHF8ZzP23QzjzMOnuKaPVnCcdHRqe0QD9YoQWYTMRouqKwntvvm69LxpjtKwaooaMApajc0-dLTRaESRDaz4dhIVhLxQwLXvpd7jOldxCFoe2G2IU2dDcy6rWzGO0agXHCbgDpye6mtZ1XZlX3QMMsBNIeYs",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles/",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPKzk1kGp9yIvNiEOoI2gS4QiOW8dkX-coCLfwIvdPb76wy-UT_CirAKWsBGGC4KJiTOqriAgEw3s8hf3085tLXi2PTxjPg9b840vvZzC4ioXFH6KCOpaxflIphPTMzrBAkgI_8EOG6PLAuU21weoxcVR2e-xg0d87-aNgBSYupmCX8I7RZA7Dtfo0UW3-glNFKPBKcNRh1tIzS4Kbps99ikHqUzmo1g1Jc_ttm9vcvBzm0Jo6_h316IaX4j3CeN1DTUaBjfdl7G3gpnBQ3arF7hRgF1bijcrSdAG7jy9cmfOC4lXqxU4EFyOp1KUl-qS8EAoWm853SC5Pa8VN0IlRmQ47oV7R_Z42bD90BvQ03V7inn7xy1m1UZb5pxZ8oOEfy7qRecZebQCaKzM-O8J4FzimJoaa_rrkO4u_OWXv9Y85jJiwuPvqI3lgzUr-jYh9SS_gfba38Xoo60lgFtFjbF6M6TZqEWP46n0w8IUIqfNrcdfnZsOUoehG7qMj3zMN75oddAmT_LcZkH5XyYgF_teGxJFe0Ayz1CaKYXSYItyobFWK5BvQmN2RTVEuVaBUNNsNHDE7j4qsv9JpoQAVMAncPeDpU4r7IyxrktIZRIIA",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer Atza|IwEBICbfIuQqJfl9cfsxlkDJdBFsaOkiF1CeILAOJ28vcMAJ2gTLG-XejU_NpzHs-lUdkroo67HfOD1uts4ecpGu1qTPICNgTMN2UpIMtAflbkLTkFf3vg-xbnybhju7ABPgwbVogX_rJo-nko4DpiI0BXpOhiI9PEAMJOdGSIeyDX7QbnHyJFw_9oufC0sVVc_fYnV_1IJ9VeBkh3_QKfYx-rNbFKG7ontnhwP3hyVXZ3anc0LTBUYrGULK8AqjNQw0_2eLekh4G2mMXPlSg2zKFGrQfsYeoyPMK36Xhw7EWP3-BcSEkjLFMBIiMTt-bogwjJ3jtO9qxtyr_ggtAhTke3PMVdyPsXBavcMW4Fxzbg4A9NFjPWgPEfX0dFeuOadbl1iuOJV3K2UjVBPrzNOJHQY1Ov_OHJ1X7CXGdazouPTUpMtyW3w3HC0PjbnCkHx-qngRWPpYJIygZ_ciBxRmEHA1XHlxrt1JDiAJ0L7mPSLKImsJH0DhDdNYRMzKLHaTQMHqtGZBHGYQNCBDAmKUzYSvmzZChCVgjCdiLvgzoAmB-YS8c2ND3FVbBCAT7hNylidtxQJ6PjgWjXpTqlrs9Xqhamy-9s3K8r4ZMdMtah8-B6912opMJ1KhGqvoIrRBw5k",
+						"disabled": true
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"campaignId\": 83430470294806,\n        \"dailyBudget\": 1,\n        \"state\": \"enabled\",\n        \"endDate\":20190311\n        \n    }]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/sp/campaigns",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIEV3qDnd9Urp1Qbbe6K7je7wFLaGssJY7C8LM_r__MuBeJvKXVk0wggFKFvTcZBF_uFAHpCcbVplDGBYZkePfqyZ8sW9Sl-qsXsuKqlGeCEiD1WRMzGnPcPZ70LMhSu64xvS2qeip5yD62kg-oPWe-RXNeP0vrOvXfzyKRhEVAW3bCUoVXgGIWb8Bm8V8PMo260otmC5QRh_268Imx1tQY2Mns_aG339SEkwvj2Cj4byA7vKQsKzyaK0xg6s_2fhziHrwvddHsbr2m_rLw_K1yb43zz7X-Q9XDcXeJ7Kzd5Byutujh0JuHrRy7qsxtlaCdQyWMnITxSQ6s1nWYaJWjvHgEzhhlIMuFaydEG6W7nfLEnLmWvI2Hn-tBchpEnUEtzzxI9q2dvxUSGjGSgpntDJw7-P-h9XE-RhS79vzMxkVSeknaDiJ8m3IxEDbh1v28HS5DQUAdTq8uZq-2Koh2Wt1SFyQ7mTmrvjpg18wVD7lyMBGoQ818B9wHpVHokFv74TO77CBZe7qgxcVvLj4_GCC2TDqc5x0rVdS77YfWr3rbmays8aj0H5wUKO-cSWqp5KByRYrVDQu1YHlaLBmX0kapT1XsX-TnrysrnYajnb8w",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns",
+						"extended"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILfeUGtTBarwIstfvUI0LSY5AFWnMmK1Peo2YR6TPEwNHQkXElrTY60JR_ZOxmd2bES_Z5xRRbt_n7aYaHS3KjcEMDPu4LYSraukq5Xl0BMhnXDGuf41Xpy1fT9eaKdrtKPKSPpGggQ3P47gMyid6orEagFp-b0KGM2rfo34nes3XcJfqsOugxNU2rxvbQqq1RUkjHYYSNTpM2meZc4RnzG1OQjRWxuIkO5M6wkzlGOwxeYa72qTD7Zduk5DoiaGmBoE2bxfXLTSoSlwlMFJ8sNisgK3mzrbMJWh7T5pJifSEhwwFVUvf1MAbClCxmx-p-w-CRZsfnZULKvoPYEOrYqS39fKoRDQqEASa9pyTXGUc-4QqOuKkJb0RRbGQ2welUA46d1IkzNMbkSJJ7M0jY_V8f2XUTv9YMKZbqYyhAp-zPgLBBMK4oExc-RO9Jb9Wmq_xZV6FC1Exd5mpwl6FUYKRjPob454eDCj1fS-O-Byj8V1_SE4QlGzFNoHIlVZMwS4gR98ngfQofqcTe2A0nVFlBHwpyEjgl6R9R7Rxwj53YGKnr6WPKQoUHg6YkKTn3xptDJhrBTCdKr6bVlwBQMwbxA1-eXG_lToNNPjA-5g9A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"profileId\": 4406898251177968,\n        \"countryCode\": \"US\",\n        \"currencyCode\": \"USD\",\n        \"dailyBudget\": 100,\n        \"timezone\": \"America/Los_Angeles\",\n        \"accountInfo\": {\n            \"marketplaceStringId\": \"ATVPDKIKX0DER\",\n            \"sellerStringId\": \"ATM2Q6PUY0CQB\"\n        }\n    }\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILfeUGtTBarwIstfvUI0LSY5AFWnMmK1Peo2YR6TPEwNHQkXElrTY60JR_ZOxmd2bES_Z5xRRbt_n7aYaHS3KjcEMDPu4LYSraukq5Xl0BMhnXDGuf41Xpy1fT9eaKdrtKPKSPpGggQ3P47gMyid6orEagFp-b0KGM2rfo34nes3XcJfqsOugxNU2rxvbQqq1RUkjHYYSNTpM2meZc4RnzG1OQjRWxuIkO5M6wkzlGOwxeYa72qTD7Zduk5DoiaGmBoE2bxfXLTSoSlwlMFJ8sNisgK3mzrbMJWh7T5pJifSEhwwFVUvf1MAbClCxmx-p-w-CRZsfnZULKvoPYEOrYqS39fKoRDQqEASa9pyTXGUc-4QqOuKkJb0RRbGQ2welUA46d1IkzNMbkSJJ7M0jY_V8f2XUTv9YMKZbqYyhAp-zPgLBBMK4oExc-RO9Jb9Wmq_xZV6FC1Exd5mpwl6FUYKRjPob454eDCj1fS-O-Byj8V1_SE4QlGzFNoHIlVZMwS4gR98ngfQofqcTe2A0nVFlBHwpyEjgl6R9R7Rxwj53YGKnr6WPKQoUHg6YkKTn3xptDJhrBTCdKr6bVlwBQMwbxA1-eXG_lToNNPjA-5g9A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"profileId\": 4406898251177968,\r\n        \"countryCode\": \"US\",\r\n        \"currencyCode\": \"USD\",\r\n        \"dailyBudget\": 1,\r\n        \"timezone\": \"America/Los_Angeles\",\r\n        \"accountInfo\": {\r\n            \"marketplaceStringId\": \"ATVPDKIKX0DER\",\r\n            \"sellerStringId\": \"ATM2Q6PUY0CQB\"\r\n        }\r\n    },\r\n    {\r\n        \"profileId\": 4406898251177968,\r\n        \"countryCode\": \"US\",\r\n        \"currencyCode\": \"USD\",\r\n        \"dailyBudget\": 2,\r\n        \"timezone\": \"America/Los_Angeles\",\r\n        \"accountInfo\": {\r\n            \"marketplaceStringId\": \"ATVPDKIKX0DER\",\r\n            \"sellerStringId\": \"ATM2Q6PUY0CQB\"\r\n        }\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIM15JuXSdz_6OeWod1KkQfn_OeVTTQpHMgfB36T1kWkbiMB3a5M3f_ohh7OOgSsTE5DrIWOElcKXiiHbjXsZjzlL_MwdeolzVDkC4PkLxZAoeUFNwF8MluHpSRVCtnkwUr1-kQ2aLChhFuj37IA0LI6oTptOmy0FAkbs6PqcwS5wUhD3GiOZaVFYgdryDOlvXtHjIO96nGQ-M3V7pq_EXDZQwhrcBaklq4qDv4vgg-2Q3qHXKdkCZvOQMNxvEdQZo9HjXi-AxcUFFNN3Xh8oKBzZMR96HrPiVbGo6L6uiQGiw_TZhupx0D9XXD09KkELdn-Sqdw40wCx0Lh0D9_4KT7C5PmES9IcbbszmgVQxbrd0vdZ7cE0HvzRUHU-bGXp3m5uPv2TSZGrVzsxODBlOfb2MLNV89MG1mWAaTEPJ9DMpovsK2LO9Cwq0dcKj_seRXRzfQDF_PkY0K5MESsxgiiSwqTU-wLmDvyJ4setXtFJbkZkws6UA7UUDdG3Kv91XGj53FW3y-34-_yPjSKk_-6c_VB1ULoyoH3ro9hvwT0zePN-RGu7WwptTufsSxmSOdq65rNAilqNzo0txmqPR4K9jSmeckLmqYUR9yx5MGklh-LpG6tZRgiKjiSbRRFDWhE",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns/?startIndex=0&count=3&campaignType=sponsoredProducts&name=test",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns",
+						""
+					],
+					"query": [
+						{
+							"key": "startIndex",
+							"value": "0"
+						},
+						{
+							"key": "count",
+							"value": "3"
+						},
+						{
+							"key": "campaignType",
+							"value": "sponsoredProducts"
+						},
+						{
+							"key": "name",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIKyDnBPjVIkccB5QRtGklWZCjCWeTVi5BdKFWIdVUXzlsdmSrtFXeSCtyJgkb5XpN6O7eFk49LtKM8PcT_hRCOeaW4JUePNl2OPCM0ciK5suPjwv3aKCTG9q00NI9JQoxEZKapmczJyjEeIvdyAJfhonK39GgW6b0myTuoR6GSkJ1p4wOKk-Q9jZHHGA_YIFzNwZJCDy5S1I7OCCwrddDNUPsehpnhwqQpC1Bvk5udPV2mCPCUBD1UNrhEswo84FRiBtbgO8atdYxqsy2UizE9BPCRgbPP_mGa9V-kDDsTMrVL087tZ1oo3KYt3NOo9xscMB2RE8-jxl2xYYJ5prcsHVtL84U4lL6VqbrW8YZFGyzAPJ2erpDp3fOHGDtO5lrpzWpOWjgzmjU_F6WVljJl2ff846j-r0MraMlON-XeW28umlllY--V6u84QBY_zRunBevYbKGjR4I7VcDAB7Q7BxYcPX5FS2vFuFBlepUU4dqW_eL8LpePOHWI0ytCLtjs4kTWmhrWdEJVZSxrOUlfp9maJJapx8kwaPolMTUUrLwkfCt6TanUdc3R6_Wj1WnpUtoS7aeTw8-5vaTVQlEo0DzCgaJTqre8S1ebGDpc4dgLo1m7cXTF8291yyRL9Rxs0",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups",
+						"extended"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILfeUGtTBarwIstfvUI0LSY5AFWnMmK1Peo2YR6TPEwNHQkXElrTY60JR_ZOxmd2bES_Z5xRRbt_n7aYaHS3KjcEMDPu4LYSraukq5Xl0BMhnXDGuf41Xpy1fT9eaKdrtKPKSPpGggQ3P47gMyid6orEagFp-b0KGM2rfo34nes3XcJfqsOugxNU2rxvbQqq1RUkjHYYSNTpM2meZc4RnzG1OQjRWxuIkO5M6wkzlGOwxeYa72qTD7Zduk5DoiaGmBoE2bxfXLTSoSlwlMFJ8sNisgK3mzrbMJWh7T5pJifSEhwwFVUvf1MAbClCxmx-p-w-CRZsfnZULKvoPYEOrYqS39fKoRDQqEASa9pyTXGUc-4QqOuKkJb0RRbGQ2welUA46d1IkzNMbkSJJ7M0jY_V8f2XUTv9YMKZbqYyhAp-zPgLBBMK4oExc-RO9Jb9Wmq_xZV6FC1Exd5mpwl6FUYKRjPob454eDCj1fS-O-Byj8V1_SE4QlGzFNoHIlVZMwS4gR98ngfQofqcTe2A0nVFlBHwpyEjgl6R9R7Rxwj53YGKnr6WPKQoUHg6YkKTn3xptDJhrBTCdKr6bVlwBQMwbxA1-eXG_lToNNPjA-5g9A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Atza|IwEBICbfIuQqJfl9cfsxlkDJdBFsaOkiF1CeILAOJ28vcMAJ2gTLG-XejU_NpzHs-lUdkroo67HfOD1uts4ecpGu1qTPICNgTMN2UpIMtAflbkLTkFf3vg-xbnybhju7ABPgwbVogX_rJo-nko4DpiI0BXpOhiI9PEAMJOdGSIeyDX7QbnHyJFw_9oufC0sVVc_fYnV_1IJ9VeBkh3_QKfYx-rNbFKG7ontnhwP3hyVXZ3anc0LTBUYrGULK8AqjNQw0_2eLekh4G2mMXPlSg2zKFGrQfsYeoyPMK36Xhw7EWP3-BcSEkjLFMBIiMTt-bogwjJ3jtO9qxtyr_ggtAhTke3PMVdyPsXBavcMW4Fxzbg4A9NFjPWgPEfX0dFeuOadbl1iuOJV3K2UjVBPrzNOJHQY1Ov_OHJ1X7CXGdazouPTUpMtyW3w3HC0PjbnCkHx-qngRWPpYJIygZ_ciBxRmEHA1XHlxrt1JDiAJ0L7mPSLKImsJH0DhDdNYRMzKLHaTQMHqtGZBHGYQNCBDAmKUzYSvmzZChCVgjCdiLvgzoAmB-YS8c2ND3FVbBCAT7hNylidtxQJ6PjgWjXpTqlrs9Xqhamy-9s3K8r4ZMdMtah8-B6912opMJ1KhGqvoIrRBw5k"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"dailyBudget\": 2}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles/4406898251177968",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles",
+						"4406898251177968"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILfeUGtTBarwIstfvUI0LSY5AFWnMmK1Peo2YR6TPEwNHQkXElrTY60JR_ZOxmd2bES_Z5xRRbt_n7aYaHS3KjcEMDPu4LYSraukq5Xl0BMhnXDGuf41Xpy1fT9eaKdrtKPKSPpGggQ3P47gMyid6orEagFp-b0KGM2rfo34nes3XcJfqsOugxNU2rxvbQqq1RUkjHYYSNTpM2meZc4RnzG1OQjRWxuIkO5M6wkzlGOwxeYa72qTD7Zduk5DoiaGmBoE2bxfXLTSoSlwlMFJ8sNisgK3mzrbMJWh7T5pJifSEhwwFVUvf1MAbClCxmx-p-w-CRZsfnZULKvoPYEOrYqS39fKoRDQqEASa9pyTXGUc-4QqOuKkJb0RRbGQ2welUA46d1IkzNMbkSJJ7M0jY_V8f2XUTv9YMKZbqYyhAp-zPgLBBMK4oExc-RO9Jb9Wmq_xZV6FC1Exd5mpwl6FUYKRjPob454eDCj1fS-O-Byj8V1_SE4QlGzFNoHIlVZMwS4gR98ngfQofqcTe2A0nVFlBHwpyEjgl6R9R7Rxwj53YGKnr6WPKQoUHg6YkKTn3xptDJhrBTCdKr6bVlwBQMwbxA1-eXG_lToNNPjA-5g9A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n\t\"name\" : \"test4\",\r\n\t\"campaignType\" : \"sponsoredProducts\",\r\n\t\"targetingType\" : \"autenabledo\",\r\n\t\"state\" : \"enabled\",\r\n\t\"dailyBudget\" : \"1.0\",\r\n\t\"startDate\" : \"20180915\"\r\n\t\r\n}]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/adGroups/extended/238961166314034",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIMUWyKG-KSwLyIGdETJ8pw0L7H7WisjjZqpSraM-KTFFqrH3DCTwjRVSV-xnuNb2N6zo6yE9gRa5gY-t_Opg4CZAtpLZJI-AV8nac9FGmFtdxDyrjIED9yAciVK6L--F6yJ4VzOPqzAueeySgH-BCDEZRA_6qxNAiqG8xxOZsVWIntZUNh4WcRdn4PGWTCrlzPfVh004iYeItcB-HIc_2_geuKynOncgY2w-NVOHaEyEC6lhM5VzG3SQWOPkFfcSTdYznjoi_aX5BbLjNcE4Dc-7SbH6gOKWejlAXYenB0VPitqnfeWFhwCYA7-ABdWWzVwUFssemm3Ci6zslX_rXyIXs7MIuVzzhLbIj814nRBKbFZSjgRZlffbJUhpd5AmkIqk3Zz-iGxDg9oxtpG7fKyOMxiAhAK2RSBwbSPak9jdgIqxf4MplnxcHl1KAr8iriYuX3_om13MMV_sEoZZAMknYuSymNYLvdc_liuBzNlscObSkzgSMu8t2rA6pv4wPNDnt10QuZOy4XYo2JuCisGW1Wv_rg7z8VzPRbOLM3IdnuSjT4Xa3C7ibPWkA3cA7uCUP-m_UZVWP53BgImQ0OCNjxbfMkumLrXnZiecc23ORQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups/extended/238961166314034",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups",
+						"extended",
+						"238961166314034"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/adGroups",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIM15JuXSdz_6OeWod1KkQfn_OeVTTQpHMgfB36T1kWkbiMB3a5M3f_ohh7OOgSsTE5DrIWOElcKXiiHbjXsZjzlL_MwdeolzVDkC4PkLxZAoeUFNwF8MluHpSRVCtnkwUr1-kQ2aLChhFuj37IA0LI6oTptOmy0FAkbs6PqcwS5wUhD3GiOZaVFYgdryDOlvXtHjIO96nGQ-M3V7pq_EXDZQwhrcBaklq4qDv4vgg-2Q3qHXKdkCZvOQMNxvEdQZo9HjXi-AxcUFFNN3Xh8oKBzZMR96HrPiVbGo6L6uiQGiw_TZhupx0D9XXD09KkELdn-Sqdw40wCx0Lh0D9_4KT7C5PmES9IcbbszmgVQxbrd0vdZ7cE0HvzRUHU-bGXp3m5uPv2TSZGrVzsxODBlOfb2MLNV89MG1mWAaTEPJ9DMpovsK2LO9Cwq0dcKj_seRXRzfQDF_PkY0K5MESsxgiiSwqTU-wLmDvyJ4setXtFJbkZkws6UA7UUDdG3Kv91XGj53FW3y-34-_yPjSKk_-6c_VB1ULoyoH3ro9hvwT0zePN-RGu7WwptTufsSxmSOdq65rNAilqNzo0txmqPR4K9jSmeckLmqYUR9yx5MGklh-LpG6tZRgiKjiSbRRFDWhE",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"adGroupId\": 238961166314034,\n        \"name\": \"testAdGroup\",\n        \"campaignId\": 7977082548176,\n        \"defaultBid\": 0.05,\n        \"state\": \"paused\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/adGroups/238961166314034",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIEmLeND9V5pzDerri73ZDpC9uqKCrmPEu9TZdd6n7WT_ZF-EDMJ0dhpyDeIDEGWAKVxhfCwzn6fO9MuErjOKdWbXgCGXYKPDz0Ru6L6HMDQrojthMeg20Q48ZXM2bKejEc3NSmT42AHXmKjUMfwcYnBNhFr_yws8hO12hleeMLLP9kbN0J2-Khwl8vDt1887EnyjmJROxo76tHYAkRopqzGMYL56E-WhW52jxRcWCxQ9cWmY933ZmTiF_rp2yBvvy48MkMKxZX1ytAfdSzpkye0I6lD9W2dHlLxusvL_x3c1f5eC0oAgHfMcTTPsduWuiiNaziosrL36UdsDj5HSgNtwKzpKtcPH-5Bf3DBYBsVkbx1dXGP4aN1egzIzYy6x85B_USfrgCPkV7OD9LwPh9Vo1g18I4aumhBo6haOy-NRfTgB_93pqV13rKHntVC8kDpolfvuz_QD45VWb8IrnF_BnqXsvyvOaw5p1EdD0aawwR4EbJSavRRcM7sBngRn_k8warK0OSDEe5yuyJ_TCfvHuHPgtiqkbAxalhzX1BiSSgEW_515DUHvyLG4Y_c4PZle1gGd_S8QwgCAHKFctXESDMVj_4poj-Tn5rp-Zfyalw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"adGroupId\": 238961166314034,\n        \"name\": \"testAdGroup\",\n        \"campaignId\": 7977082548176,\n        \"defaultBid\": 0.05,\n        \"state\": \"paused\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups/238961166314034",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups",
+						"238961166314034"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/report",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILh3xNYitDRJYS4ym6y2Tz2_rmhNb10EEexBklwoURUz8OkVq2wM4whlnDY-l3KvCbey9PTPVZbvZh7p9Y2KhQdghFmW6x75BGu2dI6sIhnEzxxo11ACstWvKGfUUpeIx-V0zry5BkU8K95zBtCIk4YpPn95zDHL3_l9Ml_wxbl7k-Xh9x089qwO9hw4_1y9frEIRY-m8xdh3LEa4ZzNSLvf6q1mFa7X7VxZPJXnfz7TqARDypCSC57jQrsW_QRE-C7hZcEiqPnYWcke0mb4LeA0DpFp6FYG-inMULme5SN8Z89c_cr09JLr4H4NXMpWCJMTlUE0sFo8pDpz7pm-4RD2u5piAThFibcyfpazYTphz-N2F9kr9GF8zwuDNCEQEN5hqa_1rBCk06CuIl6U76C3Ii60cSBDT9vOJZK9wdeghf-odNnDFFgaO3XsGLGw4SSXHXJbNu-XL9T43hrICcuaY_IM0ddh8plp6SVyDDgqEpXOEIKaP3BEJ4y-BYxIVt8TbFSl8OYrCIGv1O8d1VEGIEp_Lo8K-vS2p9-DmHq6EoTSTHSPFBVa6s5PGZMhsfiQ4G1yDT0gHur-DqE_qEv1E5W2uRrfCw38q8L37GZHTpR7mjkbm0GZXi-h0RYit7M",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\t\"segment\" : \"\",\n\t\"reportDate\" : \"20181020\",\n\t\"metrics\" : \"impressions,clicks,currency,campaignName,campaignId,cost,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU,attributedUnitsOrdered7dSameSKU\"\n\t\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5B9B22E7.2d5cd05b-d7a2-4e3c-92f2-3dba32a1a3e4",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIKyDnBPjVIkccB5QRtGklWZCjCWeTVi5BdKFWIdVUXzlsdmSrtFXeSCtyJgkb5XpN6O7eFk49LtKM8PcT_hRCOeaW4JUePNl2OPCM0ciK5suPjwv3aKCTG9q00NI9JQoxEZKapmczJyjEeIvdyAJfhonK39GgW6b0myTuoR6GSkJ1p4wOKk-Q9jZHHGA_YIFzNwZJCDy5S1I7OCCwrddDNUPsehpnhwqQpC1Bvk5udPV2mCPCUBD1UNrhEswo84FRiBtbgO8atdYxqsy2UizE9BPCRgbPP_mGa9V-kDDsTMrVL087tZ1oo3KYt3NOo9xscMB2RE8-jxl2xYYJ5prcsHVtL84U4lL6VqbrW8YZFGyzAPJ2erpDp3fOHGDtO5lrpzWpOWjgzmjU_F6WVljJl2ff846j-r0MraMlON-XeW28umlllY--V6u84QBY_zRunBevYbKGjR4I7VcDAB7Q7BxYcPX5FS2vFuFBlepUU4dqW_eL8LpePOHWI0ytCLtjs4kTWmhrWdEJVZSxrOUlfp9maJJapx8kwaPolMTUUrLwkfCt6TanUdc3R6_Wj1WnpUtoS7aeTw8-5vaTVQlEo0DzCgaJTqre8S1ebGDpc4dgLo1m7cXTF8291yyRL9Rxs0",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5BCAA32A.ef150a84-e7a9-4c3f-92aa-6059757cd7ef/download",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"reports",
+						"amzn1.clicksAPI.v1.m1.5BCAA32A.ef150a84-e7a9-4c3f-92aa-6059757cd7ef",
+						"download"
+					]
+				},
+				"description": "检索先前生成的报告"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/snapshot",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIP8XlphSrIbTto8lQ8tVbdJ4rjjQ9ScEcRPtz8FZXX9yjzH85ZgY7Cu-ykIBZVWNwi_V_OO9JxmGRRh7PCnOYF9wC252Q1DS3fm6X6B9GEKe6aNySOXuiUF8nRuBqY_aCIOm7UC7iKvUmbbLYtugEqduGWPf9pw9nE_TrtnEgeu7lysG7OA0FnAVs8LYlyWWuyHY9f4FdwEJPoWqPDscOe8zMjGOXyVwVZ5vNCsc0WB9I2P8VVIHDdQ__X_vqhQvpzOY0JEnlHgx71OKTE2ZXMOSzl1uduLSTnQeFv_ZhXjfqDDMX7THczOb7RtlKmLj0ZNme4lYuIMbV4hi_vhCIDEv9lanO2Lg1Ez3xmRFmYqEkVXSfofka46oUwaCuAiAY69HtK9kr1uv6c9DblCYpDf7yZ6YN-jlwJHut1Sfx2TanrPjR1MxO17_HkBjv5aVR0Aj4C6-MR8jL3dki0Hx9XxSfvVc9GQF-9hjLpQbAAqGuIig6AEcXiMZr1IpE_sWHihcBez36QXTnPJgOPmDpvYocD14DsJStuHrFsz_j65LhkHPn_1Lkv8sIEDfNTGlqem8xxyaUelyBNWtpmhc6cDanM3scd_HH9PzZQcT1RTiyw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{                               \r\n\"campaignType\" : \"sponsoredProducts\",  \r\n\"stateFilter\" : \"enabled\"    \r\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns/snapshot",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns",
+						"snapshot"
+					]
+				},
+				"description": "获得快照"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/snapshots/amzn1.clicksAPI.v1.p1.5B9B56E1.db8cf938-f0db-4b5e-adfc-56ce99e19901",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIP8XlphSrIbTto8lQ8tVbdJ4rjjQ9ScEcRPtz8FZXX9yjzH85ZgY7Cu-ykIBZVWNwi_V_OO9JxmGRRh7PCnOYF9wC252Q1DS3fm6X6B9GEKe6aNySOXuiUF8nRuBqY_aCIOm7UC7iKvUmbbLYtugEqduGWPf9pw9nE_TrtnEgeu7lysG7OA0FnAVs8LYlyWWuyHY9f4FdwEJPoWqPDscOe8zMjGOXyVwVZ5vNCsc0WB9I2P8VVIHDdQ__X_vqhQvpzOY0JEnlHgx71OKTE2ZXMOSzl1uduLSTnQeFv_ZhXjfqDDMX7THczOb7RtlKmLj0ZNme4lYuIMbV4hi_vhCIDEv9lanO2Lg1Ez3xmRFmYqEkVXSfofka46oUwaCuAiAY69HtK9kr1uv6c9DblCYpDf7yZ6YN-jlwJHut1Sfx2TanrPjR1MxO17_HkBjv5aVR0Aj4C6-MR8jL3dki0Hx9XxSfvVc9GQF-9hjLpQbAAqGuIig6AEcXiMZr1IpE_sWHihcBez36QXTnPJgOPmDpvYocD14DsJStuHrFsz_j65LhkHPn_1Lkv8sIEDfNTGlqem8xxyaUelyBNWtpmhc6cDanM3scd_HH9PzZQcT1RTiyw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/snapshots/amzn1.clicksAPI.v1.p1.5B9B56E1.db8cf938-f0db-4b5e-adfc-56ce99e19901",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"snapshots",
+						"amzn1.clicksAPI.v1.p1.5B9B56E1.db8cf938-f0db-4b5e-adfc-56ce99e19901"
+					]
+				},
+				"description": "快照详情"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/keywords/report ",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIGl8IgqdKBq2EeoOlTdxFUpyMUNg4xlTBJitkd_p9wEitm5zu1JlZ49Jth6qW5QQl6SFxmM8oyOepTk7pn5ZNpAzK2aqME9nciT_wrh5lEad7N5ipkRtFO0ph_K6nAk5Rk5mH7hGmNeBang2HyIGL2N-DeSv1mchbiaujTU-B9cRjWG8_JfsUdke6V4T3ocJk2Tah5FvPrikfGl_CkkDIINgkJaMHAUq-Cb2l9P951dF70ucEZYaxJTIH3GPkzwB2bCV_ZqWO05Wwapy3JQ-B9MB0hp3o_kJFWZIOTaqaJSKg1YFbt3VQ62TkZM2PWeJvyGWD17Ksb1ktGQkHggWgQpyOUqDDBFNEjBS8Pj4Ke5RoprwNhdZDJ2dp8Kg04sxnW18TYkZGsWWRj44e2iLjWd7jCvktqnfXYGc7J95r9stXXbGAPKqtScwbSolFfm8fAJOFQwA5SS-OjAMq5dC8DGHsVs9UDjB6Rsq8hgGVoPG4rqVR7ZSuOTtK-IClq3Z3ycBsPQqL9-ufZB62WjdZYKXqhiabcG16JpVl5mvJZ9wxf0Ihx_QUjXEQbV7aXE1JZRsCNiQEKYPCz2NxjB3Cd06Imdx-PYV5l8HOblWt63WAg",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\t\"segment\" : \"query\",\n\t\"reportDate\" : \"20190111\",\n\t\"metrics\" : \"keywordId,impressions,clicks,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions14dSameSKU\"\n\t\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/keywords/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"keywords",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5B9BB1B0.429da14f-f236-4da7-a2cf-890e047bc487",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Atza|IwEBIIfcVczOL-nFuiH5qoi76In3Z0XgkrZT074_x6-js1bmizrSCXeoE_8YSsg3r2cWXEPbx4barZKZm8m_l-VDPJFRwU4r1yp6mls-x-lg_MdeyIcerU_RNINin4qfvSZAM4uEIzyjW_NiubhQ8OVDgOX9r8yZBVoGCtpOUtE2c1B6_xnRUKRByoQ8rIxCWqe3i7xnMJsrC_HKnYay29_dd-TRGhH7-PGGBuZH-KfbUWbrmnWaIOrwuIorrVVDMYDuW8ZpKNexoldH9qMkET3fIqmoMLM5Unux7C7MNoJhYEZy7dbFPDXyNnYlJBlU0NMyCKLGr7aULaRFNoIPd0IjMwsMMcnRv_RzIic81Wsh01bAhJPQjJ0wKffLIsPYiOrA8x1u7vf5I8LnQ4Pfzi_d5Mhu-HLPfwVYgH2XBYEvBM46uIlDafsukAjYuTxxNHGtHyb55QDVHLDyWiaAC7jN0DxuTemzKXVOaNdufsMoKxYqGB3zJbhBIZCSplB1_ugprhO04YcUmLbHSU2xKVpiirEQFeF4k7dJGjvbaQVrtxc0gmVTXTsQKJXbNg-eyWTg_b2fM7dk5jfi0DRAQzoi_PjvTGD_iwMtsLWxPGutC9mmlw"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5BA366A6.459aa92a-d0b3-40f0-8b96-3a61ada1cd73/download",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"reports",
+						"amzn1.clicksAPI.v1.m1.5BA366A6.459aa92a-d0b3-40f0-8b96-3a61ada1cd73",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles/2186640287405829",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPhSPoiiVLTa_hGeOFKlwtTf1qP4LsvTBtU5aOKtwZjF67Kdr12_eIvabt27_CIhLlI8Vq7fWeDZsyNcKvwSPaAtfzS8VTfbvGtI-dN5Er-dO2r4Vr04h6DFqPm1ozgSnhLQ3w9AS-4WzRaLGQdNMHlyP1jDPQQbrFFBpfPfLjUz3cVKuc76da1uOzktVtptI1Jfw-3itD0YDMolEvBPfvHWfHSbkkWLZLRqslrZpljppaQ-Dfe0z9tLr4B6k18CDq7NPAAKTnugQ-Q_XchJ45qvSV8nu2VQn6REdL2nk1bLOrqpqiGEJWlRY-Q-eL5kOB3HujOHxSQuNt469yHwyq77iZS7tHZxCJ7WzGPM4pWi8F1R8UgsrXRjCccpBtnUH6aYqvlAjB7Uu5ZSXybs-yG72FJYpxlfnp8uJWRX2ZVg95OCrk4I86C0YvWBumGkN_g65qPbl8YRqQW0pdSyUPAhOk3_nJA4yCI6q7411Wvdm9oxJEAUlR5Fhwdq5T9wwjdJbgYQ_19mrJxyXkT67XEsOgqx0GOP8BEe_brEz1vcy24v8tC1Kh5t4wj7DIN8LSF5t-sq9FYnb0oB4750uslXS01Z5ShoSN6mrMqsTzeJ-Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles/2186640287405829",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles",
+						"2186640287405829"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/profiles",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPhSPoiiVLTa_hGeOFKlwtTf1qP4LsvTBtU5aOKtwZjF67Kdr12_eIvabt27_CIhLlI8Vq7fWeDZsyNcKvwSPaAtfzS8VTfbvGtI-dN5Er-dO2r4Vr04h6DFqPm1ozgSnhLQ3w9AS-4WzRaLGQdNMHlyP1jDPQQbrFFBpfPfLjUz3cVKuc76da1uOzktVtptI1Jfw-3itD0YDMolEvBPfvHWfHSbkkWLZLRqslrZpljppaQ-Dfe0z9tLr4B6k18CDq7NPAAKTnugQ-Q_XchJ45qvSV8nu2VQn6REdL2nk1bLOrqpqiGEJWlRY-Q-eL5kOB3HujOHxSQuNt469yHwyq77iZS7tHZxCJ7WzGPM4pWi8F1R8UgsrXRjCccpBtnUH6aYqvlAjB7Uu5ZSXybs-yG72FJYpxlfnp8uJWRX2ZVg95OCrk4I86C0YvWBumGkN_g65qPbl8YRqQW0pdSyUPAhOk3_nJA4yCI6q7411Wvdm9oxJEAUlR5Fhwdq5T9wwjdJbgYQ_19mrJxyXkT67XEsOgqx0GOP8BEe_brEz1vcy24v8tC1Kh5t4wj7DIN8LSF5t-sq9FYnb0oB4750uslXS01Z5ShoSN6mrMqsTzeJ-Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/profiles",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/extended/33094331109314",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIBb16qYL3hUgTSjvJp2FTkvyMT5N1gdY-ZRuft0HSOXua9h_DDI4iC6bC8W-bFKhd7khuk0QKibXjV5bCSK82f9xgW5knr7rlmcuQ0L10BcV-uC8QvG656a2h4vKpaQNMK2v0e0QF9cUaUKw4P3ePMFETt3zaeqA12DbZ52HjVAkZS768ZKFtn_jkHEclLVCce9FwsUsZwFBHt2WkrreO2lA83fTiQTn18Y2IPDSj9ykPLPZdRzr8tIWwPDpSRve41jxnXqpK0a0a7nvDkWxElNIjXsjagi5PT8zx30IilI0OQ_jLdv7nFhjAmLwdzEnbKlXBU4O0ZGZHJe_rI-JxgFr3vVjOoORjw82xyjkt3rSd_IGb3cLgv1Wt1wxGJipuyLwhzjlCGRtdXhg3HcJT_Ktpx0pffQLNZqru4_sulqD8VwnAetdBGhikPtubrbDxV6FncjWidO-jn6HOflfvm9PdZ2Qpv1ED0JyxGOqaZ6KqK4hWn-uK_7933H97FsIOp5TvNWtZl29Aw72LTFsU6j5pU9bqgttOzgfmprZ1fbfjCJfqOYAcK8HVo4cmxiib7uhQUYs0am_CxyyFkgd0oUWLn5c97SpZcsnU_CdAqKpFA",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns/extended/33094331109314",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns",
+						"extended",
+						"33094331109314"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/225904643065460",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPiwV3PeXTKJDc38llvX2N0CzARHalb8ijny_EL5Z1-JoW32SI3-qBtbU8GBk9WYKoP7AFRELMTj0dSzJA2ck6qONeUhGPDTWAeWfgFVrflUE2b2AmyH9tnqLjH8spf-K0sdHhsh2urx6ofLjUL7xxc0TuSIUTYWfo90HooB7J7LkcJYieZ0C08EPqaQrwV1D-tH8wkVIcLpKaOhX0jMl3UgD9T7-W8U2jv1q4FB-fULRY-uLf2SD937hSqPtg6_nydOUVZHF7uSpGSTvJBb88hmbr8pR0qnbMBwDl_Vd0t1jzzInuE-kgKr2kho7pWn8TPlL38uiPIbTQQ2pfv61jlKDNKDLUSLl6zHfff-sEhq9q3c0vdwfa4nvV31esIbPlOd12aoviOaiyGK3beX0HiUOBe-RJphir91lfacJKBDW-U7BkvCXF1dKoW5BWLnxG2nTMOfntAiF9OgUIrvYP6RaslGAYiIED2lfQBtRv9mQ5_pZVeou2hb639b0gb2Lq9lW7Bb-mnaygmcvEbZ5BurbJ1ynCP8-wROAiqd1sW3-nJYoAdBgcUY3tdrM_SZlzRgVP7pFg1MvWMrLS2D734MCUmGjk616tgbIm0uXPyju0_cWbiDZDZIZ2X9Q-HTI-g",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"campaignId\": 83430470294806,\n        \"name\": \"Hello World Campaign louis 20180926\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"auto\",\n        \"premiumBidAdjustment\": false,\n        \"dailyBudget\": 2.58,\n        \"startDate\": \"20180921\",\n        \"state\": \"paused\"\n      \n    },\n    {\n        \"campaignId\": 7977082548176,\n        \"name\": \"12312346sdafd\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"auto\",\n        \"premiumBidAdjustment\": false,\n        \"dailyBudget\": 1,\n        \"startDate\": \"20180906\",\n        \"state\": \"enabled\"\n    },\n    {\n        \"campaignId\": 139079074170429,\n        \"name\": \"test\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"auto\",\n        \"dailyBudget\": 1,\n        \"state\": \"enabled\"\n    },\n    {\n        \"campaignId\": 271707700732616,\n        \"name\": \"API campaigns V2 271707700732616\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"manual\",\n        \"dailyBudget\": 13,\n        \"state\": \"paused\"\n    },\n    {\n        \"campaignId\": 136891402963029,\n        \"name\": \"Hello\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"auto\",\n        \"premiumBidAdjustment\": false,\n        \"dailyBudget\": 1,\n        \"startDate\": \"20180920\",\n        \"state\": \"enabled\"\n    },\n    {\n        \"campaignId\": 33094331109314,\n        \"name\": \"test5\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"manual\",\n        \"premiumBidAdjustment\": false,\n        \"dailyBudget\": 1,\n        \"startDate\": \"20180915\",\n        \"state\": \"enabled\"\n    },\n    {\n        \"campaignId\": 220965537260847,\n        \"name\": \"test3\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"auto\",\n        \"premiumBidAdjustment\": false,\n        \"dailyBudget\": 1,\n        \"startDate\": \"20180915\",\n        \"state\": \"enabled\"\n    },\n    {\n        \"campaignId\": 225904643065460,\n        \"name\": \"API campaigns V2 test225904643065460\",\n        \"campaignType\": \"sponsoredProducts\",\n        \"targetingType\": \"manual\",\n        \"premiumBidAdjustment\": false,\n        \"dailyBudget\": 10,\n        \"startDate\": \"20180921\",\n        \"endDate\": \"20181117\",\n        \"state\": \"paused\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILqUghHqDv4mUanYO1_Q6jNFh6AMu4vJJr4gc00CSb6Lpt2ecvqd1zgHsPdNNP-zZKx8_KqBDYOl0Jax2bUB0thXT1jgE6jTNYStO-tmi3XpXB5aDoF5aCk5V5ffLf-KtsG8yLaa22kwhq2OD2WCt8OufY9EKgXSiuUDkC-5npnd1D3X6s1rlO2ZibdyyNbKcpObGdwhPftv22DGC9b091Bs6wHOz8V85aCRB5uFXqk9W0AFlz7gFBHkZY1qwcVh06ibG29DljhcoonN1eyKldZzTJd-Y8ovH4lbeVTGfsTqmZAaLxhCeFkhFi715NQ5aW-kYlbkTWWg2yQiv6zYJqonljShP71xp_rjaLx2DxrfLahjsNq--35uUPKWnCpWw9-PslLfBxlU6wvTvlW7jnIrTVnHctfADxoHqzGNZebyqMqAQ9Aj3lSaQQLVaxmvDORE5D2YPHlYAv_sc-l4R7ak8Tihebt1e9kySRzjoxM2A7fjwFxomLm13uUhi4GijtrA9MsbuYIDi5uRKT1C4n-WNqSjzNoiO7aCOdwcDz41ElJzOK6Jck2pjg3qeQBRlqeWy9XE7YlhHwpUhS7j2oLlgHqKAUMYJBEGtjRTU7KuOA",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"campaignId\": 83430470294806,\n\t\"name\" : \"Hello World Campaign louis 20180921\",\n\n\n\t\"state\" : \"paused\",\n\t\"dailyBudget\" : \"2.00\",\n\t\"startDate\" : \"20180921\"\n}\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5BA366A6.459aa92a-d0b3-40f0-8b96-3a61ada1cd73/download",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Atza|IwEBIMme1v2tAR0rUwQS2PF-ixV3E0rv6pNCgm5NmJQc2DWnGnIaJpp8RwhbBnfXeP8sRkjHNlpRE_xVBJwAj9uXEnj9kH6kMqyc2C9xQyNCC3NgitUjEmzpTMDMfdZqZgqhnNk3Rui1gBitVqWcvk1SEDXrD9x7C1PDcu0F5ZmqMPctC6xq8MDAcgI8GZ9WNLNaWINWZKahU2wnd1c2GfnBvJGaftec_l9VERtzOa94V8yxPzTJze7LdYIIpHVoSrg39vutXavWxfoMuUoOAd201Nay6WjSGc7ueQRpLgBdJvf0u6ENafNzEZeN8sdHBsgd-_Hl91JT-VX5Fg3_J4X7EEFdwIKeCc1bysXQlm18tjQceVEE85wAN7kUDO06De4C4LotyGHGzlYE_DOJCj1Rp73b9Es1OYLXz8YNrzHlStM1ZCvOmFC39h6Xqf00OomcT1ccMhDjaZSqOGO_LPP18EyzPqd-whBVJZNfg4wU6X8NZgrVSR5PZ2IM0WrKHwFi0FgRxxa-laWvo4AsY0iEO3312TkDsdlXxuQjLskQ1CToPRFOskpKi_XURCX_yn8OxjA4kXbKwezd-Sh04qbQBv2ngUyclTh4Q0hxjgHtCnj3cA"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5BA366A6.459aa92a-d0b3-40f0-8b96-3a61ada1cd73/download",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"reports",
+						"amzn1.clicksAPI.v1.m1.5BA366A6.459aa92a-d0b3-40f0-8b96-3a61ada1cd73",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/keywords",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIGcT7f18BAiTh1GIqt_l81g0vRUR2StkQxmL2b0Unwu9x20mbXnCoFScAMtPUYnpT1Pg0vnhdclTSUHPXwSTg_Gd7eQJgKLHK7qgYlJ7a8XVRzD1FuHaSiHdEsQTSa_rOpoISI1SR8ocju9ZYEbKF_2gA6MoXVCwCGTd7kiyuPqGAZDt9VBFgvPfnuvhumay2FuyuX1afp3u8Qt6PHQ80fx8LxGE14mSK0gsgMeZb7-pLWERZbA8kfr98JZGVsIaRULip-PgknU2yuvZ00Ht1mS6AJnyFfBIdqesHXS5TCy7fEBccnbt2JS8n_nQwTzYJDoouobIwGwKZhmc6ABymVXOWX0hMMOavLUJ3ReRWoSgcSumjJFiD8zj1v-MBMKcSanlobjERLikMeSySp9-Xwivlj6O-xpuqTjRN8zeiQJoldqMWmQHtB0S0u7MSsLL-HWKUPet4rEjCAMaUFr_GJHGfIo_ECMvdXu6MhPW9BPBuHgl_-bdXgu3wNQT1o5hHDjoShgeHxOqecSGXTEVxv4acBKDat1wpNl0mFPYPiBmVkqgzVd0SIh40_R1vAS0lHjuwVKcObNugcDfInZynpJZ3Me9qoTCs_gZUVoCJ_l34w",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\n    {\n\n        \"adGroupId\": 238961166314034,\n        \"campaignId\": 7977082548176,\n        \"keywordText\": \"Louis keyword4\",\n        \"matchType\": \"broad\",\n        \"state\": \"enabled\"\n    },\n    {\n\n        \"adGroupId\": 238961166314034,\n        \"campaignId\": 7977082548176,\n        \"keywordText\": \"Louis keyword2\",\n        \"matchType\": \"broad\",\n        \"state\": \"paused\"\n    },{\n\n        \"adGroupId\": 238961166314034,\n        \"campaignId\": 7977082548176,\n        \"keywordText\": \"Louis keyword3\",\n        \"matchType\": \"broad\",\n        \"state\": \"enabled\"\n    }\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/keywords",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"keywords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/adGroups",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIGs-m_6dTwBOFFec1GxZnFyRQkJf_CvxjH8LnGERfofbbhBdpin1nGFdbEFKkBa78et6NqHP62nM1gSpF6geq-NvMyK344onQ0D8LFX6ZeDxbKoayA5K1xxRQ6RmjIS3NjbR1IPUgX-m_gxjTuZvhCQHsNgAJo63Zdu8QbG-wF00kLm3y9wTxvvLJszeBnhupm84RPffsIYE-f1DCg93RHjVBGF2yTPHGBRyiiDPLJml0OF69l9AyNOlGmkv6buRA4Mwype1AIPvAZ3iSYP656r0C8yBXPGDu-vzDyiMgefFTvn4xh-xiJUAZhG0uQ-BnFGoMuWPcGvN8dud2ZulHVKbBKu7cdUeB9H3ptvVHgvk8AjmnIu70ozuLSzh_OiPP9Cd7QRGla8tdj2X68Rchz49vJbfRJxaRij2q75C93EbX9olfuG2bl49uMsVUy1LZpixQRz86YrId1Mr9305OPpKeHC8LvGpAaC875sXqjOEcinw5eFUgjsWQHrxMxQr_awAcodE53VWoS1UXW9HaeC1oCaoFn6AUYCTilteEs1piesWd4Vs_M3O8XUG6g8-e0FtnMFsHeDgDmoLK-FkR5Ld7iyXA_Kq8dnfjargYYUCIw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"campaignId\" : 271707700732616,\n\t\"name\" : \"Louis\",\n\t\"state\" : \"enabled\",\n\t\"defaultBid\" : 2.00\n},{\n\t\"campaignId\" : 271707700732616,\n\t\"name\" : \"Louis1\",\n\t\"state\" : \"enabled\",\n\t\"defaultBid\" : 2.15\n},{\n\t\"campaignId\" : 271707700732616,\n\t\"name\" : \"Louis0\",\n\t\"state\" : \"enabled\",\n\t\"defaultBid\" : 2.19\n},\n{\n\t\"campaignId\" : 271707700732616,\n\t\"name\" : \"Loui2s\",\n\t\"state\" : \"enabled\",\n\t\"defaultBid\" : 3.58\n},{\n\t\"campaignId\" : 271707700732616,\n\t\"name\" : \"Louis5\",\n\t\"state\" : \"enabled\",\n\t\"defaultBid\" : 2.56\n},{\n\t\"campaignId\" : 271707700732616,\n\t\"name\" : \"Louis3\",\n\t\"state\" : \"enabled\",\n\t\"defaultBid\" : 2.58\n}\n\n\n]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/adGroups/report",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIMYGuM-lC97uX48YLVDPbM1DiN-yF2Ujl_863U53mKbzaLNFhl-WL1G87aW5Sl_pQmsYr5VaCKapY-crW3FbAxDwkfXr53QCXsa8zuMZtLRLqRyAECrW_AiqasXAu5H9IPrDQyDLa7yur0UufN6esANDyT3vFo5dPM7rzBnbh-MIdQvSsj4M8nK4oIsce-0tkNH-8lSMdIoJO10usV8f1QL6oxay9dV0yAjLcCE8XnsFDkfhpZDQiIDf3Sk-sLbCxcQc45oA-Zn3t6OOw58a17D7gdJ-KnecKv8nfmgDjPeZh0ZCJDNCtFIP_2vULSVQ6wDMakDtiDnWw9B0TPCIkYHzFgjozeCJlB1s3LFUNSgFAgROxgz2w6SYIgXH6_XpZKvWpC_TH9R2ezzL8mHOiubqAsHORoEx7R7jyf9VKJMLqiYBFFYpqlgc0d-mI-2G87qodkdRqMtsGqRKvitcLp8mQ2Y4khrF2w1d7fXmZQZvJBNzLmu0I9wfdkGRlXL6PlXCZlwbhSCCHNQAKnogov8UVqb1nwDjkeGSowyyP_Puv99wx16uElIbzFKFhiImjv8QKMJD-02FrVeU_dEz_-r1TveOmJ1bzdDHNlAaJCipKw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\n\t\"reportDate\" : \"20180930\",\n\t\"metrics\" : \"campaignName,campaignId,adGroupName,adGroupId,impressions,clicks,cost,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU,attributedUnitsOrdered7dSameSKU\"\n\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBILrMerWGP8Q6U5O71Mp5w9dR6MsLsDkzHR3e2sElWdFChjYZ8SOQsyx8E_ZI04zIuZvztOnBDpcb1WpWJEzppAORKEZgCwSSMsGwi1nK8tPZHStzW87-8Gp3wix0vGaJ9GWDVowUAw5AmdvoC7YEE7URUphHSQayA5_9fG2KReayi-N-hQNBDXih2nYh_zIe3fCZIqvSHIMsPoOp46MIjyxp32gs5AlnsT3Nrogg-Z8nKjq-mtMgCkv_0Ojj584O9MApd4WC2SRQ9o9ZBg1sHDglGc6yyFEAZQJyblUu5bCRcBkADt2x2tAQfDfRXtALWjUw77epe5o1bgzuDbzU91r5WnSZmrOvSJq7HbndgkrCr_t-7SqU-9ZTotlKEDXGyBLdtXXmN7trG3I93ITOmtt07UYN2MFS0GR-9wL1Ozjiqa3AGLQq-SpPfGs7sE2xTl6guLz7WljiTV4BbvKYUUMJAY3tFU0bCx0GOVo4axhahT27giSKo1XqwQn2PZz5gMK5VLTRU_Z2AjDOzvu6v6uEuEqBnQG2Fofz8tWg90q6h8Y_RWVCUIR17rF2LAH0aKRf_xfcBqbHf3H1-GxQAbdILYcvq1hcvPwsFifdSMX4ij7pBHNaodbSiwmfrH6x8sA",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/campaigns/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"campaigns",
+						"extended"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/adGroups/",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIAYbIqxme21sDs5YzbgD1XXiC2cQGS67jRmns8s_qCrEVTYCQLHjgEUCZx7wz1F_RqhJGgs_yDn0qODOC5KD-I4b3TZi_YrcKSmBkBxSXeGjeXfwor185SLbCVS6QRMiCUFFXy_WQpSgS0egT71cXq9NXR_mvacp5M2bHbdAEtOdFX0HAE0dIfApNLXOeWDCaGdQNhjx6vGT9E6LFwfgqL97Z73ZBTrMFXpRWsWuzzeNcx4xOyObEBPO3DJhl1Kr7HIQjrRXXK9d1JN9laQrZSoOyamf7lgbCe6tmLoQaH0qfdSTJZkTRDNz0NqLDzUZ030WLSVjac0tSEV0Cr8PUPxnrLHwY7FSOgJ75p8nipQcWXswb2vEXtflZLyNQi0pN3OGQbWWHuZUu-y982FsftuOjAyGrCME3pM3zDHeh_qwp2eziXhiWYpKIuaYe3mf4Ucqne_sXb0YOEhKrGRKYX2uyYuFXHTp1E8Q8qMMp4nSCdKjZJc1fWRHj4tLwh2qMvQcIv5gBmQYCkV9YWebTHdbU2zxC1lLDLlpgsCNOvjE-xV0qNyp-YybZg-82qLYqaHu70Qph-ZjjFduvdWyXXhDXfaN_r42-U-ruXP5b7C45A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/adGroups/",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/campaigns/",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIMYGuM-lC97uX48YLVDPbM1DiN-yF2Ujl_863U53mKbzaLNFhl-WL1G87aW5Sl_pQmsYr5VaCKapY-crW3FbAxDwkfXr53QCXsa8zuMZtLRLqRyAECrW_AiqasXAu5H9IPrDQyDLa7yur0UufN6esANDyT3vFo5dPM7rzBnbh-MIdQvSsj4M8nK4oIsce-0tkNH-8lSMdIoJO10usV8f1QL6oxay9dV0yAjLcCE8XnsFDkfhpZDQiIDf3Sk-sLbCxcQc45oA-Zn3t6OOw58a17D7gdJ-KnecKv8nfmgDjPeZh0ZCJDNCtFIP_2vULSVQ6wDMakDtiDnWw9B0TPCIkYHzFgjozeCJlB1s3LFUNSgFAgROxgz2w6SYIgXH6_XpZKvWpC_TH9R2ezzL8mHOiubqAsHORoEx7R7jyf9VKJMLqiYBFFYpqlgc0d-mI-2G87qodkdRqMtsGqRKvitcLp8mQ2Y4khrF2w1d7fXmZQZvJBNzLmu0I9wfdkGRlXL6PlXCZlwbhSCCHNQAKnogov8UVqb1nwDjkeGSowyyP_Puv99wx16uElIbzFKFhiImjv8QKMJD-02FrVeU_dEz_-r1TveOmJ1bzdDHNlAaJCipKw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\t\"segment\" : \"\",\n\t\"reportDate\" : \"20180930\",\n\t\"metrics\" : \"campaignName,campaignId,adGroupName,adGroupId,clicks,cost,currency,asin,sku,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU,attributedUnitsOrdered7dSameSKU\"\n\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/productAds/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"productAds",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/keywords/report",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIMYGuM-lC97uX48YLVDPbM1DiN-yF2Ujl_863U53mKbzaLNFhl-WL1G87aW5Sl_pQmsYr5VaCKapY-crW3FbAxDwkfXr53QCXsa8zuMZtLRLqRyAECrW_AiqasXAu5H9IPrDQyDLa7yur0UufN6esANDyT3vFo5dPM7rzBnbh-MIdQvSsj4M8nK4oIsce-0tkNH-8lSMdIoJO10usV8f1QL6oxay9dV0yAjLcCE8XnsFDkfhpZDQiIDf3Sk-sLbCxcQc45oA-Zn3t6OOw58a17D7gdJ-KnecKv8nfmgDjPeZh0ZCJDNCtFIP_2vULSVQ6wDMakDtiDnWw9B0TPCIkYHzFgjozeCJlB1s3LFUNSgFAgROxgz2w6SYIgXH6_XpZKvWpC_TH9R2ezzL8mHOiubqAsHORoEx7R7jyf9VKJMLqiYBFFYpqlgc0d-mI-2G87qodkdRqMtsGqRKvitcLp8mQ2Y4khrF2w1d7fXmZQZvJBNzLmu0I9wfdkGRlXL6PlXCZlwbhSCCHNQAKnogov8UVqb1nwDjkeGSowyyP_Puv99wx16uElIbzFKFhiImjv8QKMJD-02FrVeU_dEz_-r1TveOmJ1bzdDHNlAaJCipKw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\t\"segment\" : \"query\",\n\t\"reportDate\" : \"20180930\",\n\t\"metrics\" : \"campaignName,campaignId,keywordText,adGroupId,adGroupName,currency,matchType,impressions,clicks,cost,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU,attributedUnitsOrdered7dSameSKU\"\n\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/keywords/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"keywords",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/keywords/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIIzY5ph6akKyd_3172EsfVrI4EzdGgUOqQEDwey5wztmre1zpIKk10Wp6Nlbw2xvW2jxFnPMiXobewh3mwf6TVitmg64LduHMMC6enFse_RLaYZJdpOvHheKYLVoI_vthXhWahiSsL9ooVhNQS9Uppl1ar7BKWF3FTkaRr9znW5KtQGJiBEH5a55O3cD5CiHzt0kMYhxSpHGgSbOIdlN5BmQnWX_ecP6gjZ9GU8mCrNQ_lf4k-XlzGufKBd5tgb_gHZtlTOGOqxsKs2QEXmcOh6hRVIsVnbwQiRRiGcfATRpeUa07O4M6Zo-z3hEc_qHr_gbr-r8W1Bd_yzEovzYVOHh9rMfBAb32w4FtK_EM_FHSJLujqY9gIX5N7faitWBspRPVmBj6hgI3G03NXHUofhl_7LHDqMuEahF4QTCn713DLFbJq9Mdk2a0dszAmGlTbH1NsGf98GfYV1UQyZIQoz87ILB0FuPecHuglGqF1TTk21p7vlof82L3-Jaq-frdtLWcavRfH5vlxinFWJGQR6Cz5Dgytg8GLhmBxx5cXD1qtW_GQ8Mw_ryv8k3cILBbG_69x_o9Kne4CPaJF8d1thmwbMnnQkynx6BWNscVr2CG3cAoIzmbpibkApGjxnfpbQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/keywords/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"keywords",
+						"extended"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/reports/amzn1.clicksAPI.v1.m1.5BACD03F.4be0dc40-a49d-4bf7-b809-42ce513933de/download/",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIAlxacyPwt9vidNy-4RD-ZewV7NyHD_LzcHvgbefLF5giwa8uUs2VWP50ri4znZlNLHpVZ4tZUBMciMNAPtl6EQOZ18VlOv94dAWeqxEusEDf5PM_qqkx264j3pMz9JPUnWq7qSVhnkX_5c0PbrfKlgCEdHIdxZ752-MY6-KgRsjVrdWUKk1B_rOH3L2LFOqvscE6kZHDlcQVn7GRJ-xYesTOaQWkbaFDtlETUIGsKt-hV3z3gFQtcHRd0GWSu_MNv-B0eMvdftvDUYhd31MjTcFIVgD5tDu9icbngocss3mHjXHD-HM4YOtzURYMi69-m_6BqWLkgoIHLRtsFMueZnyQ4LjBFk4t9c7HD78FFrGR87CVXT0Xd5UVUQSQ3TsOV4zsAqmpPh2XUoSsFKNFz-sGa_8V5xwoQRWAdkhXoJ36cGSOzd2q8R-3M2GX1q9PILIQC7GrCI7G4fe8Dv3Qxrp87shX2TrigPqsuNQS4smlIk9sv70Sf7DaY_vdBdEHwcrDqeKW1cl8B0mYLxzc7zqH3102GuyIOF7VEUQY5J-ONIEW3lFs62UHj9Gn746Q2mpIjcgCjap0A_rtbM7m9mn0ClvOdGEUC87emCaYyxtI4uN2EttthNe3I-K1q_7GA0",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/reports/amzn1.clicksAPI.v1.m1.5BD06EC8.fb3eb428-947c-477a-ba1e-3e2964933128/download/",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"reports",
+						"amzn1.clicksAPI.v1.m1.5BD06EC8.fb3eb428-947c-477a-ba1e-3e2964933128",
+						"download",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/productAds/report",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBINJIMici_eYw52n5KKfdNOkfCG1wc3SEQ9JyDdty87frnigKOjey4vpVtK3cY6AQ3O0V4qZPLVROdSkgXT8JnUOm9Q-43nq5ATw3UNrSnltl_2gdighFOZay2CdsfZqEDBIaUzYPK9preLz8IAX3w5JaBxtM7JA28IJcwFjwanC3CB_8hFTYU8mg6H-S358g9JkcjkAGYUOjqdVxaWDIQiX1HN5tGXwCIEeSD_8FULks9fRo9YlKK0A6IpzFPaP1uAyNH9y1I_iKsZeRQN1pNNlmxjuWUflJP6U1V0Net2u3GHKEBWvIKi1i5lcKKyYLsqjFlgDnl5mrWhTZc4KBR-VQ1ZI6PFLZ409BaVVJxuz4wL3cHCyCPHXtMcEwTfMet2CccixMCh6wlLxhgG2udWDQWBlz0IEyPLWKJCyOSvQE7C2iUK6ehiAbrUMAL31TTcJ90zqjHOEbBeLvoJDTBBAt9WjPtosbY065Xx8_qQl3MFwii0SIB1cwZAQBsyEgUg63sxCV0o0R5KY8PVxRgT7C5XYEYFnY3eQf9nVoRhYTsosjcyrP333xQVOin--fwYaUoj9Ye7p2tEDvdd504t2G4iYgAlq1EcyHliIDsDPr9w",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\t\"segment\" : \"\",\n\t\"reportDate\" : \"20180930\",\n\t\"metrics\" : \"campaignName,campaignId,adGroupName,adGroupId,keywordId,clicks,cost,currency,asin,sku,attributedConversions1d,attributedConversions7d,attributedConversions14d,attributedConversions30d,attributedConversions1dSameSKU,attributedConversions7dSameSKU,attributedConversions14dSameSKU,attributedConversions30dSameSKU,attributedUnitsOrdered1d,attributedUnitsOrdered7d,attributedUnitsOrdered14d,attributedUnitsOrdered30d,attributedSales1d,attributedSales7d,attributedSales14d,attributedSales30d,attributedSales1dSameSKU,attributedSales7dSameSKU,attributedSales14dSameSKU,attributedSales30dSameSKU\"\n\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/asins/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"asins",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/asins",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIKgN6hWkQFR3VxBnn0HwJhP-wHoNpeHi8BbUJezV1t6iZ5lNsAxc22sZAQsTf37hxjCQvVZHgNdypw03eM76Q1hfmSsSb4uZyMntjJ2aVRu6pJOt8Gc6c-jg4i-gfPs35ReszZ7Jqps77TkEBrK5vxufnXbjzcORfuYnKpNM8PnQfmEOP1Tx7HJp_QOXOaRWCzJQkM_nxOVMaUjhWRKUPCng2-C93uWgFqu3Ad1VfRSxnytP5VYkFX2jInH7DsS0JlMp4efa-OVDTouA9EPzcXoQlDcq_Kw0w-OoCQHsvBqOZF-aTPbNiImqRygE-DbR5uSX9GWvulbcu4inAqC7e9HE9dC7jBizOw0RpPjP-qbkzxWGlTUArSo6Vh7E5TCuH1NMWGSkMcb63fxaYvjQz3bI6LCLwyanPM1KcN6ybqWLC5QV3Lrv-E79XiJmVPv5jX4v-7jFLkviYms_SRhtwx80OQASOVPp0BpIuOOn9qV1cR5SGkIDnew9z31sG0kSqjea3Pb63O6Oldet6yUuxn3QRlj4pq4559cS3VERNlWnt0oza2WcXRUnyWSPdMbdKSvbe9ljJbXNHs_-VcLgpvS4ELsUolRNJCSBhGdwz9ieoZ1NcROFht96hIy0B-5tt6M",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"campaignType\" : \"sponsoredProducts\",\n\t\"segment\" : \"\",\n\t\"reportDate\" : \"20181103\",\n\t\"metrics\" : \"campaignName,campaignId,adGroupName,adGroupId,keywordId,keywordText,asin,otherAsin,sku,currency,matchType,attributedUnitsOrdered1dOtherSKU,attributedUnitsOrdered7dOtherSKU,attributedUnitsOrdered14dOtherSKU,attributedUnitsOrdered30dOtherSKU,attributedUnitsOrdered1dOtherSKU,attributedSales1dOtherSKU,attributedSales7dOtherSKU,attributedSales14dOtherSKU,attributedSales30dOtherSKU,attributedSales7dOtherSKU,attributedConversions7dOtherSKU\"\n\t\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/asins/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"asins",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "ANjnaqdPvodrehPLBtDz",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://app.ykamz.com/outh/authToken",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "208257577110975193121591895857093449424",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.amazon.com/ap/oa?client_id=amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8&scope=cpc_advertising:campaign_management&response_type=code&redirect_uri=https://app.ykamz.com/outh/authToken&state=2000003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.amazon.com/ap/oa?client_id=amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8&scope=cpc_advertising:campaign_management&response_type=code&redirect_uri=https://app.ykamz.com/outh/authToken&state=2000003",
+					"protocol": "https",
+					"host": [
+						"www",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"ap",
+						"oa"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8"
+						},
+						{
+							"key": "scope",
+							"value": "cpc_advertising:campaign_management"
+						},
+						{
+							"key": "response_type",
+							"value": "code"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://app.ykamz.com/outh/authToken"
+						},
+						{
+							"key": "state",
+							"value": "2000003"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/hsa/headlineSearch/report",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIPy8WELmQWHNeVwF_Qi250F0SEUhQ8XJVoLTS-2QElowngy4yiikN9xOj53DUyNRtSwTDPdRu3Yyg1VNffI80gUld1MFwsMojwU4lPAuj6pVvgHxfM8QvBiM2t7Wm3L_FiI7EjpEhwkP-Bxi8eShUbKRsb6ud4_rZNrKYru1gerwCS_RwlKOePC21SUBkFf9Pnod9vfhfiIh3sx0cByCUtGenz0HTXfnGgCs5z1IZZ2jF1TXXrZZ6K4cv60czI5Y684-UVdx7EJYzuMZdY_GelDCqS1iq2aqK_R4qvxgN4JvoG0toiB91G0WuNoiPDfZIS8Ot7KQ2h_axY3CatPxlIj6LqyZrrCP11C78_C77A0CAmhFq_NUhlhkHjWeN-5gqeS99x2YF6y3vDdvEKBzwmpl3DChc40KvpB_dej006qpJlnebz-Le5rDITy7Rx_t9zXDjF6FXeS7zMbdczhCAoSkJ2PTVlbN1EaYzMCi0cq6DRTV4PRgwRymRJQN2_h70q0_7DR9qEU6txAOimtzmmG1q4ntgyJOR7QuGSlDnIU6xlENbQ3rkhBp8p67VnYEjXOhOCJ2jewc-9lHByYY344CgJ53w2e5UDKkZPEoc_oSbw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/hsa/headlineSearch/report",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"hsa",
+						"headlineSearch",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api.amazon.com/v2/sp/productAds/extended?startIndex=11755",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIGKz3N8_zIqKQp4WyzwsNlb2AkRAVpv2gh7_d2EaAtkVFfokTkD66TfiFw_BvcZusdDHw8sQhzHY5-l3s_Fnm5evEMbGdBBeaclQnCqqcOPtmQ_kGodx65xcINwNPUGpi8La6XCDkipCIBKJMVCdCdZAH5SqKbG6IwV_N8B6tO5wByNSVj2k3_Gx7rEmQvbLBUfhh21rhqTtVYuMPd2qpOoqGVoP24y9SjJ5AedsEN31uIF8hHAQXvlDbXbQKSa-u1Txt6egKDBwS17yZB5foV3EW1wX4WI0lpZtKzmVok6ku6lnAkQpjR7bPCLVSmV_iHQBKYQLb6hRoTzDJRJlQZVGAx8sdEK8E_uss7lNwT0D8rBrYpe9PWVphBSXww68vyUjHjr-YW1jv3ViIJDQIDUMS4V_TmGt68m5MMX3mLJ1kdX5AjnlPYCGfZTLa7WppuPtzacBNlfLSVjhhu0KmzgAIokhlPZZ15dSd0M3WBLAcwm6RZSPSH9lLDCVIsPF-umPO2RROl9YdykQoch0Lr6sbFFqRQcBs0jUMCX5TqSeu02eVcYt9_ojoNCojNCHAa2Xuz_HtwdwweWG1CmU25jDlOQNe0kIN7tqByztJ5mKWOHXafJAS9KI2JXq5cJob8Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "913335469840997",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api.amazon.com/v2/sp/productAds/extended?startIndex=11755",
+					"protocol": "https",
+					"host": [
+						"advertising-api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"productAds",
+						"extended"
+					],
+					"query": [
+						{
+							"key": "startIndex",
+							"value": "11755"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api.amazon.com/v2/sp/keywords/extended?startIndex=20055",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIGKz3N8_zIqKQp4WyzwsNlb2AkRAVpv2gh7_d2EaAtkVFfokTkD66TfiFw_BvcZusdDHw8sQhzHY5-l3s_Fnm5evEMbGdBBeaclQnCqqcOPtmQ_kGodx65xcINwNPUGpi8La6XCDkipCIBKJMVCdCdZAH5SqKbG6IwV_N8B6tO5wByNSVj2k3_Gx7rEmQvbLBUfhh21rhqTtVYuMPd2qpOoqGVoP24y9SjJ5AedsEN31uIF8hHAQXvlDbXbQKSa-u1Txt6egKDBwS17yZB5foV3EW1wX4WI0lpZtKzmVok6ku6lnAkQpjR7bPCLVSmV_iHQBKYQLb6hRoTzDJRJlQZVGAx8sdEK8E_uss7lNwT0D8rBrYpe9PWVphBSXww68vyUjHjr-YW1jv3ViIJDQIDUMS4V_TmGt68m5MMX3mLJ1kdX5AjnlPYCGfZTLa7WppuPtzacBNlfLSVjhhu0KmzgAIokhlPZZ15dSd0M3WBLAcwm6RZSPSH9lLDCVIsPF-umPO2RROl9YdykQoch0Lr6sbFFqRQcBs0jUMCX5TqSeu02eVcYt9_ojoNCojNCHAa2Xuz_HtwdwweWG1CmU25jDlOQNe0kIN7tqByztJ5mKWOHXafJAS9KI2JXq5cJob8Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "913335469840997",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api.amazon.com/v2/sp/keywords/extended?startIndex=20055",
+					"protocol": "https",
+					"host": [
+						"advertising-api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"keywords",
+						"extended"
+					],
+					"query": [
+						{
+							"key": "startIndex",
+							"value": "20055"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIKsIIBRyoW8bLvONlF6Pzxnb4S4M1TJ54mwLA6pNuG79Psnf8KYQKJHoNjiY3hztNMoUVDWjSej9jONBAIZfWXqzK51nct_3WMxyIWc047Vk4TrY1FQMGPSzqyUEK-IlmUKOZSvSoL0JWBnU05HOoJaKcanz65yEDgcToXUTc-WzKAjGYYrkJiwmmN-Og_EuRTQfOuZZpOXMwPbIs0Sg77hl-y05fNoYavmpD7mkfOgxMJxIM-3P9lgm7DH0FthehCPfzRP_aX7XTTjtgYg9qXCJo_L4U4uKX7JCu2i8q3aYXtwNxIjwqdD47HkQsT3h2fPAroUb38AtjSdd2HAcc2Z4e0_ciLPd1Cyw03WeJBMbAzKOsdPPadXgBqPhd85GFKnpH6JT-bukj4FbCdSYaeXGJTuHUcINv3RZ-exaYwLAK5Y_UnjMcLCMUZ2vDlyVlN8evWTuNt_raCn9W8FjOAobEfWyBQATAPH9ZaLxvc5rPiy-KvtV8f9E3xcLkHhgCqZMfayc96DryBjiBjaaab9slkH6f2LgRsVbnAwI9gWsHWh3GnsW8utS3nTSxcjWc1J8itHXznbL_LxxompvgpgS",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/sp/campaigns/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIJLdNnKuMKvjmUqiti0EaDmRChbxFTjz2neTWrDfRmKDke3tYujLjJo7SASAsoU2vXTHC0LZeYz6_FS8q1EuIUjZ3fNSkt-LKLZPtlE114iYF5ENNfyoAY3wb7O3lY_A1r-l3eiVfccVXU1xeiHmBmwauv9rxL3M92Ybo7jGEVnYoSDyqf6UwiGLO6rNCauNGAoa7m7H9dphpwzxBB4njg0ynMpJhZyFY262k12fJYWsRdMJSp_PaCCsue5Xc0p9J8MsJpORvWh9AaFUGmEc2sOk1ZTeYEjoAlRL6OWov2NWahm4BEMJNmkxi66DH6fqtgfVN77bE7HCSdogEISM2PF3sadNjrelV6nYMceBSbxU1jahUI1diTp2twT_EFko-FFdYf_Hac2lbrJEjM-9_z8g9C1D8yluFKmciPLwzAY-mnn1anHaF1taubOlTbZO4sM4hHwUBTF2slJZ549DKMv1M---n0b164i2umGcRIYITuwFyYLiknYd6-22nM5Mo-XLmpdCE6eSISaGTN43j9peFlcGCnMXd_ZXhS5xRec3EusKwyhM71V1RdzjCyEV15pPSieeSZfyD1UrPDnFTQGOqMso2xHJXBF5MmInjUrkhg",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/sp/campaigns/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"campaigns",
+						"extended"
+					]
+				},
+				"description": "GET最多属性的全部广告活动列表"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/sp//campaigns/{campaignId}",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIN91dxiaNKh9ARltWyFG_GYFC7xDmMwE1SKtYFZ3i5DXz8hTJ2QgMLDEMGML7yLH7ugbxdY3q1SZqioHpEPlb4XIqjgddrinoGvjygg90PDgP6kymOJSiu1-MPJxg1HLj_gDcD3Kf0IfTwfYQDj7Qpvw4iQlnX4MIhpnoMaU89twJX2pW_FFL-Vf08AMU-v-WSvS8K6640RgyAi5M4tl-M2u2HScFMevgQkzMbBBg7bZ5xBLHX5JQ7g7i4Sdyj-K-QqtrxK-slipOzD4hhUL-eADDoWFHUDsNAzwdTgGOdo69p6F7VbcxW7TOwBWZzO51B9d-dMyMGE3pifVY3cixgVyJ0bnd-HpARQq6y_4sU_6oINTIWJM7pChFsxS_WPoEWV6ERqnOSbXA5Z4-znuGbT7qdjB86etCPb2SY2_ccUDtCURj0_A2s3gZ7sclUodmiCt-dW02zKx2VaNpFSuOoRsr1EmCWYciu5nmBLQMk1gUB85nSShL8h2fn-TEdJhWJDbMao_zg1axTYEETDKjMwCcGxPuWcGvJe77VkUaohat-RwhID-Coh8Y1P-ojsR5ON-PdpIEzWB7t4bfE7JOflpce_YUoElRQz1k55UU5OAFQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/sp//campaigns/{campaignId}",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"",
+						"campaigns",
+						"{campaignId}"
+					]
+				},
+				"description": "将广告活动设为已存档，已存档的广告活动无法再次开启。"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/sp/campaigns/extended?startIndex=0&count=3",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIN91dxiaNKh9ARltWyFG_GYFC7xDmMwE1SKtYFZ3i5DXz8hTJ2QgMLDEMGML7yLH7ugbxdY3q1SZqioHpEPlb4XIqjgddrinoGvjygg90PDgP6kymOJSiu1-MPJxg1HLj_gDcD3Kf0IfTwfYQDj7Qpvw4iQlnX4MIhpnoMaU89twJX2pW_FFL-Vf08AMU-v-WSvS8K6640RgyAi5M4tl-M2u2HScFMevgQkzMbBBg7bZ5xBLHX5JQ7g7i4Sdyj-K-QqtrxK-slipOzD4hhUL-eADDoWFHUDsNAzwdTgGOdo69p6F7VbcxW7TOwBWZzO51B9d-dMyMGE3pifVY3cixgVyJ0bnd-HpARQq6y_4sU_6oINTIWJM7pChFsxS_WPoEWV6ERqnOSbXA5Z4-znuGbT7qdjB86etCPb2SY2_ccUDtCURj0_A2s3gZ7sclUodmiCt-dW02zKx2VaNpFSuOoRsr1EmCWYciu5nmBLQMk1gUB85nSShL8h2fn-TEdJhWJDbMao_zg1axTYEETDKjMwCcGxPuWcGvJe77VkUaohat-RwhID-Coh8Y1P-ojsR5ON-PdpIEzWB7t4bfE7JOflpce_YUoElRQz1k55UU5OAFQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/sp/campaigns/extended?startIndex=6&count=3",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"campaigns",
+						"extended"
+					],
+					"query": [
+						{
+							"key": "startIndex",
+							"value": "6"
+						},
+						{
+							"key": "count",
+							"value": "3"
+						},
+						{
+							"key": "stateFilter",
+							"value": "{stateFilter}\n    ",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "{name}\n    ",
+							"disabled": true
+						},
+						{
+							"key": "campaignIdFilter",
+							"value": "83430470294806,7977082548176",
+							"disabled": true
+						}
+					]
+				},
+				"description": "带参数的列表请求"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/sp/adGroups/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIJLdNnKuMKvjmUqiti0EaDmRChbxFTjz2neTWrDfRmKDke3tYujLjJo7SASAsoU2vXTHC0LZeYz6_FS8q1EuIUjZ3fNSkt-LKLZPtlE114iYF5ENNfyoAY3wb7O3lY_A1r-l3eiVfccVXU1xeiHmBmwauv9rxL3M92Ybo7jGEVnYoSDyqf6UwiGLO6rNCauNGAoa7m7H9dphpwzxBB4njg0ynMpJhZyFY262k12fJYWsRdMJSp_PaCCsue5Xc0p9J8MsJpORvWh9AaFUGmEc2sOk1ZTeYEjoAlRL6OWov2NWahm4BEMJNmkxi66DH6fqtgfVN77bE7HCSdogEISM2PF3sadNjrelV6nYMceBSbxU1jahUI1diTp2twT_EFko-FFdYf_Hac2lbrJEjM-9_z8g9C1D8yluFKmciPLwzAY-mnn1anHaF1taubOlTbZO4sM4hHwUBTF2slJZ549DKMv1M---n0b164i2umGcRIYITuwFyYLiknYd6-22nM5Mo-XLmpdCE6eSISaGTN43j9peFlcGCnMXd_ZXhS5xRec3EusKwyhM71V1RdzjCyEV15pPSieeSZfyD1UrPDnFTQGOqMso2xHJXBF5MmInjUrkhg",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api.amazon.com/v2/sp/adGroups/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"adGroups",
+						"extended"
+					]
+				},
+				"description": "广告组列表"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/adGroups/60727844825432/suggested/keywords",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIC2EX5fWWDZ58TxyAgfom7Oh_lYyNj1YR1gXz3R_Faaqvcf_K7bUXFkNzsBVZ7HcHNRTcsdxaTsEG5wIWustTXypsMNIj4JmMGeoV7qONxnoLLez1WcUpucsZSxRpIYCggS2ZsgH6u_idWvOZ7m0lDNtndksud3ABglX06TuifDzUDMtkiC0r-E2Cg1FqXqqGTtAxhvhdUDSDQmjkL7DeltZIEZeJ4AowzQarVVOXYHYQhDAbuclp7SAEL-5h9ultd_EEssSRwL2JciFu4ZHLuq1sIyAjMgBKIazyfDgvdXIBsRW1tG1gJPmYk94AEACSi7ZFqlLsWgWmYKVLB82yV6h7Hyl17wfZWIhn1Y5MQ6X-JC64uYd5t35Dvi0ue6AfGeZrvY_373JefnqJr6QdhRSqJORDWYe0Neuo9o2kaLMGfVKueWF4SjeEhTwGMWaJrButMowqUb3fBUTG_TKxRRbMYVW0z7Ldi5BFkXXsvmg0952K53tZuSzOme9ZgYyy5BDFnK_nX8Q6GGdpmee05eUzFa9ravTPLXjJ3tMKLV9LdUGMnRnbfrmX_P8_uB-lcBSEN_YJDFBSqGVtuNYT5okMmJ1_02rySQVz2p7Wh8c0Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/adGroups/60727844825432/suggested/keywords",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"adGroups",
+						"60727844825432",
+						"suggested",
+						"keywords"
+					]
+				},
+				"description": "广告组建议的关键词，已归档的广告组无法获取建议的关键词"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/adGroups/60727844825432/suggested/keywords/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIC2EX5fWWDZ58TxyAgfom7Oh_lYyNj1YR1gXz3R_Faaqvcf_K7bUXFkNzsBVZ7HcHNRTcsdxaTsEG5wIWustTXypsMNIj4JmMGeoV7qONxnoLLez1WcUpucsZSxRpIYCggS2ZsgH6u_idWvOZ7m0lDNtndksud3ABglX06TuifDzUDMtkiC0r-E2Cg1FqXqqGTtAxhvhdUDSDQmjkL7DeltZIEZeJ4AowzQarVVOXYHYQhDAbuclp7SAEL-5h9ultd_EEssSRwL2JciFu4ZHLuq1sIyAjMgBKIazyfDgvdXIBsRW1tG1gJPmYk94AEACSi7ZFqlLsWgWmYKVLB82yV6h7Hyl17wfZWIhn1Y5MQ6X-JC64uYd5t35Dvi0ue6AfGeZrvY_373JefnqJr6QdhRSqJORDWYe0Neuo9o2kaLMGfVKueWF4SjeEhTwGMWaJrButMowqUb3fBUTG_TKxRRbMYVW0z7Ldi5BFkXXsvmg0952K53tZuSzOme9ZgYyy5BDFnK_nX8Q6GGdpmee05eUzFa9ravTPLXjJ3tMKLV9LdUGMnRnbfrmX_P8_uB-lcBSEN_YJDFBSqGVtuNYT5okMmJ1_02rySQVz2p7Wh8c0Q",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/adGroups/60727844825432/suggested/keywords/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"adGroups",
+						"60727844825432",
+						"suggested",
+						"keywords",
+						"extended"
+					]
+				},
+				"description": "广告组建议的关键词,已归档的广告组无法获取建议的关键词,extended请求"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v1/snapshots/amzn1.clicksAPI.v1.p1.5BEE7351.8fcca14e-429f-4051-ba05-81a29f95ac5a/download",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIHdnRXNR81fP9XME3UIxUw6HHJ_tVzgF9wRTEqdO9rqtt-GuK5ui-RjFwdeTepfENjcuQjIWeDND-YRbEwA9pVichnpgoBdfGtc7sZ35ak9lRFjPFk16HjcA6qRFemkIHPkneLeKhNCZJSKcQlkrepJnY5nrpNW5lEoASK9aj_Pv7hE-_PnLEF6bXRYGlpZ9N7nR4Wa7z1A8wSCUc1MnaqYZhPHWD4lrP6fiWWr0-F4lNF305AHxc96hFPRQg8681PBwMamgnKVescTf58PzU22e79g1opCAWuBYtLC5SMFmCwN1Q7gSOWIeowzqUlXBbhgOaHC8RGly9CQtezK036Ve4eIxmaEPy_2ZZII-AUirzkijt5RGJ9bQQy8nq4dFEfbtMSem08Dte2N7uVu3BDkZMNhoN7dr_RKwC5RE3WqHNrwKxn6PurhGAxgLUoWZXRP_EXDQQCOonUK6kFZMx2N7kR6WFS6_jOUDe1vKSj0tdMamwkcBmoA2-VDJTkyNun1k6_ixX0JaMQgQicEjjXYXBTEp9OzL2YGBWOwUTMaD0EVhsLFSKLcQLjHK85kX7ihu4vkebt3WiuMwXa1DHr-ci7wAUIIaRidzucTYcxKY6A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v1/snapshots/amzn1.clicksAPI.v1.p1.5BEE7351.8fcca14e-429f-4051-ba05-81a29f95ac5a/download",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"snapshots",
+						"amzn1.clicksAPI.v1.p1.5BEE7351.8fcca14e-429f-4051-ba05-81a29f95ac5a",
+						"download"
+					]
+				},
+				"description": "快照下载路径请求,307重定向生成浏览器可直接访问的地址，直接浏览器页面返回json数据，该地址30秒有效期"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/snapshots/amzn1.clicksAPI.v1.p1.5BEE7351.8fcca14e-429f-4051-ba05-81a29f95ac5a",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIHdnRXNR81fP9XME3UIxUw6HHJ_tVzgF9wRTEqdO9rqtt-GuK5ui-RjFwdeTepfENjcuQjIWeDND-YRbEwA9pVichnpgoBdfGtc7sZ35ak9lRFjPFk16HjcA6qRFemkIHPkneLeKhNCZJSKcQlkrepJnY5nrpNW5lEoASK9aj_Pv7hE-_PnLEF6bXRYGlpZ9N7nR4Wa7z1A8wSCUc1MnaqYZhPHWD4lrP6fiWWr0-F4lNF305AHxc96hFPRQg8681PBwMamgnKVescTf58PzU22e79g1opCAWuBYtLC5SMFmCwN1Q7gSOWIeowzqUlXBbhgOaHC8RGly9CQtezK036Ve4eIxmaEPy_2ZZII-AUirzkijt5RGJ9bQQy8nq4dFEfbtMSem08Dte2N7uVu3BDkZMNhoN7dr_RKwC5RE3WqHNrwKxn6PurhGAxgLUoWZXRP_EXDQQCOonUK6kFZMx2N7kR6WFS6_jOUDe1vKSj0tdMamwkcBmoA2-VDJTkyNun1k6_ixX0JaMQgQicEjjXYXBTEp9OzL2YGBWOwUTMaD0EVhsLFSKLcQLjHK85kX7ihu4vkebt3WiuMwXa1DHr-ci7wAUIIaRidzucTYcxKY6A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/snapshots/amzn1.clicksAPI.v1.p1.5BEE7351.8fcca14e-429f-4051-ba05-81a29f95ac5a",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"snapshots",
+						"amzn1.clicksAPI.v1.p1.5BEE7351.8fcca14e-429f-4051-ba05-81a29f95ac5a"
+					]
+				},
+				"description": "由快照id去获取下载路径的请求"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/campaigns/snapshot",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIHdnRXNR81fP9XME3UIxUw6HHJ_tVzgF9wRTEqdO9rqtt-GuK5ui-RjFwdeTepfENjcuQjIWeDND-YRbEwA9pVichnpgoBdfGtc7sZ35ak9lRFjPFk16HjcA6qRFemkIHPkneLeKhNCZJSKcQlkrepJnY5nrpNW5lEoASK9aj_Pv7hE-_PnLEF6bXRYGlpZ9N7nR4Wa7z1A8wSCUc1MnaqYZhPHWD4lrP6fiWWr0-F4lNF305AHxc96hFPRQg8681PBwMamgnKVescTf58PzU22e79g1opCAWuBYtLC5SMFmCwN1Q7gSOWIeowzqUlXBbhgOaHC8RGly9CQtezK036Ve4eIxmaEPy_2ZZII-AUirzkijt5RGJ9bQQy8nq4dFEfbtMSem08Dte2N7uVu3BDkZMNhoN7dr_RKwC5RE3WqHNrwKxn6PurhGAxgLUoWZXRP_EXDQQCOonUK6kFZMx2N7kR6WFS6_jOUDe1vKSj0tdMamwkcBmoA2-VDJTkyNun1k6_ixX0JaMQgQicEjjXYXBTEp9OzL2YGBWOwUTMaD0EVhsLFSKLcQLjHK85kX7ihu4vkebt3WiuMwXa1DHr-ci7wAUIIaRidzucTYcxKY6A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{                               \r\n\"campaignType\":\"sponsoredProducts\",  \r\n\"stateFilter\":\"enabled\"     \r\n}"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/campaigns/snapshot",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"campaigns",
+						"snapshot"
+					]
+				},
+				"description": "获取快照id"
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/adGroups/73543219454792/bidRecommendations",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIHdnRXNR81fP9XME3UIxUw6HHJ_tVzgF9wRTEqdO9rqtt-GuK5ui-RjFwdeTepfENjcuQjIWeDND-YRbEwA9pVichnpgoBdfGtc7sZ35ak9lRFjPFk16HjcA6qRFemkIHPkneLeKhNCZJSKcQlkrepJnY5nrpNW5lEoASK9aj_Pv7hE-_PnLEF6bXRYGlpZ9N7nR4Wa7z1A8wSCUc1MnaqYZhPHWD4lrP6fiWWr0-F4lNF305AHxc96hFPRQg8681PBwMamgnKVescTf58PzU22e79g1opCAWuBYtLC5SMFmCwN1Q7gSOWIeowzqUlXBbhgOaHC8RGly9CQtezK036Ve4eIxmaEPy_2ZZII-AUirzkijt5RGJ9bQQy8nq4dFEfbtMSem08Dte2N7uVu3BDkZMNhoN7dr_RKwC5RE3WqHNrwKxn6PurhGAxgLUoWZXRP_EXDQQCOonUK6kFZMx2N7kR6WFS6_jOUDe1vKSj0tdMamwkcBmoA2-VDJTkyNun1k6_ixX0JaMQgQicEjjXYXBTEp9OzL2YGBWOwUTMaD0EVhsLFSKLcQLjHK85kX7ihu4vkebt3WiuMwXa1DHr-ci7wAUIIaRidzucTYcxKY6A",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/adGroups/73543219454792/bidRecommendations",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"adGroups",
+						"73543219454792",
+						"bidRecommendations"
+					]
+				},
+				"description": "广告组出价建议。\nBid recommendation for AD group in Manual Targeted Campaign is not supported."
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api-test.amazon.com/v2/sp/adGroups",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBIDiI5q7cXN_MbT8g4XpHaui9iOR2bbT_uPffv-AvtEvGnOpD-DLv0jafYFFofMzyLk8yh7fLTegzQC0x0uZIDA9ls6zdWkaVGEzTJiCFGbnkv9_gq234XgTu6gpfzttSJH2j3X2iQfblZSr0Jga3DvbEiyGLlScetnOzwSWEtnPIVqoeVQ4BObL7WPv2Ne4H5I3FRDG6IC31W1Ow0lYLjwCSFfZCBJRPKvpcYcM6UOK5k6cTxqIKYEVnr-x9CrF5WbBBfe4aHBWBVsNITZ5yvT5dePRoeMOTj6DAyoWi-6jWkkRfpBl2CVJRFHMYok-qpbEfh-lc7eloa1Znn0dDogsZznCMXmjiYNZzqBdx_yIcPn6mD7aKKbMbuB3ifZuMUFd5R3T-2QianJaBbk7I307LfTmP5MoK9tCjeFyM_ijO17E08ZHDtnBVuyIh7fMAvSYbP1eUX02mxRsubvHJkDJtJU9iiErmzX4rMEmiSxeKpFrc04UwVXe2MejP6qPeZEwI-rTMohF9ZM1ZjuNqDJdkQBv7mbPRBaAmviaJKsHY1LSsmMXVCIQDREX65HskNjVmLY1qZufGW_E0INd-KU_7HqoL14kIthCiIzOyli6kvEGfxbvesIVVzmIIOFY79eY",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-ClientId",
+						"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+						"type": "text"
+					},
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "4406898251177968",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n    \"adGroupId\": 73543219454792,\n\n    \"name\": \"12312346sdafd\",\n\n    \"defaultBid\" : \"2.56\",\n  \n    \"state\": \"enabled\"\n\n}]"
+				},
+				"url": {
+					"raw": "https://advertising-api-test.amazon.com/v2/sp/adGroups",
+					"protocol": "https",
+					"host": [
+						"advertising-api-test",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v2",
+						"sp",
+						"adGroups"
+					]
+				},
+				"description": "更改广告组属性信息"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Customer/outh/authToken?state=1526282076,2000001003&code=ANcQQklhTyTZhTakIARy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "state",
+							"value": "1529569972,2000001003",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "code",
+							"value": "ANCXfUHTiVbFvSaJMFXpI",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/Customer/outh/authToken?state=1526282076,2000001003&code=ANcQQklhTyTZhTakIARy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Customer",
+						"outh",
+						"authToken"
+					],
+					"query": [
+						{
+							"key": "state",
+							"value": "1526282076,2000001003"
+						},
+						{
+							"key": "code",
+							"value": "ANcQQklhTyTZhTakIARy"
+						}
+					]
+				},
+				"description": "bb"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.amazon.com/auth/o2/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "amzn1.application-oa2-client.9ddb59a397324d1c96b5c2c15baf39e8",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "Atzr|IwEBIBDbmqCWPfoAjy5siEOO2sbeYaPjBrk7SxyeMZ4geE46fCvyFoz753pJYjBwXxPXXkP9n5jgI0V7LH6T8hYpvngLJZ2n3cbwCA-4QjOd1G6kqPupCliEeLK4xdjrlHKgHZ4AWkxoTTq8nWWh_Yugl7rmldOUuj2F2EyecOIvui0jQo0FLDysuqAi_GlApg_eCSMGdqKRkKDTVs7BCfhUiH16iNtfjoGV-9SjrsZ164THr-6y4EySWQftgauLLI7ITofN5PoMkVFmeIauSQM9IAzFDbq3aG6qimBviwrJpXbjrJZ8cHDRnfEc4fCG8g34mJykiXi2emgn1NlVeLM66_kNAPCuN0xkGnYKDftGEcuTbZXrBXJ3dYk1ZdyF_hQUJN_mi2K0WGo8Y45z9UbxGkwmj7-Y5qZ8nhaxU9kPtKJveUhUW1Sk5hnxbpfDeTll6R9BgL-xoMsXy5cm9KGQK_rlZpImSmnFtx8kQKUoi3ICBgv6rRDSqmb1ki-qfQ7XC_5uGRpO7Sei1I-GZbyB5m_1cFI7nq8iptgVl0ouTznq1zgg5F6bZjwYchXTpb0faBY6DTX8_wO87SWU1OyKD_nT",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "c53f348f4fbbe606e5f614b25df8a38df0d8ac2ac25cd527bb05c569ed5a66ab",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.amazon.com/auth/o2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"auth",
+						"o2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api.amazon.com/v1/asins/B07F2M21QK/suggested/keywords/",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBINxnf738xsWmHDY1Ldz9_COhCFv-mxcYtyYidCeETpqA1yTFueCK8V1YudCQkUdrFFdTtpaWbfhElwSWgOIgn7QesSicWxqAd2ec01SIMGCR4WAnK6b08eFAEoHaAkKa-kdK2y4BLRtqK5g5yx_nH0m-qsn_07z_JLBqJNeFaIxQskSR7L8sWABYlsFSl7hEOeuir8cpyua7kfQpMTr2euv55E7jA1IcgRawYLnQP8jHqLhFpqFWYSHgkeYxiT7q_01Ti2vsfK4zRXZpxJ138pnz_MgZ3g_n4o299geY61ZaTZNpTWJ59tYPCnnMYFUSaSPy_jXJrU6LL3qp7u9qBkehf9SJ8plYxje1n_uh5sA1oECQm4v5wIwIBIFuoQbwgCsDTyciwEkyJyf2-1K1_qnbDavfHboWPPQeKXDL86bvkTLaezyRLQTbL7CniysuLp5geiiFRSuqmGaVYUrRnq1LQGtFRgF8ZEcNJEzlS_mRCkTH_jkP6pe1X0ZKFH2Se_0B9hwXgt7yi3xDy_-Y1PzSuRKRbak3Dw2_86SGYXxSg6KT1GUleBVbQNMMYnF165geishCqLqxqNu2UIORdkUX9fxkPzMqLciXopB_eD7WPQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "204897611698354",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api.amazon.com/v1/asins/B07F2M21QK/suggested/keywords/",
+					"protocol": "https",
+					"host": [
+						"advertising-api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"asins",
+						"B07F2M21QK",
+						"suggested",
+						"keywords",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://advertising-api.amazon.com/v1/adGroups/91796209437875/suggested/keywords/extended",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "Atza|IwEBINxnf738xsWmHDY1Ldz9_COhCFv-mxcYtyYidCeETpqA1yTFueCK8V1YudCQkUdrFFdTtpaWbfhElwSWgOIgn7QesSicWxqAd2ec01SIMGCR4WAnK6b08eFAEoHaAkKa-kdK2y4BLRtqK5g5yx_nH0m-qsn_07z_JLBqJNeFaIxQskSR7L8sWABYlsFSl7hEOeuir8cpyua7kfQpMTr2euv55E7jA1IcgRawYLnQP8jHqLhFpqFWYSHgkeYxiT7q_01Ti2vsfK4zRXZpxJ138pnz_MgZ3g_n4o299geY61ZaTZNpTWJ59tYPCnnMYFUSaSPy_jXJrU6LL3qp7u9qBkehf9SJ8plYxje1n_uh5sA1oECQm4v5wIwIBIFuoQbwgCsDTyciwEkyJyf2-1K1_qnbDavfHboWPPQeKXDL86bvkTLaezyRLQTbL7CniysuLp5geiiFRSuqmGaVYUrRnq1LQGtFRgF8ZEcNJEzlS_mRCkTH_jkP6pe1X0ZKFH2Se_0B9hwXgt7yi3xDy_-Y1PzSuRKRbak3Dw2_86SGYXxSg6KT1GUleBVbQNMMYnF165geishCqLqxqNu2UIORdkUX9fxkPzMqLciXopB_eD7WPQ",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Amazon-Advertising-API-Scope",
+						"value": "204897611698354",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://advertising-api.amazon.com/v1/adGroups/91796209437875/suggested/keywords/extended",
+					"protocol": "https",
+					"host": [
+						"advertising-api",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"v1",
+						"adGroups",
+						"91796209437875",
+						"suggested",
+						"keywords",
+						"extended"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

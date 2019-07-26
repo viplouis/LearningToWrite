@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c859dc2f-0fc6-45f3-80a3-7ca329f5ec15",
+		"name": "智慧门店 - 琨大端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeHandover/storeHandoverList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "kunda",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeHandover/storeHandoverList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"storeHandoverList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeHandover/acceptAudit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "kunda",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 4\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeHandover/acceptAudit",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"acceptAudit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeHandover/rejectAudit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "kunda",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 4\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeHandover/rejectAudit",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeHandover",
+						"rejectAudit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
