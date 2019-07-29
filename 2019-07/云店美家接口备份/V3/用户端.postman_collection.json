@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "14823738-a08c-45ab-963c-9d5aaf6c5644",
+		"name": "用户端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "用户 - 订单 - 付款（立即购买，购物车子单）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderId\": \"O400000000040\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/payment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户 - 订单 - 立即购买（下单）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"skuId\": 13,\n    \"num\": 1,\n    \"specification\": [\n        {\n            \"param\": \"尺寸\",\n            \"value\": \"100*100\"\n        },\n        {\n            \"param\": \"厚度\",\n            \"value\": \"1.88\"\n        }\n    ],\n    \"attr\": [\n        {\n            \"values\": [\n                \"黄色\"\n            ],\n            \"attr\": \"外色\"\n        }\n    ],\n    \"addressId\": 1,\n    \"message\": \"测试超时自动取消订单\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/buyNow",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"buyNow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户 - 订单 - 取消订单",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderId\": \"O400000000000022\",\n    \"cancelReason\": 3\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/cancelOrder",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"cancelOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户 - 订单 -根据订单id查询订单详情",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderId\": \"O400000000040\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/getOrderById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"getOrderById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户 - 订单 - 我的订单列表（支持根据状态查询，分页）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": 1,\n    \"page\": 1,\n    \"limit\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/myOrders",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"myOrders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "e6971ebe-158c-41bb-8371-835ae0aaaa5f",
+		"name": "门店端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "门店- 订单 - 我的订单列表（支持根据状态查询，分页）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": 1,\n    \"page\": 1,\n    \"limit\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/myOrders",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"myOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 根据id直接设置默认运费模板",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/updateDefaultTemplate",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"updateDefaultTemplate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 前往新增运费模板页",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/goShippingTemplate",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"goShippingTemplate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 查询运费模板列表",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/getShippingTemplateList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"getShippingTemplateList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 删除运费模板",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 23\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/deleteShippingTemplate",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"deleteShippingTemplate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 更新运费模板",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"测试更新第一个模板\",\n    \"shippingRange\": 2,\n    \"valuationModel\": 1,\n    \"firstPiece\": 1,\n    \"firstAmount\": 10.05,\n    \"secondPiece\": 1,\n    \"secondAmount\": 5,\n    \"isDefault\": 1,\n    \"cityList\": [\n        {\n            \"type\": 1,\n            \"checked\": false,\n            \"id\": \"210000\",\n            \"pid\": \"0\",\n            \"name\": \"辽宁省\"\n        },\n        {\n            \"id\": \"210100\",\n            \"pid\": \"210000\",\n            \"name\": \"沈阳市\",\n            \"checked\": false,\n            \"type\": 2\n        },\n        {\n            \"id\": \"210200\",\n            \"pid\": \"210000\",\n            \"name\": \"大连市\",\n            \"checked\": false,\n            \"type\": 2\n        },\n        {\n            \"id\": \"210300\",\n            \"pid\": \"210000\",\n            \"name\": \"鞍山市\",\n            \"checked\": false,\n            \"type\": 2\n        },\n        {\n            \"id\": \"210400\",\n            \"pid\": \"210000\",\n            \"name\": \"抚顺市\",\n            \"checked\": false,\n            \"type\": 2\n        },\n        {\n            \"id\": \"210500\",\n            \"pid\": \"210000\",\n            \"name\": \"本溪市\",\n            \"checked\": false,\n            \"type\": 2\n        },\n        {\n            \"id\": \"210600\",\n            \"pid\": \"210000\",\n            \"name\": \"丹东市\",\n            \"checked\": false,\n            \"type\": 2\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/updateShippingTemplate",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"updateShippingTemplate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 根据id查询运费模板",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 27\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/getShippingTemplateById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"getShippingTemplateById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 新增运费模板",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"测试模板777\",\n    \"shippingRange\": 1,\n    \"valuationModel\": 1,\n    \"firstPiece\": 1,\n    \"firstAmount\": 10.05,\n    \"secondPiece\": 1,\n    \"secondAmount\": 5,\n    \"isDefault\": 1,\n    \"cityList\": []\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/addShippingTemplate",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"addShippingTemplate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店设置 门店信息更新接口 v2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeName\": \"圣保罗桂城店1\",\n    \"storeBrand\": \"马特斯门窗\",\n    \"introduction\": \"1,2,3,4\",\n    \"taobaoLink\": null,\n    \"contactNumber\": \"111321\",\n    \"storekeeperWechat\": \"111321\",\n    \"establishmentTime\": \"2019-5-28\",\n    \"logoUrl\": \"11111\",\n    \"bannerUrl\": \"1111,1111\",\n    \"jdLink\": null,\n    \"brandUrl\": \"11111\",\n    \"auditer\": null,\n    \"lat\": null,\n    \"lng\": null,\n    \"vrUrl\": \"1\",\n    \"storeDes\": \"马特斯门窗1\",\n    \"abbreviation\": \"云店美家1\",\n    \"storeAddress\": \"千灯湖222222\",\n    \"isVr\": 1,\n    \"storeIndustry\": \"玻璃\",\n    \"locateAddress\": \"广东省佛山市南海区桂澜北路28号\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v2/store/updateStore",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v2",
+						"store",
+						"updateStore"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
