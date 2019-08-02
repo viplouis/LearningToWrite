@@ -1,0 +1,1 @@
+select *from goods where goods_code ='9990300100000030001' for update ;

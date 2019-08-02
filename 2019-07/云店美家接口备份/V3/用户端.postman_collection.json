@@ -1,30 +1,68 @@
 {
 	"info": {
-		"_postman_id": "14823738-a08c-45ab-963c-9d5aaf6c5644",
+		"_postman_id": "0ce8cfa7-6028-4cae-90dd-997bd01d7739",
 		"name": "用户端",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "用户 - 订单 - 付款（立即购买，购物车子单）",
+			"name": "用户 - 订单 - 立即购买（确定）",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					},
 					{
 						"key": "token",
-						"value": "zhang",
-						"type": "text"
+						"type": "text",
+						"value": "zhang"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"orderId\": \"O400000000040\"\n}"
+					"raw": "{\n    \"skuId\": 79,\n    \"num\": 1,\n    \"attr\": \"黑色\",\n    \"addressId\": 5\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/confirmPurchase",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"confirmPurchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "用户 - 订单 - 立即购买（立即支付）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "zhang"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"skuId\": 79,\n    \"num\": 1,\n    \"attr\": \"黑色\",\n    \"addressId\": 5\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{port}}/store_api/v3/order/payment",
@@ -44,7 +82,7 @@
 			"response": []
 		},
 		{
-			"name": "用户 - 订单 - 立即购买（下单）",
+			"name": "用户 - 订单 - 立即购买（二次支付）",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -62,10 +100,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"skuId\": 13,\n    \"num\": 1,\n    \"specification\": [\n        {\n            \"param\": \"尺寸\",\n            \"value\": \"100*100\"\n        },\n        {\n            \"param\": \"厚度\",\n            \"value\": \"1.88\"\n        }\n    ],\n    \"attr\": [\n        {\n            \"values\": [\n                \"黄色\"\n            ],\n            \"attr\": \"外色\"\n        }\n    ],\n    \"addressId\": 1,\n    \"message\": \"测试超时自动取消订单\"\n}"
+					"raw": "{\n\t\"orderId\" : \"O400190\"\n}"
 				},
 				"url": {
-					"raw": "http://{{host}}:{{port}}/store_api/v3/order/buyNow",
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/payment",
 					"protocol": "http",
 					"host": [
 						"{{host}}"
@@ -75,7 +113,7 @@
 						"store_api",
 						"v3",
 						"order",
-						"buyNow"
+						"payment"
 					]
 				}
 			},
@@ -158,25 +196,25 @@
 			"response": []
 		},
 		{
-			"name": "用户 - 订单 - 我的订单列表（支持根据状态查询，分页）",
+			"name": "用户 - 订单 - 我的订单列表（支持根据状态查询,订单号搜索 分页）",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					},
 					{
 						"key": "token",
-						"value": "zhang",
-						"type": "text"
+						"type": "text",
+						"value": "zhang"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"status\": 1,\n    \"page\": 1,\n    \"limit\": 2\n}"
+					"raw": "{\n    \"status\": 1,\n    \"page\": 1,\n    \"limit\": 100\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{port}}/store_api/v3/order/myOrders",
