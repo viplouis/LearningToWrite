@@ -24,7 +24,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"skuId\": 79,\n    \"num\": 1,\n    \"attr\": \"黑色\",\n    \"addressId\": 5\n}"
+					"raw": "{\n    \"skuId\": 79,\n    \"num\": 3,\n    \"attr\": \"黑色\",\n    \"addressId\": 5\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{port}}/store_api/v3/order/confirmPurchase",
@@ -62,7 +62,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"skuId\": 79,\n    \"num\": 1,\n    \"attr\": \"黑色\",\n    \"addressId\": 5\n}"
+					"raw": "{\n    \"skuId\": 79,\n    \"num\": 5,\n    \"attr\": \"黑色\",\n    \"addressId\": 5\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{port}}/store_api/v3/order/payment",
@@ -132,16 +132,16 @@
 					},
 					{
 						"key": "token",
-						"value": "zhang",
+						"value": "kunda",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"orderId\": \"O400000000000022\",\n    \"cancelReason\": 3\n}"
+					"raw": "{\n    \"orderId\": \"O400308\",\n    \"cancelReason\": 3\n}"
 				},
 				"url": {
-					"raw": "http://{{host}}:{{port}}/store_api/v3/order/cancelOrder",
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/buyerCancelOrder",
 					"protocol": "http",
 					"host": [
 						"{{host}}"
@@ -151,7 +151,7 @@
 						"store_api",
 						"v3",
 						"order",
-						"cancelOrder"
+						"buyerCancelOrder"
 					]
 				}
 			},
@@ -214,7 +214,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"status\": 1,\n    \"page\": 1,\n    \"limit\": 100\n}"
+					"raw": "{\n    \"status\": 1,\n    \"orderId\" : \"\",\n    \"page\": 1,\n    \"limit\": 10\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{port}}/store_api/v3/order/myOrders",

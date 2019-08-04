@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "e6971ebe-158c-41bb-8371-835ae0aaaa5f",
+		"_postman_id": "4a2c6200-376a-437c-9b7e-68bc7ee7c2f2",
 		"name": "门店端",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "门店- 订单 - 我的订单列表（支持根据状态查询，分页）",
+			"name": "门店- 订单 - 我的订单列表（支持根据状态查询,订单号搜索 分页）",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -24,7 +24,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"status\": 1,\n    \"page\": 1,\n    \"limit\": 2\n}"
+					"raw": "{\n    \"status\": 1,\n    \"orderId\": \"O400000000040\",\n    \"page\": 1,\n    \"limit\": 2\n}"
 				},
 				"url": {
 					"raw": "http://{{host}}:{{port}}/store_api/v3/order/myOrders",
@@ -342,6 +342,82 @@
 						"v2",
 						"store",
 						"updateStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 订单 - 取消订单",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "35",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderId\": \"O400308\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/storeCancelOrder",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"storeCancelOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "门店 - 订单 - 改价",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "kunda",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderId\": \"O400308\",\n    \"changePrice\": 0.01\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/order/changeOrderPrice",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"order",
+						"changeOrderPrice"
 					]
 				}
 			},
