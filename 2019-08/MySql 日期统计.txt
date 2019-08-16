@@ -1,0 +1,9 @@
+mysql查询本周记录
+2018年04月18日 21:00:12 春眠不觉暁 阅读数：465
+到了周末了，查询本周(本周一至周日)数据竟然出错！！！
+
+原因中外周末起始时间不一样，国外周日算第一天
+
+select * from table_name where YEARWEEK(date_format(work_time,'%Y-%m-%d') - INTERVAL 1 DAY) = YEARWEEK(now() - INTERVAL 1 DAY)
+
+国外周日算第一天，相当于早了一天，到周日时计算到下一周了，减去1天计算本周。
