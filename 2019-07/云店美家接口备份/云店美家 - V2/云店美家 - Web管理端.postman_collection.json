@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "fddf547b-aa6e-4788-8f6b-5eb66ae1c983",
+		"name": "云店美家 - Web管理端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/sys/menu/getMenu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/sys/menu/getMenu",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"sys",
+						"menu",
+						"getMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/ydmj//sys/menu/list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj//sys/menu/list",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"",
+						"sys",
+						"menu",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/ydmj//sys/menu/getTreeMenu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj//sys/menu/getTreeMenu",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"",
+						"sys",
+						"menu",
+						"getTreeMenu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_web/v1/store/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ids\" : [70000054,70000055]\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_web/v1/store/delete",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_web",
+						"v1",
+						"store",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/ydmj/store_web/v1/store/storeCommentList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/store_web/v1/store/storeCommentList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"store_web",
+						"v1",
+						"store",
+						"storeCommentList"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

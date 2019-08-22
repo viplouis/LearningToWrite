@@ -1,0 +1,1282 @@
+{
+	"info": {
+		"_postman_id": "c6c73702-de30-4edf-bd1e-813bc2944cf3",
+		"name": "云店美家 - 百店联盟",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 134\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getAlianceById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/createAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n    \"alianceName\": \"万达广场顾家家居\",\n    \"alianceAddress\": \"佛山市南海区桂澜北路28号首层113号\",\n    \"alianceDes\": \"佛山市南海区桂澜北路28号首层113号\",\n    \"lng\" : 113.15732688,\n    \"lat\" : 23.06339012,\n    \"logoUrl\": \"http://tmp/wxd3d06240de1b5ad5.o6zAJs7IJrkzMI8G9h2xKgRxcF50.mYCSkxM109R680b854dbcc6907da5583d5a3ae5026a6.png\",\n    \"bannerUrl\": \"http://tmp/wxd3d06240de1b5ad5.o6zAJs7IJrkzMI8G9h2xKgRxcF50.rOoU0ykBtvdIe397380a8f6d02460cf3401bf62322c6.png,http://tmp/wxd3d06240de1b5ad5.o6zAJs7IJrkzMI8G9h2xKgRxcF50.7RyRVxRYdnXMfc4899ebc1be3fd72b82101ddba40239.jpg\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/createAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"createAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 134\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/applyJoinAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "huo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153\n\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/applyJoinAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"applyJoinAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getStoresApplyJoinAlianceListByAlianceId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 134,\n\t\"userId\" : 10000652\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getStoresApplyJoinAlianceListByAlianceId",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getStoresApplyJoinAlianceListByAlianceId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceInviteJoinAlianceListByStoreId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000017,\n\t\"userId\" : 100018\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceInviteJoinAlianceListByStoreId",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getAlianceInviteJoinAlianceListByStoreId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/invitationJoinAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zbaiquan",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153,\n\t\"storeId\" : 600000004\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/invitationJoinAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"invitationJoinAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/agreeOrRefuseApplyJoinAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153,\n\t\"storeId\" : 600000004,\n\t\"type\" : 1,\n\t\"saeId\" : 87\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/agreeOrRefuseApplyJoinAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"agreeOrRefuseApplyJoinAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/agreeOrRefuseInviteJoinAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153,\n\t\"storeId\" : 600000004,\n\t\"type\" : 1,\n\t\"saeId\" : 88\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/agreeOrRefuseInviteJoinAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"agreeOrRefuseInviteJoinAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/disbandAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "alianceId",
+							"value": "53",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/disbandAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"disbandAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/exitAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "yangjing",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 154,\n\t\"storeId\" : 600000022,\n\t\"type\" : 1\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/exitAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"exitAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getMyAlianceList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "35",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getMyAlianceList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getMyAlianceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getStoreByAlianceId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 153,\n    \"page\" : 3,\n    \"limit\" : 1\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getStoreByAlianceId",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getStoreByAlianceId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/myNearStore",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lng\" : 113.16152,\n\t\"lat\" : 23.064719,\n\t\"page\" : 1,\n\t\"limit\" : 2\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/myNearStore",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"myNearStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceCollectionList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"searchName\" : \"京华\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceCollectionList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getAlianceCollectionList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceCollectionAndCancel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 136,\n    \"type\": 0\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceCollectionAndCancel",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"alianceCollectionAndCancel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/notification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "yangjing",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/notification",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"notification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceByAlianceName",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceName\" : 111\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getAlianceByAlianceName",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getAlianceByAlianceName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByInvitedStoresList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153,\n\t\"type\" : \"distance\",\n\t\"lat\" : 23.06339012,\n\t\"lng\" : 113.15732788\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByInvitedStoresList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getNearByInvitedStoresList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByApplyAliancesList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"lat\" : 23.095726,\n\t\"lng\" : 113.150883\n\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByApplyAliancesList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getNearByApplyAliancesList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeCase/createStoreCaseBatch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ids\": \"20,21,22,23\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeCase/createStoreCaseBatch",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"createStoreCaseBatch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceIndex",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "dev"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceIndex",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"alianceIndex"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearAlianceList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "zhang"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lng\" : 113.14278,\n\t\"lat\" : 23.02882,\n\t\"page\" : 1,\n\t\"limit\" : 10\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearAlianceList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getNearAlianceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceStoreList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 114,\n\t\"page\" : 1,\n\t\"limit\" : 2\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceStoreList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"alianceStoreList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceSaleList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 114,\n\t\"page\" : 1,\n\t\"limit\" : 10\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/alianceSaleList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"alianceSaleList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getRecentAlianceList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : 1,\n\t\"limit\" : 20\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getRecentAlianceList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getRecentAlianceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/scanCodeJoinAliance",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "31d2e027-feb8-48f0-9cc2-32e48f17ecd7",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 163\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/scanCodeJoinAliance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"scanCodeJoinAliance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByApplyAliancesList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": " ebbf1be7-ef04-4e5a-ad0c-901501a4e471",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lat\" : 23.06399374,\n\t\"lng\" : 113.15587465\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByApplyAliancesList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getNearByApplyAliancesList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByApplyAlianceByAlianceId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"alianceId\" : 153\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByApplyAlianceByAlianceId",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getNearByApplyAlianceByAlianceId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getMyAlianceByAlianceId",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 153\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getMyAlianceByAlianceId",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getMyAlianceByAlianceId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/notificationById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "yangjing",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 154\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/notificationById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"notificationById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/notificationById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "yangjing",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 153,\n    \"storeId\": 600000017,\n    \"saeId\": 121\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/notificationById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"notificationById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getRecentAlianceById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 153\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getRecentAlianceById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getRecentAlianceById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByInvitedStoreById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alianceId\": 153,\n    \"storeId\": 600000022\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/aliance/getNearByInvitedStoreById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"aliance",
+						"getNearByInvitedStoreById"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

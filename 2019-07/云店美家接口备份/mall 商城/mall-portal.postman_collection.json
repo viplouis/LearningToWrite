@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "4f4fc1a1-3c8d-4267-8344-a36568096bbd",
+		"name": "mall-portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "会员登录",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{portal.mall}}/sso/login",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"sso",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取购物车列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/cart/list",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"cart",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "清空购物车",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/cart/clear",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"cart",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "加入购物车",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"price\": 5499,\r\n  \"productId\": 29,\r\n  \"productName\": \"Apple iPhone 8 Plus\",\r\n  \"productSkuCode\": \"201808270029001\",\r\n  \"productSkuId\": 106,\r\n  \"productSubTitle\": \"【限时限量抢购】Apple产品年中狂欢节，好物尽享，美在智慧！速来 >> 勾选[保障服务][原厂保2年]，获得AppleCare+全方位服务计划，原厂延保售后无忧。\",\r\n  \"quantity\": 1,\r\n  \"sp1\": \"金色\",\r\n  \"sp2\": \"32G\",\r\n  \"sp3\": null\r\n}"
+				},
+				"url": {
+					"raw": "{{portal.mall}}/cart/add",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"cart",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取购物车列表（包括促销信息）",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/cart/list/promotion",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"cart",
+						"list",
+						"promotion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改购物车中商品数量",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/cart/update/quantity?id=15&quantity=1",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"cart",
+						"update",
+						"quantity"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15"
+						},
+						{
+							"key": "quantity",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "添加收货地址",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"defaultStatus\": 1,\r\n  \"name\": \"大梨\",\r\n  \"phoneNumber\": \"18033441849\",\r\n  \"postCode\": \"518000\",\r\n  \"city\": \"深圳市\",\r\n  \"detailAddress\": \"东晓街道\",\r\n  \"province\": \"广东省\",\r\n  \"region\": \"福田区\"\r\n}"
+				},
+				"url": {
+					"raw": "{{portal.mall}}/member/address/add",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"address",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除收货地址",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/member/address/delete/2",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"address",
+						"delete",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询指定收货地址",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/member/address/3",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"address",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改收货地址",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 3,\n        \"memberId\": 1,\n        \"name\": \"大梨\",\n        \"phoneNumber\": \"18033441849\",\n        \"defaultStatus\": 0,\n        \"postCode\": \"518000\",\n        \"province\": \"广东省\",\n        \"city\": \"深圳市\",\n        \"region\": \"福田区\",\n        \"detailAddress\": \"清水河街道\"\n    }"
+				},
+				"url": {
+					"raw": "{{portal.mall}}/member/address/update/3",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"address",
+						"update",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "领取优惠券",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/member/coupon/add/7",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"coupon",
+						"add",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取会员优惠券列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/member/coupon/list",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"coupon",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取购物车可用优惠券",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/member/coupon/list/cart/1",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"member",
+						"coupon",
+						"list",
+						"cart",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "根据购物车信息生成确认单",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/order/confirmOrder",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"order",
+						"confirmOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "下单",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"couponId\": 2,\r\n  \"memberReceiveAddressId\": 4,\r\n  \"payType\": 0\r\n}"
+				},
+				"url": {
+					"raw": "{{portal.mall}}/order/generateOrder",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"order",
+						"generateOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "订单支付成功回调",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/order/paySuccess?orderId=12",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"order",
+						"paySuccess"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取消超时订单",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/order/cancelTimeOutOrder",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"order",
+						"cancelTimeOutOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取消单个超时订单",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{portal.mall}}/order/cancelOrder?orderId=13",
+					"host": [
+						"{{portal.mall}}"
+					],
+					"path": [
+						"order",
+						"cancelOrder"
+					],
+					"query": [
+						{
+							"key": "orderId",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

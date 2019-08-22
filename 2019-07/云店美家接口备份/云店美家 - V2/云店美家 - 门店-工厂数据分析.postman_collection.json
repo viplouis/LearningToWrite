@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "2d859323-3ad8-4718-98e0-5442299c642c",
+		"name": "云店美家 - 门店/工厂数据分析",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/statistics/store/storeComprehensiveData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000024\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/statistics/store/storeComprehensiveData",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"store",
+						"storeComprehensiveData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/statistics/store/storeCustomerStatistics",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "600000028",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"staDate\" : \"2019-06\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/statistics/store/storeCustomerStatistics",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"store",
+						"storeCustomerStatistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/statistics/store/storeLeaderboard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "35"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\": \"day\",\n    \"staDate\": \"2019-06-25\",\n    \"indicators\": \"view\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/statistics/store/storeLeaderboard",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"store",
+						"storeLeaderboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/startPagePanorama",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"typeId\" : 1,\n\t\"code\" : 5\n}\n"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/startPagePanorama",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"startPagePanorama"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/statistics/factory/factoryComprehensiveData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "factory",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\" : \"product\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/statistics/factory/factoryComprehensiveData",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"factory",
+						"factoryComprehensiveData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

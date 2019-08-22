@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "bc6f2efa-5ad7-46f2-8a7c-44aad7252dd3",
+		"name": "云店美家 - 后台端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "后台 - 注册",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\" : 18883365888,\n\t\"password\" : \"logitech\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/register",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 获取登录二维码",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tel\":\"18883365217\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/sms/getSmsCode",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"sms",
+						"getSmsCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 获取验证码",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tel\":\"18883365217\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/sms/getSmsCode",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"sms",
+						"getSmsCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 登录 -  帐号密码",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : 18883365888,\n\t\"password\" : \"logitech\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/login",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 登录 - 验证码登录",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\" : 18883365217,\n\t\"code\" : 596235\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/smsLogin",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"smsLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 扫码登录 - 后台地址（废弃）",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/web/login?clientId=af695fdb-83ff-9ab6-0e3b-6fb2ef018512&token=095d9195-dbcc-4b16-8a1e-b0d6b8ae4deb&phone=18883365369",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"web",
+						"login"
+					],
+					"query": [
+						{
+							"key": "clientId",
+							"value": "af695fdb-83ff-9ab6-0e3b-6fb2ef018512"
+						},
+						{
+							"key": "token",
+							"value": "095d9195-dbcc-4b16-8a1e-b0d6b8ae4deb"
+						},
+						{
+							"key": "phone",
+							"value": "18883365369"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 扫码登录 - api地址（废弃）",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/sys/web/login?clientId=0f8fde90-b02d-ca2e-0658-1f1af75cc87b&token=zhang",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"sys",
+						"web",
+						"login"
+					],
+					"query": [
+						{
+							"key": "clientId",
+							"value": "0f8fde90-b02d-ca2e-0658-1f1af75cc87b"
+						},
+						{
+							"key": "token",
+							"value": "zhang"
+						},
+						{
+							"key": "phone",
+							"value": "18883365369",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 获取当前登录用户",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "http://localhost:8000"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/getCurrentUser",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"getCurrentUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 注册 - 完善信息",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\" : 10000726,\n\t\"applyRole\" : 1,\n\t\"industry\" : 1,\n\t\"province\" : \"广东省\",\n\t\"city\" : \"佛山市\",\n\t\"district\" : \"南海区\",\n\t\"address\" : \"万达广场\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/perfectInformation",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"perfectInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 扫码登录（新 post方式 api 废弃）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientId\": \"5f10ffcf-ba7f-1a5c-104f-a4ddec96e1f1\",\n    \"token\": \"095d9195-dbcc-4b16-8a1e-b0d6b8ae4deb\",\n    \"userId\": \"10000691\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/sys/web/login",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"sys",
+						"web",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "后台 - 扫码登录及绑定（新 post方式 后台）",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientId\": \"4cdd9e3e-d53b-c2b1-2944-c78e3a6dec96\",\n    \"token\": \"095d9195-dbcc-4b16-8a1e-b0d6b8ae4deb\",\n    \"userId\": \"10000726\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/ydmj/sys/web/login",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"ydmj",
+						"sys",
+						"web",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

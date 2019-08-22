@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "cc850832-0c89-437e-b9e8-1d7abb785b7d",
+		"name": "云店美家 - 生成小程序码",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/qrCode/updateOneQr",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "zhang"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : \"pagesindex/index/sweep_code_addition/invite_alliance\",\n\t\"tableName\" : \"store_aliance\",\n\t\"idColumn\" : \"aliance_id\",\n\t\"qrColumn\" : \"qr_code_add_member_url\",\n\t\"param\": \"alianceId\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/qrCode/updateOneQr",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"qrCode",
+						"updateOneQr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/qrCode/updateTwoQr",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : \"pagesindex/index/brand_introduction/selected_cases/selected_cases_info\",\n\t\"tableName\" : \"store_case\",\n\t\"idColumn\" : \"case_id\",\n\t\"qrColumn\" : \"share_qr_code\",\n\t\"param1\": \"caseId\",\n\t\"param2\": \"work=true\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/qrCode/updateTwoQr",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"qrCode",
+						"updateTwoQr"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/qrCode/storeProductQr",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : \"pages/shop/shop_details/shopdetails\",\n\t\"tableName\" : \"product\",\n\t\"idColumn\" : \"id\",\n\t\"ida\" : \"id\",\n\t\"idb\" : \"store_id\",\n\t\"qrColumn\" : \"qr_code\",\n\t\"param1\": \"pid\",\n\t\"param2\": \"storeId\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/qrCode/storeProductQr",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"qrCode",
+						"storeProductQr"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

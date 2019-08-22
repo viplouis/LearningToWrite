@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "7356d508-420a-451c-89a1-f108dac6a30f",
+		"name": "云店美家 - 商城端",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "商品 - 根据商品id获取商品详情",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": 188,\n    \"isFactory\": 0\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/product/findProDetails",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"product",
+						"findProDetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

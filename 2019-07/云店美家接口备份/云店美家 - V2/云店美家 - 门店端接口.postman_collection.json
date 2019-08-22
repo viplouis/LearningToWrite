@@ -1,0 +1,1408 @@
+{
+	"info": {
+		"_postman_id": "650f6f8d-6a2e-4ebd-b8f3-7108dcf47bb6",
+		"name": "云店美家 - 门店端接口",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/storeIndexPage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeId\": 600000028\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/storeIndexPage",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeIndexPage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://{{host}}:{{port}}/store_api/v1/store/storeIndexPage",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "zhang",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"storeId\": 600000028\n}"
+						},
+						"url": {
+							"raw": "http://{{host}}:{{port}}/store_api/v1/store/storeIndexPage",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"store_api",
+								"v1",
+								"store",
+								"storeIndexPage"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jul 2019 09:52:41 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1,\n    \"msg\": \"OK\",\n    \"data\": {\n        \"news\": {\n            \"visitorCounts\": {\n                \"todayVisitorCount\": 0,\n                \"allVisitorCount\": 20\n            },\n            \"visitorLogInfoVos\": [\n                {\n                    \"logId\": 624,\n                    \"visitorId\": 10000744,\n                    \"visitorName\": \"曹波\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIqHD8VSshHdn1cwxmZe0mV2NSJUxIV1jiaxLMQpSf3Zeu1nlu4JiaN2ZZVFicG9SejPwYWTGib0Dib0ZA/132\",\n                    \"visitorPhone\": \"13929124996\",\n                    \"actionTime\": \"2019-07-15 10:07:34\",\n                    \"actionDes\": \"浏览了商城1次\"\n                },\n                {\n                    \"logId\": 618,\n                    \"visitorId\": 10000744,\n                    \"visitorName\": \"曹波\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIqHD8VSshHdn1cwxmZe0mV2NSJUxIV1jiaxLMQpSf3Zeu1nlu4JiaN2ZZVFicG9SejPwYWTGib0Dib0ZA/132\",\n                    \"visitorPhone\": \"13929124996\",\n                    \"actionTime\": \"2019-07-15 10:07:17\",\n                    \"actionDes\": \"浏览了门店主页5次\"\n                },\n                {\n                    \"logId\": 621,\n                    \"visitorId\": 10000744,\n                    \"visitorName\": \"曹波\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIqHD8VSshHdn1cwxmZe0mV2NSJUxIV1jiaxLMQpSf3Zeu1nlu4JiaN2ZZVFicG9SejPwYWTGib0Dib0ZA/132\",\n                    \"visitorPhone\": \"13929124996\",\n                    \"actionTime\": \"2019-07-15 10:03:15\",\n                    \"actionDes\": \"浏览了李智博销售主页1次\"\n                },\n                {\n                    \"logId\": 471,\n                    \"visitorId\": 10000691,\n                    \"visitorName\": \"赢在江湖 🏂\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epEDpS99O3bBW3q0L7d5VcnevHxtiaFmCjRJUkXTQBMuYc0bcATZ29JCNDI9PdpibibHVV9LibXJjN4pw/132\",\n                    \"visitorPhone\": \"18883365217\",\n                    \"actionTime\": \"2019-07-15 09:26:23\",\n                    \"actionDes\": \"浏览了商城22次\"\n                },\n                {\n                    \"logId\": 469,\n                    \"visitorId\": 10000691,\n                    \"visitorName\": \"赢在江湖 🏂\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83epEDpS99O3bBW3q0L7d5VcnevHxtiaFmCjRJUkXTQBMuYc0bcATZ29JCNDI9PdpibibHVV9LibXJjN4pw/132\",\n                    \"visitorPhone\": \"18883365217\",\n                    \"actionTime\": \"2019-07-15 09:26:09\",\n                    \"actionDes\": \"浏览了门店主页73次\"\n                },\n                {\n                    \"logId\": 610,\n                    \"visitorId\": 10000740,\n                    \"visitorName\": \"张小富\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/yFKsy7cdQPeIwYgwMEQxe7rKXkttstrCmeicmnhZ2trC0stBfv2hib0KZrrW6tTqEFy9UKibiaDPUfkOstKhCyPGsQ/132\",\n                    \"visitorPhone\": \"\",\n                    \"actionTime\": \"2019-07-14 18:15:12\",\n                    \"actionDes\": \"浏览了门店主页2次\"\n                },\n                {\n                    \"logId\": 399,\n                    \"visitorId\": 10000652,\n                    \"visitorName\": \"芥末\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI39XReVrENheenh4yWtEM3M9JXmpcPibzR2s2micLyNaxM1kFlic2wBg2S3ibAl7REPt0cJKFQYWbY8A/132\",\n                    \"visitorPhone\": \"13502212077\",\n                    \"actionTime\": \"2019-07-13 18:09:22\",\n                    \"actionDes\": \"浏览了门店主页18次\"\n                },\n                {\n                    \"logId\": 589,\n                    \"visitorId\": 10000652,\n                    \"visitorName\": \"芥末\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI39XReVrENheenh4yWtEM3M9JXmpcPibzR2s2micLyNaxM1kFlic2wBg2S3ibAl7REPt0cJKFQYWbY8A/132\",\n                    \"visitorPhone\": \"13502212077\",\n                    \"actionTime\": \"2019-07-13 18:09:22\",\n                    \"actionDes\": \"浏览了商城7次\"\n                },\n                {\n                    \"logId\": 528,\n                    \"visitorId\": 10000735,\n                    \"visitorName\": \"大白菜小白菜与菜\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/n4DWCAtBFBvF54OnQVWSMM5ZQWOJKxl4uorxlYPum9ZH9RMHMaeFnhVLw3qG7pGAoe9W9icOoS0nNSdjGAXAZFw/132\",\n                    \"visitorPhone\": \"18942406380\",\n                    \"actionTime\": \"2019-07-12 17:56:48\",\n                    \"actionDes\": \"浏览了商城2次\"\n                },\n                {\n                    \"logId\": 514,\n                    \"visitorId\": 10000735,\n                    \"visitorName\": \"大白菜小白菜与菜\",\n                    \"visitorHeadUrl\": \"https://wx.qlogo.cn/mmopen/vi_32/n4DWCAtBFBvF54OnQVWSMM5ZQWOJKxl4uorxlYPum9ZH9RMHMaeFnhVLw3qG7pGAoe9W9icOoS0nNSdjGAXAZFw/132\",\n                    \"visitorPhone\": \"18942406380\",\n                    \"actionTime\": \"2019-07-12 17:56:18\",\n                    \"actionDes\": \"浏览了门店主页7次\"\n                }\n            ]\n        },\n        \"saleGeniuses\": [\n            {\n                \"collectionSum\": 2,\n                \"phoneNumber\": \"18814095084\",\n                \"viewSum\": 25,\n                \"gender\": 1,\n                \"headImgUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/c8a0/1561551672909124.png\",\n                \"createTime\": \"2019-06-25 20:44:45\",\n                \"nickname\": \"李智博\",\n                \"isCollection\": 0,\n                \"isPraise\": 0,\n                \"praiseSum\": 4,\n                \"userId\": 17,\n                \"salePosition\": \"销售顾问\"\n            },\n            {\n                \"collectionSum\": 2,\n                \"phoneNumber\": \"18814095084\",\n                \"viewSum\": 8,\n                \"gender\": 0,\n                \"headImgUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/02f9/1561552165678128.png\",\n                \"createTime\": \"2019-06-25 20:44:50\",\n                \"nickname\": \"刘佳乐\",\n                \"isCollection\": 0,\n                \"isPraise\": 0,\n                \"praiseSum\": 0,\n                \"userId\": 18,\n                \"salePosition\": \"销售顾问\"\n            },\n            {\n                \"collectionSum\": 0,\n                \"phoneNumber\": \"18814095084\",\n                \"viewSum\": 0,\n                \"gender\": 0,\n                \"headImgUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/c5be/1561552500801129.png\",\n                \"createTime\": \"2019-06-25 20:44:54\",\n                \"nickname\": \"王楠\",\n                \"isCollection\": 0,\n                \"isPraise\": 0,\n                \"praiseSum\": 0,\n                \"userId\": 19,\n                \"salePosition\": \"销售顾问\"\n            }\n        ],\n        \"date\": \"2019-07-26 23:59:59\",\n        \"storeBody\": {\n            \"msg\": \"当前门店不是我所属的门店\",\n            \"qrCodeAddSalerUrl\": \"https://kunda-dev.oss-cn-shenzhen.aliyuncs.com/saleQrCode/d6e0f192-2df4-4ad7-b003-84e76c3390ad7890627917338532568.jpg\",\n            \"createUserId\": 37,\n            \"qrCodeAddVipUrl\": \"https://kunda-dev.oss-cn-shenzhen.aliyuncs.com/saleQrCode/d6e0f192-2df4-4ad7-b003-84e76c3390ad7890627917338532568.jpg\",\n            \"own\": 0,\n            \"taobaoLink\": \"https://rainbow.tmall.com\",\n            \"bannerUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/00ab/1561543236888110.png,https://kunda-store.oss-cn-shenzhen.aliyuncs.com/9fcc/156154323693477.png,https://kunda-store.oss-cn-shenzhen.aliyuncs.com/b3b5/156154323691445.png\",\n            \"isCollection\": 0,\n            \"view\": 1372,\n            \"jdLink\": \"https://mall.jd.com/index-804315.html\",\n            \"qrCodeIntroductionUrl\": \"https://kunda-dev.oss-cn-shenzhen.aliyuncs.com/saleQrCode/d6e0f192-2df4-4ad7-b003-84e76c3390ad7890627917338532568.jpg\",\n            \"contactNumber\": \"020-38559827\",\n            \"storeName\": \"瑞宝布艺·壁纸广州马会店\",\n            \"auditer\": \"\",\n            \"lat\": 23.11867,\n            \"vrUrl\": \"\",\n            \"lng\": 113.34641,\n            \"storeDes\": \"瑞宝布艺·壁纸广州马会店\",\n            \"qrCodeAddManagerUrl\": \"https://kunda-dev.oss-cn-shenzhen.aliyuncs.com/saleQrCode/d6e0f192-2df4-4ad7-b003-84e76c3390ad7890627917338532568.jpg\",\n            \"brandVideoUrl\": \"\",\n            \"collection\": 3,\n            \"storeId\": 600000028,\n            \"storekeeperWechat\": \"RAINBOW_gz\",\n            \"establishmentTime\": \"2019-6-26\",\n            \"abbreviation\": \"瑞宝布艺·壁纸广州马会店\",\n            \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/7f21/156154045603144.png\",\n            \"qrCodeIndexUrl\": \"https://kunda-dev.oss-cn-shenzhen.aliyuncs.com/saleQrCode/d6e0f192-2df4-4ad7-b003-84e76c3390ad7890627917338532568.jpg\",\n            \"praise\": 1,\n            \"factory_id\": 4,\n            \"vrResourceId\": \"3R3qAsrk\",\n            \"storeAddress\": \"马会家居西南门二楼251\",\n            \"auditTime\": \"\",\n            \"createTime\": \"2019-7-18 09:33:41\",\n            \"isVr\": true,\n            \"storeIndustry\": \"瓷砖\",\n            \"locateAddress\": \"广东省广州市天河区黄埔大道西688号\",\n            \"auditStatus\": \"\",\n            \"isPraise\": 0,\n            \"comment\": 1,\n            \"storeBrand\": \"RAINBOW瑞宝\",\n            \"lastUpdateTime\": \"\",\n            \"status\": 1\n        },\n        \"footprintOfProBrowses\": [\n            {\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/2c80/15615192928719.png\",\n                \"name\": \"圣堡罗 定制木门欧式实木工艺门卧室门烤漆室内门房间门 H009款\",\n                \"summary\": \"卧室门 简欧风格 隔音 热销\",\n                \"suggestPrice\": 2500,\n                \"angleImages\": \"63cmTQ8F\",\n                \"videoUrl\": \"\",\n                \"hpId\": 3566,\n                \"productId\": 91,\n                \"storeId\": 600000027,\n                \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/0bed/1561539741533136.png\",\n                \"modifyTime\": \"2019-07-13 09:46:49\",\n                \"modifyDate\": \"2019-07-13\"\n            },\n            {\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/2c80/15615192928719.png\",\n                \"name\": \"圣堡罗 定制木门欧式实木工艺门卧室门烤漆室内门房间门 H009款\",\n                \"summary\": \"卧室门 简欧风格 隔音 热销\",\n                \"suggestPrice\": 2500,\n                \"angleImages\": \"63cmTQ8F\",\n                \"videoUrl\": \"\",\n                \"hpId\": 3541,\n                \"productId\": 91,\n                \"storeId\": 600000027,\n                \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/0bed/1561539741533136.png\",\n                \"modifyTime\": \"2019-07-12 19:02:44\",\n                \"modifyDate\": \"2019-07-12\"\n            },\n            {\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/941a/156151972478294.png\",\n                \"name\": \"圣堡罗 高端品牌室内门复古大气不锈钢门锁 型号F04\",\n                \"summary\": \"复古 大气\",\n                \"suggestPrice\": 245,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"hpId\": 3516,\n                \"productId\": 94,\n                \"storeId\": 600000027,\n                \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/0bed/1561539741533136.png\",\n                \"modifyTime\": \"2019-07-12 17:23:03\",\n                \"modifyDate\": \"2019-07-12\"\n            },\n            {\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/941a/1561519572131145.png\",\n                \"name\": \"圣堡罗 定做 简约欧式 卧室门 室内门 实木工艺门 全实木门 H008\",\n                \"summary\": \"简约欧式\",\n                \"suggestPrice\": 2300,\n                \"angleImages\": \"3R3qAsrk\",\n                \"videoUrl\": \"\",\n                \"hpId\": 3515,\n                \"productId\": 92,\n                \"storeId\": 600000027,\n                \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/0bed/1561539741533136.png\",\n                \"modifyTime\": \"2019-07-12 17:22:30\",\n                \"modifyDate\": \"2019-07-12\"\n            },\n            {\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/ef37/156153871479447.png\",\n                \"name\": \"热带丛林壁画\",\n                \"summary\": \"北欧手绘复古植物丛林壁纸客厅卧室\",\n                \"suggestPrice\": 60,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"hpId\": 2255,\n                \"productId\": 132,\n                \"storeId\": 600000027,\n                \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/0bed/1561539741533136.png\",\n                \"modifyTime\": \"2019-06-27 18:20:16\",\n                \"modifyDate\": \"2019-06-27\"\n            },\n            {\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/c1cc/156152048914341.png\",\n                \"name\": \"左右布艺床卧室大小户型简约双人床主卧公主床婚床软床DR046\",\n                \"summary\": \"简约设计 亲肤触感 易洗快干\",\n                \"suggestPrice\": 7999,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"hpId\": 2020,\n                \"productId\": 99,\n                \"storeId\": 600000027,\n                \"logoUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/0bed/1561539741533136.png\",\n                \"modifyTime\": \"2019-06-26 18:26:37\",\n                \"modifyDate\": \"2019-06-26\"\n            }\n        ],\n        \"shareActivity\": {\n            \"activityId\": 0,\n            \"activityType\": \"\",\n            \"activityName\": \"\",\n            \"storeName\": \"\",\n            \"storeId\": \"\",\n            \"bannerUrl\": \"\",\n            \"startDate\": \"\",\n            \"endDate\": \"\",\n            \"introduction\": \"\",\n            \"qrCode\": \"\",\n            \"awardFirst\": \"\",\n            \"awardSecond\": \"\",\n            \"awardThird\": \"\",\n            \"rewardFirst\": \"\",\n            \"rewardSecond\": \"\",\n            \"rewardThird\": \"\"\n        },\n        \"dailySpikeList\": [],\n        \"hotSellingList\": [\n            {\n                \"productId\": 81,\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/1294/1560736524844130.png\",\n                \"productName\": \"900大门\",\n                \"suggestPrice\": \"998.00\",\n                \"presentPrice\": \"\",\n                \"count\": \"\",\n                \"number\": \"\",\n                \"salesVolume\": 0,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"summary\": \"材质好\",\n                \"storeId\": 600000028,\n                \"pricingMethod\": 1,\n                \"type\": \"0\"\n            },\n            {\n                \"productId\": 83,\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/1294/1560736524844130.png\",\n                \"productName\": \"限量版大门\",\n                \"suggestPrice\": \"998.00\",\n                \"presentPrice\": \"\",\n                \"count\": \"\",\n                \"number\": \"\",\n                \"salesVolume\": 0,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"summary\": \"轻质便捷\",\n                \"storeId\": 600000028,\n                \"pricingMethod\": 1,\n                \"type\": \"0\"\n            },\n            {\n                \"productId\": 84,\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/1294/1560736524844130.png\",\n                \"productName\": \"111窗纱一体\",\n                \"suggestPrice\": \"1500.00\",\n                \"presentPrice\": \"\",\n                \"count\": \"\",\n                \"number\": \"\",\n                \"salesVolume\": 0,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"summary\": \"这是介绍\",\n                \"storeId\": 600000028,\n                \"pricingMethod\": 1,\n                \"type\": \"0\"\n            },\n            {\n                \"productId\": 199,\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/6864/156154146281296.png\",\n                \"productName\": \"宏宇陶瓷客厅仿大理石地砖800x800瓷砖 灰色现代简约全抛釉地板砖\",\n                \"suggestPrice\": \"89.00\",\n                \"presentPrice\": \"\",\n                \"count\": \"\",\n                \"number\": \"\",\n                \"salesVolume\": 0,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"summary\": \"北欧风格\",\n                \"storeId\": 600000028,\n                \"pricingMethod\": 1,\n                \"type\": \"0\"\n            },\n            {\n                \"productId\": 201,\n                \"advertUrl\": \"https://kunda-store.oss-cn-shenzhen.aliyuncs.com/f98a/156154190098483.png\",\n                \"productName\": \"宏宇陶瓷蓝色地中海卫生间瓷砖浴室墙砖洗手间防滑地砖3-3E30398\",\n                \"suggestPrice\": \"57.00\",\n                \"presentPrice\": \"\",\n                \"count\": \"\",\n                \"number\": \"\",\n                \"salesVolume\": 0,\n                \"angleImages\": \"\",\n                \"videoUrl\": \"\",\n                \"summary\": \"地中海\",\n                \"storeId\": 600000028,\n                \"pricingMethod\": 1,\n                \"type\": \"0\"\n            }\n        ],\n        \"groupList\": [],\n        \"AlianceStreetVos\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/saleGeniusesPagination",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000046,\n\t\"page\" : 2,\n\t\"limit\" :2\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/saleGeniusesPagination",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"saleGeniusesPagination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getRecentStoreList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : 1,\n\t\"limit\" : 50\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getRecentStoreList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getRecentStoreList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getStoreCollectionList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sort\" : \"collection\",\n\t\"searchName\" : \"圣保罗桂城店\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getStoreCollectionList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getStoreCollectionList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getStoreById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000046\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getStoreById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getStoreById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/commitStoreComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "dev",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000017,\n\t\"content\" : \"我就要发个dsfdsfsdfsdf表情\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/commitStoreComment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"commitStoreComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/statistics/storeLeaderboard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"startDate\" : \"2019-04-20 00:00:00\",\n\t\"endDate\" : \"2019-05-23 00:00:00\",\n\t\"indicators\" : \"synthesis\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/statistics/storeLeaderboard",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"statistics",
+						"storeLeaderboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/storeCommentList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000046\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/storeCommentList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeCommentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/storePraise",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000046\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/storePraise",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storePraise"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/delStoreComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "base",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"contentId\" : 70000044\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/delStoreComment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"delStoreComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/saveStoreSetting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeName\": \"圣保罗桂城店1\",\n    \"storeBrand\": \"马特斯门窗\",\n    \"introduction\": \"1,2,3,4\",\n    \"taobaoLink\": null,\n    \"contactNumber\": \"111321\",\n    \"storekeeperWechat\": \"111321\",\n    \"establishmentTime\": \"2019-5-28\",\n    \"logoUrl\": \"11111\",\n    \"bannerUrl\": \"1111,1111\",\n    \"jdLink\": null,\n    \"brandUrl\": \"11111\",\n    \"auditer\": null,\n    \"lat\": 23.2,\n    \"lng\": 123.2,\n    \"vrUrl\": \"1\",\n    \"storeDes\": \"马特斯门窗1\",\n    \"abbreviation\": \"云店美家1\",\n    \"storeAddress\": \"千灯湖222222\",\n    \"isVr\": 1,\n    \"storeIndustry\": \"玻璃\",\n    \"locateAddress\": \"广东省佛山市南海区桂澜北路28号\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/saveStoreSetting",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"saveStoreSetting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/startPagePanorama",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"typeId\" : 600000026,\n\t\"code\" : 1\n}\n"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/startPagePanorama",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"startPagePanorama"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getBrandIntroduction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "ebbf1be7-ef04-4e5a-ad0c-901501a4e471",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getBrandIntroduction",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getBrandIntroduction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/addBrandIntroduction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "zhang"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"introduction\" : \"url4,url5,url6\",\n\t\"brandVideoUrl\" : \"url3\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/addBrandIntroduction",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"addBrandIntroduction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/delBrandIntroduction",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "null",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/delBrandIntroduction",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"delBrandIntroduction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeCase/storeCaseList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeCase/storeCaseList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"storeCaseList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/storeCommentMangt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/storeCommentMangt",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeCommentMangt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getMyStore",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getMyStore",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getMyStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeCase/getStoreCase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"caseId\" : 6000000142\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeCase/getStoreCase",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"getStoreCase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeCase/commitStoreCaseComment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"caseId\" : 6000000142,\n\t\"content\" : \"dsgfsd\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeCase/commitStoreCaseComment",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"commitStoreCaseComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "系统 - 普通用户授权为门店",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": -1,\n    \"roleNum\": 1\n}"
+				},
+				"url": {
+					"raw": "https://{{host}}:{{port}}/store_api/v3/store/setRoleNum",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"setRoleNum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getProductCategoryList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getProductCategoryList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getProductCategoryList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/addProductCategory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"icon\" : \"http://web.fsyizhuang.com/upload/image/20181206/grxd1544041463401.png\",\n\t\"name\" : \"测试分类2\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/addProductCategory",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"addProductCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/delProductCategorybatch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ids\" : [29,30]\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/delProductCategorybatch",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"delProductCategorybatch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/myNearStore",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"lng\" : 113.15732788,\n\t\"lat\" : 23.06339012 \n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/myNearStore",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"myNearStore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeCase/getStoreCaseById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"caseId\" : 6000000142\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeCase/getStoreCaseById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"getStoreCaseById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getRecentStoreById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeId\": 600000017\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getRecentStoreById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getRecentStoreById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/sys/mini_app/setRoleNum",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "98b3fe9b-3c23-42c4-93e1-285aac0d3292",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\" : 10000652,\n\t\"roleNum\" : 0\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/sys/mini_app/setRoleNum",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"sys",
+						"mini_app",
+						"setRoleNum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/storeCase/storeCaseCommentList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"caseId\" : 6000000142\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/storeCase/storeCaseCommentList",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"storeCase",
+						"storeCaseCommentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/storeHome",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storeId\" : 600000004\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/storeHome",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"storeHome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/getStoreById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"storeId\": 600000046\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/getStoreById",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"getStoreById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/millionPartnerApply",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"inviterId\": 10000691,\n    \"invitationCode\": \"IhzuyJ\",\n    \"name\": \"zhangbaiquan\",\n    \"applyRole\": 1,\n    \"phoneNum\": 18883365217,\n    \"city\": \"佛山\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/millionPartnerApply",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"millionPartnerApply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/store/millionPartnerInvitation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "zhang",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/store/millionPartnerInvitation",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"store",
+						"millionPartnerInvitation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v1/sys/qrcode/generate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"page\" : \"pagesindex/index/Group_details/goto_group/gotogroup\",\n\t\"scene\" : \"productGroupId=11&storeId=12\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v1/sys/qrcode/generate",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v1",
+						"sys",
+						"qrcode",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{host}}:{{port}}/store_api/v3/store/deleteKey",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"key\" : \"z\"\n}"
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/store_api/v3/store/deleteKey",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"store_api",
+						"v3",
+						"store",
+						"deleteKey"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2b470a1a-3374-43be-9ccc-371fd3c4a686",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "feea0c1d-51c3-4243-a67c-6d5dec43fde2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
