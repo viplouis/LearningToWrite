@@ -1,0 +1,28 @@
+云店美家3.0
+
+原型图地址
+1.https://www.processon.com/view/link/5d297ebbe4b0f42d06823968
+2.https://vmcdeg.axshare.com
+
+测试环境 数据库地址 47.107.163.13  ydmj_test  ydmj_6380
+
+云店美家测试环境（体验版）api 请求地址：https://www.fsyizhuang.cn/ydmj_api_test
+
+主分支svn地址：http://desktop-tc13pho:8360/svn/webdoc/store/trunk/store-parent
+
+3.0版分支地址：http://desktop-tc13pho:8360/svn/webdoc/store/branches/store_v3.0/store-parent
+
+后台登录注册：https://lanhuapp.com/web/#/item/project/board?pid=244c5914-6e20-4959-88d2-9b96234e5172&see=all
+
+V3.1：
+PC后台原型：https://n91dby.axshare.com  
+小程序原型：https://lshpwq.axshare.com
+
+V3.1 新原型地址：
+https://lanhuapp.com/url/OnkbL
+https://lanhuapp.com/url/cJPUR
+
+apizza:
+杨菁：13502212077@163.com
+馥池：635742310@qq.com
+嘉毅：changefuture@outlook.com

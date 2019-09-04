@@ -1,0 +1,59 @@
+    STORE_VIP("门店会员管理","pagesme/me/member_manage/member_register/MemberRegister"),
+    //storeId=xxx   已生成
+
+    STORE_SALE("门店员工管理（即销售）","pagesindex/index/sweep_code_addition/invite_staff"),
+    //storeId=xxx&position=0  已生成
+
+    STORE_MANAGER("门店管理人员管理","pagesindex/index/sweep_code_addition/invite_administrators"),
+    //storeId=xxx&position=1  已生成
+
+    FACTORY_MANAGER("工厂人员管理","pagesindex/index/sweep_code_addition/invite_administrators"),
+    //factoryId=xxx&position=2 已生成
+
+    ALLIANCE_ADD_MEMBER("联盟添加成员","pagesindex/index/sweep_code_addition/invite_alliance"),
+    //alianceId=xxx   已生成
+
+    APP_INDEX("小程序首页","pages/index/index"),
+    //storeId=xxx    已生成
+
+    STORE_INDEX_CARD("门店主页名片","pages/index/index"),
+    //storeId=xxx   已生成
+
+    STORE_RECOMMEND("门店介绍页","pagesindex/index/brand_introduction/brand_introduction"),
+    //storeId=xxx 已生成
+
+    SALE_CARD("销售名片","pagesindex/index/sales_list/personal_display"),
+    //saleId=xxx  已生成
+
+    ALLIANCE_CARD("联盟名片","pagesindex/index/alliance_shop/alliance_shop"),
+    //alianceId=xxx  已生成
+
+    STORE_PRODUCT_BY_GROUP("商品拼团分享","pagesindex/index/Group_details/goto_group/gotogroup"),
+    //productGroupId=xxx   已生成
+
+    STORE_PRODUCT("门店商品","pages/shop/shop_details/shopdetails"),
+    //pid=xxx&storeId=xxx  已生成
+
+    STORE_PRODUCT_CASE("商品案例","pages/shop/shop_casesDetails/shopCasesDetails"),
+    //pid=xxx&caseId=xxx   已生成
+
+    SALE_WORK_CASE("销售作品案例","pagesindex/index/brand_introduction/selected_cases/selected_cases_info"),
+    //workId=xxx  已生成
+
+    STORE_CASE("门店案例","pagesindex/index/brand_introduction/selected_cases/selected_cases_info"),
+    //caseId=xxx&work=true  已生成
+
+    STORE_PRODUCT_GROUP_DETAIL("商品拼团详情","pagesindex/index/Group_details/Group_details"),
+    //fid=xxx&pid=xxx    已生成
+
+    MILLION_PARTNER("百万合伙人邀请","pagesme/me/million_partner/application_for_admission"),
+    //uid=xxx&code=xxx   已生成
+
+    STORE_ACTIVITY("活动案例分享","pagesindex/index/case_activity/case_activity"),
+    //activityId=xxx 已生成
+
+    CASE_PREVIEW("活动详情","pagesindex/index/case_activity/case_preview"),
+    //activityId=xxx  已生成
+
+    COMMUNITY_DETAILS("社区动态详情","pages/community/community_info/community_details");
+    //dynamicsId=xxx  已生成
