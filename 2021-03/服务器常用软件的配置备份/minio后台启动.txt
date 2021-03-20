@@ -1,0 +1,1 @@
+nohup /home/software/minio/minio server /home/software/minio/data > /home/software/minio/data/minio.log 2>&1 &

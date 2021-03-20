@@ -1,0 +1,26 @@
+nohup: ignoring input
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ You are running an older version of MinIO released 2 days ago ┃
+┃ Update: Run `mc admin update`                                 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+Endpoint: http://192.168.3.8:9000  http://127.0.0.1:9000           
+
+Browser Access:
+   http://192.168.3.8:9000  http://127.0.0.1:9000          
+
+Object API (Amazon S3 compatible):
+   Go:         https://docs.min.io/docs/golang-client-quickstart-guide
+   Java:       https://docs.min.io/docs/java-client-quickstart-guide
+   Python:     https://docs.min.io/docs/python-client-quickstart-guide
+   JavaScript: https://docs.min.io/docs/javascript-client-quickstart-guide
+   .NET:       https://docs.min.io/docs/dotnet-client-quickstart-guide
+Detected default credentials 'minioadmin:minioadmin', please change the credentials immediately using 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD'
+
+
+nohup /home/software/minio/minio server /home/software/minio/data > /home/software/minio/data/minio.log 2>&1 &
+
+
+aria2c --conf-path=/home/software/aria2/aria2.conf -D &
+
